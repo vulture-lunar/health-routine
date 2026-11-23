@@ -114,3 +114,25 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
 .card-bottom { width:100%; font-weight:500; padding-top:9px; }
 @media(max-width:767px) { .card { grid-template-columns:84px minmax(0,1fr); padding:16px; column-gap:14px; min-height:152px; } .routine-thumb { width:84px; height:84px; } }
 @media(max-width:374px) { .card { grid-template-columns:70px minmax(0,1fr); padding:14px; column-gap:12px; } .routine-thumb { width:70px; height:70px; } .card h3 { font-size:14px; } }
+
+/* Direct concern search, above the existing picker. */
+.concern-search { width:100%; max-width:570px; margin-bottom:20px; }
+.concern-search label { display:block; color:var(--color-gold-light); font-size:14px; font-weight:700; margin-bottom:10px; }
+.search-field { display:flex; gap:8px; padding:6px; background:var(--color-paper-2); border:1px solid var(--color-gold-deep); border-radius:8px; }
+.search-field:focus-within { outline:2px solid var(--color-gold-light); outline-offset:3px; }
+.search-field input { flex:1; min-width:0; width:100%; font:inherit; font-size:16px; color:var(--color-ink); background:none; border:0; padding:10px; outline:none; }
+.search-field input::placeholder { color:var(--color-muted); opacity:1; }
+.search-field button { flex:none; padding:9px 18px; border:0; border-radius:5px; color:var(--color-paper); background:var(--color-gold); cursor:pointer; font-size:14px; font-weight:700; white-space:nowrap; }
+.search-feedback { margin-top:12px; background:var(--color-paper-2); border:1px solid var(--color-rule); border-radius:8px; padding:12px; }
+.search-summary { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
+.search-summary p { margin:0; color:var(--color-muted); font-size:12px; line-height:1.7; }
+.search-summary button { flex:none; border:0; background:none; color:var(--color-gold); cursor:pointer; font-size:12px; padding:0; white-space:nowrap; }
+.search-results { max-height:320px; overflow-y:auto; overscroll-behavior:contain; }
+.search-result { display:flex; align-items:center; gap:12px; width:100%; text-align:left; background:none; border:0; border-top:1px solid var(--color-rule-soft); padding:12px 2px; cursor:pointer; margin-top:8px; }
+.search-result img { flex:none; width:44px; height:44px; object-fit:cover; border-radius:5px; }
+.search-result > span:nth-child(2) { flex:1; min-width:0; }
+.search-result small { display:block; color:var(--color-gold); font-size:11px; margin-bottom:4px; }
+.search-result strong { display:block; color:var(--color-ink); font-size:13px; font-weight:500; overflow-wrap:anywhere; }
+.search-result > span:last-child { color:var(--color-gold); }
+@media(max-width:767px) { .concern-search { max-width:none; } }
+@media(max-width:374px) { .search-field input { padding:10px 6px; } .search-field button { padding-inline:14px; } }

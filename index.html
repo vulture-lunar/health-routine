@@ -237,6 +237,19 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
       <p class="eyebrow"><span>DAILY ROUTINE</span>고민별 건강 루틴</p>
       <h1>요즘 신경 쓰이는 내 몸,<br><em>고민별로</em> 정리했어요.</h1>
       <p class="hero-copy">속, 잠, 피부, 장 건강까지. 해당하는 고민을 모두 골라 보세요.<br>생활 습관과 추천 제품을 한 번에 정리해 드려요.</p>
+      <div class="concern-search">
+        <form id="concern-search-form" role="search" aria-label="건강 고민 검색">
+          <label for="concern-query">내 고민 직접 검색하기</label>
+          <div class="search-field">
+            <input id="concern-query" type="search" placeholder="예: 잠, 붓기, 피부, 부모님" autocomplete="off" maxlength="100" aria-controls="concern-search-results">
+            <button type="submit">검색</button>
+          </div>
+        </form>
+        <div class="search-feedback" id="search-feedback" hidden>
+          <div class="search-summary"><p id="search-status" role="status" aria-live="polite"></p><button type="button" id="search-clear">지우기</button></div>
+          <div class="search-results" id="concern-search-results"></div>
+        </div>
+      </div>
       <div class="picker" role="group" aria-labelledby="picker-title">
         <div class="picker-head"><b id="picker-title">내 고민 고르기</b><span>여러 개 골라도 돼요</span></div>
         <div class="picker-chips" id="picker-chips"></div>
@@ -547,6 +560,51 @@ document.getElementById("prod-grid").innerHTML = ORDER.map(no => {
     </span>
   </a>`;
 }).join("");
+
+
+// Search only the existing concern archive; input is never sent to a server.
+const queryEl = document.getElementById("concern-query");
+const searchResultsEl = document.getElementById("concern-search-results");
+const searchFeedbackEl = document.getElementById("search-feedback");
+const searchStatusEl = document.getElementById("search-status");
+const searchAliases = {
+  meal: "식욕 간식 야식 식후 혈당 과식",
+  light: "붓기 부기 부종 무거움",
+  gut: "위 위장 속쓰림 더부룩 소화불량 복부",
+  bowel: "변비 배변 장 유산균 화장실",
+  skin: "피부 보습 건조 콜라겐 이너뷰티",
+  hair: "탈모 모발 머리카락 두피 비오틴",
+  change: "갱년기 여성 열감 기분 감정",
+  sleep: "불면 불면증 수면 잠 멜라토닌",
+  throat: "기관지 목 코 호흡 환절기 비염",
+  vessel: "혈관 혈행 혈압 콜레스테롤 순환",
+  parents: "부모님 부모 엄마 아빠 어머니 아버지 중년 노년"
+};
+const normalizeSearch = value => value.normalize("NFKC").toLocaleLowerCase("ko-KR");
+function renderSearch() {
+  const query = normalizeSearch(queryEl.value.trim());
+  searchFeedbackEl.hidden = !query;
+  if (!query) { searchResultsEl.replaceChildren(); searchStatusEl.textContent = ""; return; }
+  const terms = query.split(/\s+/);
+  const matches = C.filter(c => {
+    const text = normalizeSearch([c.tag, c.q, c.title, c.lead, catName(c.cat), ...c.memo, searchAliases[c.id] || ""].join(" "));
+    return terms.every(term => text.includes(term));
+  });
+  searchStatusEl.textContent = matches.length ? `관련 고민 ${matches.length}개를 찾았어요` : "관련 고민을 찾지 못했어요. 잠, 붓기처럼 짧은 단어로 검색해 보세요.";
+  searchResultsEl.innerHTML = matches.map(c => `<button type="button" class="search-result" data-id="${c.id}" aria-haspopup="dialog"><img src="assets/routine-${c.id}.webp" alt="" width="44" height="44"><span><small>${esc(c.tag)}</small><strong>${esc(c.q)}</strong></span><span aria-hidden="true">›</span></button>`).join("");
+}
+queryEl.addEventListener("input", renderSearch);
+document.getElementById("concern-search-form").addEventListener("submit", e => {
+  e.preventDefault(); renderSearch();
+  searchResultsEl.querySelector("button")?.focus();
+});
+document.getElementById("search-clear").addEventListener("click", () => {
+  queryEl.value = ""; renderSearch(); queryEl.focus();
+});
+searchResultsEl.addEventListener("click", e => {
+  const button = e.target.closest(".search-result");
+  if (button) openNote(button.dataset.id);
+});
 
 renderGrid();
 renderPicker();
