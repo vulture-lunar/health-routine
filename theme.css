@@ -267,3 +267,30 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
  .youtube-emblem { width:48px; height:48px; }
  .youtube-copy h2 { font-size:19px; }
 }
+
+/* Four products per swipe page, with native touch and desktop dragging. */
+.prod-grid { gap:16px; padding:4px 0 16px; cursor:grab; user-select:none; }
+.product-page { flex:0 0 100%; min-width:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; scroll-snap-align:start; scroll-snap-stop:always; align-content:start; }
+.prod-grid .prod-tile { min-width:0; scroll-snap-align:none; }
+.prod-grid .prod-tile:hover { transform:none; }
+.prod-grid.is-dragging { cursor:grabbing; scroll-snap-type:none; }
+.prod-grid.is-dragging a { cursor:grabbing; }
+/* A single clear channel link, directly after the products and before the closing artwork. */
+.youtube-banner { padding-block:0 48px; }
+.youtube-channel-card { display:flex; align-items:center; gap:22px; padding:28px 0; border-block:1px solid var(--color-rule); }
+.youtube-avatar { flex:none; width:64px; height:64px; border-radius:50%; border:1px solid var(--color-gold-deep); }
+.youtube-channel-info { flex:1; min-width:0; }
+.youtube-wordmark { display:flex; align-items:center; gap:7px; font-size:12px; color:var(--color-ink); font-weight:700; }
+.youtube-wordmark svg { color:var(--color-youtube); }
+.youtube-channel-info h2 { font-family:var(--font-display); font-size:23px; font-weight:600; color:var(--color-gold-light); margin:8px 0; letter-spacing:-.04em; }
+.youtube-channel-info p { font-size:12px; line-height:1.8; color:var(--color-muted); margin:0; }
+.youtube-channel-action { display:flex; gap:12px; align-items:center; flex:none; color:var(--color-gold-light); font-size:13px; padding:13px 18px; border:1px solid var(--color-gold-deep); border-radius:99px; white-space:nowrap; }
+.youtube-channel-card:hover .youtube-channel-action { background:var(--color-gold); color:var(--color-paper); }
+@media(max-width:767px) {
+ .product-page { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+ .youtube-banner { padding-block:0 32px; }
+ .youtube-channel-card { display:grid; grid-template-columns:56px minmax(0,1fr); gap:18px; padding-block:24px; }
+ .youtube-avatar { width:56px; height:56px; }
+ .youtube-channel-info h2 { font-size:21px; }
+ .youtube-channel-action { grid-column:1 / -1; justify-content:center; border-radius:10px; }
+}
