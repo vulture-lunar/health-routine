@@ -1,0 +1,107 @@
+/* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V4
+ * genre: atmospheric · macrostructure: illustrated split masthead + routine archive
+ * theme: custom, user-supplied channel artwork · mobile: verified before release
+ */
+html, body { overflow-x: clip; }
+body { background: var(--color-paper); }
+h1,h2,h3 { font-style: normal; overflow-wrap: anywhere; min-width: 0; }
+.coral,.peach,.yellow,.green,.lavender,.blue {
+  --accent: var(--color-gold); --accent-soft: var(--color-raised);
+}
+a:focus-visible,button:focus-visible { outline: 2px solid var(--color-gold-light); outline-offset: 4px; }
+.channel-header { border-top: 3px solid var(--color-gold-deep); border-bottom: 1px solid var(--color-rule); background: var(--color-paper); }
+.channel-header .inner { display:flex; align-items:center; justify-content:space-between; gap:var(--space-sm); padding-block:14px; }
+.channel-brand { display:flex; align-items:center; gap:var(--space-sm); }
+.channel-brand img { width:54px; height:54px; border-radius:50%; border:1px solid var(--color-gold-deep); }
+.channel-brand strong { font-family:var(--font-display); font-size:20px; letter-spacing:-.04em; color:var(--color-gold-light); }
+.channel-brand small { display:block; margin-top:3px; font-size:10px; color:var(--color-muted); letter-spacing:.15em; }
+.channel-nav { font-size:12px; color:var(--color-gold); white-space:nowrap; border-bottom:1px solid var(--color-rule); padding-block:7px; }
+.hero { background:var(--color-paper); border-bottom:1px solid var(--color-rule); }
+.hero-art { position:absolute; inset:0 0 0 35%; background-image:linear-gradient(90deg,var(--color-paper),var(--color-clear) 42%),linear-gradient(0deg,var(--color-paper),var(--color-clear) 65%),url('assets/book-of-life.jpg'); background-position:center; background-size:cover; opacity:.8; pointer-events:none; }
+.hero .inner { align-items:flex-start; text-align:left; padding-block:64px 48px; }
+.hero::before,.hero::after,.orbit { display:none; }
+.eyebrow { color:var(--color-muted); background:none; border:0; border-radius:0; padding:0; font-size:11px; letter-spacing:.08em; margin-bottom:22px; }
+.eyebrow span { color:var(--color-gold); }
+.hero h1 { font-family:var(--font-display); font-weight:700; font-size:clamp(32px,4vw,49px); letter-spacing:-.055em; line-height:1.5; }
+.hero h1 em { color:var(--color-gold-light); }
+.hero h1 em::after { display:none; }
+.hero-copy { color:var(--color-ink); font-size:14px; margin:20px 0 28px; max-width:36em; }
+.picker { max-width:570px; padding:22px; border:1px solid var(--color-gold-deep); border-radius:var(--radius-card); background:var(--color-paper-2); box-shadow:0 16px 40px var(--color-shadow); gap:18px; }
+.picker-head b { color:var(--color-gold-light); }
+.pick { background:var(--color-paper); border-color:var(--color-rule-soft); color:var(--color-ink); font-size:13px; padding:8px 12px 8px 10px; white-space:nowrap; }
+.pick .tick { background:var(--color-paper); border-color:var(--color-rule); }
+.pick[aria-pressed="true"] { color:var(--color-paper); background:var(--color-gold-light); border-color:var(--color-gold-light); }
+.pick[aria-pressed="true"] .tick { color:var(--color-paper); background:var(--color-gold-light); border-color:var(--color-gold-deep); }
+.picker-go { background:var(--color-gold); color:var(--color-paper); border-radius:6px; white-space:nowrap; }
+.picker-go:not(:disabled):hover { background:var(--color-gold-light); }
+.picker-go:disabled { background:var(--color-raised); color:var(--color-muted); border:1px solid var(--color-rule-soft); }
+.picker-reset { white-space:nowrap; }
+.library { padding-block:var(--space-lg) 24px; }
+.archive-heading { margin-bottom:22px; }
+.archive-heading p { color:var(--color-gold); font-size:11px; letter-spacing:.12em; margin:0 0 8px; }
+.archive-heading h2,.products h2 { font-family:var(--font-display); font-size:28px; font-weight:600; margin:0; letter-spacing:-.04em; }
+.filters { flex-wrap:wrap; overflow:visible; gap:8px; padding-bottom:22px; }
+.filters button { color:var(--color-muted); background:var(--color-paper-2); border-color:var(--color-rule-soft); border-radius:6px; font-size:13px; padding:9px 12px; white-space:nowrap; }
+.filters button[aria-pressed="true"] { background:var(--color-gold); color:var(--color-paper); border-color:var(--color-gold); box-shadow:none; }
+.filters button[aria-pressed="true"] span { color:var(--color-paper); }
+.card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.card { border:1px solid var(--color-rule-soft); border-radius:var(--radius-card); background:var(--color-paper-2); padding:24px; min-height:190px; gap:18px; }
+.card::after { width:110px; height:110px; top:-55px; right:-55px; border-radius:50%; transform:none; border:1px solid var(--color-gold); opacity:.25; }
+.card:hover { border-color:var(--color-gold-deep); box-shadow:0 8px 22px var(--color-shadow); }
+.card .label { color:var(--color-gold); background:none; padding:0; font-size:12px; }
+.card h3 { font-size:18px; font-weight:500; max-width:100%; }
+.card-bottom { border-radius:0; border-top:1px solid var(--color-rule-soft); padding:12px 0 0; color:var(--color-gold); background:none; font-size:12px; }
+.arrow { color:var(--color-gold); background:none; width:24px; height:24px; }
+.card:hover .card-bottom { background:none; color:var(--color-gold-light); }
+.card:hover .arrow { background:none; color:var(--color-gold-light); }
+.products { padding-block:36px 48px; }
+.products h2 { margin-bottom:24px; }
+.products-kicker { font-size:11px; font-weight:500; }
+.prod-tile { border-radius:var(--radius-card); }
+.prod-tile .body { padding:16px; }
+.prod-tile .n { font-size:13px; }
+.prod-tile .t { font-size:11px; line-height:1.7; }
+.landscape { height:180px; background:var(--color-paper) url('assets/golden-landscape.jpg') center 50% / cover; border-block:1px solid var(--color-rule); }
+footer { background:var(--color-paper); border-color:var(--color-rule); }
+.footer-line { color:var(--color-gold-light); }
+.footer-brand { font-family:var(--font-display); color:var(--color-gold); font-size:20px; margin-bottom:8px; }
+dialog.sheet { border:1px solid var(--color-rule); border-radius:16px 16px 0 0; }
+dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
+.sheet-head::before { background:none; border:1px solid var(--color-rule); border-radius:50%; right:-65px; top:-65px; }
+.sheet-close { color:var(--color-gold-light); background:var(--color-raised); border-color:var(--color-rule); }
+.sheet-head h3 { font-family:var(--font-display); font-weight:600; line-height:1.6; }
+.memo,.prod { border-radius:var(--radius-card); }
+.memo li.tip { border-color:var(--color-rule); }
+.btn { color:var(--color-paper); background:var(--color-gold); border-radius:6px; white-space:nowrap; }
+.btn:hover { background:var(--color-gold-light); }
+.match .both { color:var(--color-paper); }
+@media(min-width:1200px) { .hero-art { background-size:auto 100%; background-repeat:no-repeat; background-position:right center; } }
+@media(max-width:767px) {
+ .channel-brand strong { font-size:17px; }
+ .channel-brand img { width:44px; height:44px; }
+ .hero-art { inset:0 0 auto; height:245px; opacity:.95; background-image:linear-gradient(0deg,var(--color-paper),var(--color-clear) 50%),url('assets/book-of-life.jpg'); background-position:center 55%; }
+ .hero .inner { padding-top:230px; padding-bottom:32px; }
+ .hero h1 { font-size:clamp(28px,6.8vw,43px); line-height:1.5; }
+ .hero-copy { font-size:13px; }
+ .eyebrow { margin-bottom:16px; }
+ .picker { max-width:none; padding:18px; gap:16px; }
+ .card-grid { grid-template-columns:minmax(0,1fr); }
+ .card { min-height:165px; padding:20px; gap:14px; }
+ .archive-heading h2,.products h2 { font-size:25px; }
+ .landscape { height:130px; }
+}
+@media(max-width:374px) {
+ .inner { padding-inline:16px; }
+ .channel-brand strong { font-size:15px; }
+ .channel-brand small { font-size:9px; letter-spacing:.08em; }
+ .channel-nav { font-size:11px; }
+ .picker { padding:14px; }
+ .picker-head b { font-size:14px; }
+ .picker-head span { font-size:11px; }
+ .pick { font-size:12px; padding:7px 10px; }
+ .picker-go { font-size:12px; }
+ .picker-reset { font-size:11px; }
+ .prod { grid-template-columns:64px minmax(0,1fr); gap:10px; padding:12px; }
+ .prod img { width:64px; height:64px; }
+ .prod-tile .body { padding:12px; }
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#F3F8F1">
+<meta name="theme-color" content="#071725">
 <meta property="og:type" content="website">
 <meta property="og:title" content="활력포션 건강 루틴">
 <meta property="og:description" content="고민을 고르면 생활 습관과 추천 제품을 한 번에 정리해 드려요.">
@@ -214,12 +214,24 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 .match .both { background: var(--lime); color: var(--ink); }
 .sheet-foot { margin: 18px 0 0; font-size: 11.5px; color: var(--muted); line-height: 1.6; }
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
 
+<header class="channel-header">
+  <div class="inner">
+    <a class="channel-brand" href="#top" aria-label="백년 탐구생활 건강 루틴 홈">
+      <img src="assets/channel-emblem.jpg" width="54" height="54" alt="백년 탐구생활 채널 로고">
+      <span><strong>백년 탐구생활</strong><small>건강한 일상을 탐구하다</small></span>
+    </a>
+    <a class="channel-nav" href="#routines">건강 루틴 보기 ↗</a>
+  </div>
+</header>
 <main>
   <section class="hero" id="top">
-    <span class="orbit orbit-1" aria-hidden="true"></span>
+    <div class="hero-art" aria-hidden="true"></div>
     <span class="orbit orbit-2" aria-hidden="true"></span>
     <div class="inner">
       <p class="eyebrow"><span>DAILY ROUTINE</span>고민별 건강 루틴</p>
@@ -236,8 +248,9 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
     </div>
   </section>
 
-  <section class="library" aria-label="고민 목록">
+  <section class="library" id="routines" aria-label="고민 목록">
     <div class="inner">
+      <div class="archive-heading"><p>DAILY HEALTH ARCHIVE</p><h2>오늘의 몸을 살피는 작은 습관</h2></div>
       <div class="filters" id="filters" role="group" aria-label="카테고리"></div>
       <div class="card-grid" id="grid"></div>
     </div>
@@ -245,7 +258,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 
   <section class="products" aria-label="추천 제품">
     <div class="inner">
-      <p class="section-kicker products-kicker">PRODUCTS</p>
+      <p class="section-kicker products-kicker">ROUTINE COLLECTION</p><h2>내 루틴에 더하는 제품</h2>
       <div class="prod-grid" id="prod-grid"></div>
       <p class="hero-note"><b>✓</b>공식 판매처에서 파는 제품만 소개해요</p>
       <p class="page-note">일반적인 생활 정보이며, 사람마다 느끼는 정도가 다를 수 있어요. 복용 중인 약이 있다면 전문가와 먼저 상담해 주세요.</p>
@@ -254,9 +267,10 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 
 </main>
 
+<div class="landscape" role="img" aria-label="남색 하늘과 금빛 산맥 사이로 떠오르는 해"></div>
 <footer>
   <div class="inner">
-    <p class="footer-line">고민은 쉽게 찾고, 고르는 기준은 분명하게.</p>
+    <div class="footer-brand">백년 탐구생활</div><p class="footer-line">고민은 쉽게 찾고, 고르는 기준은 분명하게.</p>
     <p>© 백년 탐구 생활</p>
   </div>
 </footer>
