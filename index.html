@@ -226,13 +226,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
       <img src="assets/channel-emblem.jpg" width="54" height="54" alt="백년 탐구생활 채널 로고">
       <span><strong>백년 탐구생활</strong><small>건강한 일상을 탐구하다</small></span>
     </a>
-    <nav class="header-links" aria-label="채널 및 건강 루틴">
-      <a class="channel-youtube" href="https://www.youtube.com/@%EB%B0%B1%EB%85%84_%ED%83%90%EA%B5%AC%EC%83%9D%ED%99%9C" target="_blank" rel="noopener noreferrer" aria-label="백년 탐구생활 유튜브 채널 (새 탭)">
-        <svg width="19" height="15" viewBox="0 0 24 18" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="16" rx="5" stroke="currentColor" stroke-width="1.5"/><path d="m10 5 6 4-6 4V5Z" fill="currentColor"/></svg>
-        <span>유튜브</span><span aria-hidden="true">↗</span>
-      </a>
-      <a class="channel-nav" href="#routines">건강 루틴 보기 ↗</a>
-    </nav>
+    <a class="channel-nav" href="#routines">건강 루틴 보기 ↗</a>
   </div>
 </header>
 <main>
@@ -279,7 +273,18 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
   <section class="products" aria-label="추천 제품">
     <div class="inner">
       <p class="section-kicker products-kicker">ROUTINE COLLECTION</p><h2>내 루틴에 더하는 제품</h2>
-      <div class="prod-grid" id="prod-grid"></div>
+      <p class="products-intro">필요한 대상과 주의사항을 확인한 후 선택하세요.</p>
+      <div class="product-carousel" role="region" aria-label="루틴 제품 넘겨보기" aria-roledescription="캐러셀">
+        <div class="prod-grid" id="prod-grid" tabindex="0" role="group" aria-label="제품 목록, 좌우 방향키로 넘겨보세요"></div>
+        <div class="product-carousel-toolbar">
+          <p class="product-swipe-hint">옆으로 넘겨 살펴보세요</p>
+          <div class="product-carousel-controls">
+            <span id="product-position" aria-live="polite" aria-atomic="true"></span>
+            <button type="button" id="product-prev" aria-label="이전 제품" aria-controls="prod-grid" disabled>←</button>
+            <button type="button" id="product-next" aria-label="다음 제품" aria-controls="prod-grid">→</button>
+          </div>
+        </div>
+      </div>
       <p class="hero-note"><b>✓</b>공식 판매처에서 파는 제품만 소개해요</p>
       <p class="page-note">일반적인 생활 정보이며, 사람마다 느끼는 정도가 다를 수 있어요. 복용 중인 약이 있다면 전문가와 먼저 상담해 주세요.</p>
     </div>
@@ -288,6 +293,15 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 </main>
 
 <div class="landscape" role="img" aria-label="남색 하늘과 금빛 산맥 사이로 떠오르는 해"></div>
+<section class="youtube-banner" aria-labelledby="youtube-heading">
+  <div class="inner">
+    <div class="youtube-panel">
+      <img class="youtube-emblem" src="assets/channel-emblem.jpg" alt="" width="88" height="88" loading="lazy">
+      <div class="youtube-copy"><p>YOUTUBE · 백년 탐구생활</p><h2 id="youtube-heading">궁금했던 건강 이야기,<br>영상으로 만나보세요.</h2><span>내 몸을 알아가는 시간, 백년 탐구생활과 함께해요.</span></div>
+      <a class="youtube-cta" href="https://www.youtube.com/@%EB%B0%B1%EB%85%84_%ED%83%90%EA%B5%AC%EC%83%9D%ED%99%9C" target="_blank" rel="noopener noreferrer" aria-label="백년 탐구생활 유튜브 채널 바로가기 (새 탭)"><svg width="23" height="18" viewBox="0 0 24 18" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="16" rx="5" stroke="currentColor" stroke-width="1.5"/><path d="m10 5 6 4-6 4V5Z" fill="currentColor"/></svg>유튜브 채널 바로가기 <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
 <footer>
   <div class="inner">
     <div class="footer-brand">백년 탐구생활</div><p class="footer-line">고민은 쉽게 찾고, 고르는 기준은 분명하게.</p>
@@ -595,6 +609,33 @@ document.getElementById("prod-grid").innerHTML = ORDER.map(no => {
   </a>`;
 }).join("");
 
+
+// Native touch scrolling with buttons and keyboard support for the product row.
+const productTrack = document.getElementById("prod-grid");
+const productPrev = document.getElementById("product-prev");
+const productNext = document.getElementById("product-next");
+function updateProductPosition() {
+  const cards = [...productTrack.querySelectorAll(".prod-tile")];
+  const start = productTrack.getBoundingClientRect().left;
+  const first = cards.findIndex(card => card.getBoundingClientRect().right > start + 12);
+  document.getElementById("product-position").textContent = `${Math.max(0, first) + 1} / ${cards.length}`;
+  productPrev.disabled = productTrack.scrollLeft <= 2;
+  productNext.disabled = productTrack.scrollLeft >= productTrack.scrollWidth - productTrack.clientWidth - 2;
+}
+function moveProducts(direction) {
+  const card = productTrack.querySelector(".prod-tile");
+  const step = card.getBoundingClientRect().width + parseFloat(getComputedStyle(productTrack).gap);
+  productTrack.scrollBy({left:direction * step, behavior:matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"});
+}
+productPrev.addEventListener("click", () => moveProducts(-1));
+productNext.addEventListener("click", () => moveProducts(1));
+productTrack.addEventListener("scroll", updateProductPosition, {passive:true});
+productTrack.addEventListener("keydown", e => {
+  if (e.target !== productTrack) return;
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); moveProducts(e.key === "ArrowRight" ? 1 : -1); }
+});
+new ResizeObserver(updateProductPosition).observe(productTrack);
+updateProductPosition();
 
 // Search only the existing concern archive; input is never sent to a server.
 const queryEl = document.getElementById("concern-query");

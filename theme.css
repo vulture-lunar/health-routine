@@ -220,3 +220,50 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
 .short-main:hover,.short-small:hover { border-color:var(--color-gold-deep); }
 .shorts-checked { font-size:10px; color:var(--color-muted); line-height:1.8; margin:12px 0 0; }
 @media(max-width:374px) { .short-main { padding:10px; gap:12px; } .short-main-copy { gap:10px; } .short-main-copy > strong { font-size:14px; } .shorts-heading h4 { font-size:20px; } }
+
+/* Product carousel: retain all products and official destination links. */
+.products h2 { margin-bottom:12px; }
+.products-intro { color:var(--color-muted); font-size:13px; line-height:1.8; margin:0 0 22px; }
+.prod-grid { display:flex; gap:16px; overflow-x:auto; overscroll-behavior-x:contain; scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:var(--color-gold-deep) var(--color-paper-2); padding:4px 4px 18px; }
+.prod-grid:focus-visible { outline:2px solid var(--color-gold); outline-offset:4px; border-radius:12px; }
+.prod-grid .prod-tile { flex:0 0 204px; min-width:0; scroll-snap-align:start; }
+.prod-grid .prod-tile img { aspect-ratio:1; object-fit:cover; }
+.prod-grid .prod-tile .n { font-size:13px; line-height:1.65; }
+.prod-grid .prod-tile .t { font-size:11px; line-height:1.7; }
+.product-carousel-toolbar { display:flex; justify-content:space-between; align-items:center; gap:12px; padding-top:14px; }
+.product-swipe-hint { color:var(--color-muted); font-size:12px; margin:0; }
+.product-carousel-controls { display:flex; align-items:center; gap:8px; }
+#product-position { font-size:12px; color:var(--color-gold); font-variant-numeric:tabular-nums; margin-right:6px; white-space:nowrap; }
+.product-carousel-controls button { width:42px; height:42px; border:1px solid var(--color-rule); border-radius:50%; background:var(--color-paper-2); color:var(--color-gold-light); cursor:pointer; font-size:20px; }
+.product-carousel-controls button:disabled { opacity:.35; cursor:default; }
+.product-carousel-controls button:not(:disabled):hover { border-color:var(--color-gold); background:var(--color-raised); }
+/* A prominent channel invitation at the bottom of the page. */
+.youtube-banner { padding-block:40px; background:var(--color-paper); }
+.youtube-panel { display:grid; grid-template-columns:88px minmax(0,1fr) auto; align-items:center; gap:28px; padding:32px; border:1px solid var(--color-gold-deep); border-radius:20px; background:linear-gradient(120deg,var(--color-raised),var(--color-paper-2)); box-shadow:inset 0 1px 0 var(--color-line-faint); }
+.youtube-emblem { width:88px; height:88px; border-radius:50%; border:1px solid var(--color-gold); }
+.youtube-copy p { font-size:11px; letter-spacing:.08em; color:var(--color-gold); margin:0 0 10px; }
+.youtube-copy h2 { font-family:var(--font-display); font-size:26px; font-weight:600; color:var(--color-gold-light); line-height:1.6; letter-spacing:-.04em; margin:0; }
+.youtube-copy > span { display:block; margin-top:10px; font-size:12px; line-height:1.8; color:var(--color-muted); }
+.youtube-cta { display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:52px; padding:12px 20px; border-radius:10px; background:var(--color-gold); color:var(--color-paper); font-size:13px; font-weight:700; white-space:nowrap; }
+.youtube-cta:hover { background:var(--color-gold-light); }
+@media(max-width:767px) {
+ .prod-grid .prod-tile { flex-basis:150px; }
+ .prod-grid { gap:12px; }
+ .prod-grid .prod-tile .body { padding:12px; }
+ .products-intro { font-size:12px; }
+ .youtube-banner { padding-block:28px; }
+ .youtube-panel { grid-template-columns:60px minmax(0,1fr); gap:18px; padding:24px 20px; }
+ .youtube-emblem { width:60px; height:60px; align-self:start; margin-top:4px; }
+ .youtube-copy h2 { font-size:21px; }
+ .youtube-copy > span { font-size:11px; }
+ .youtube-copy p { font-size:10px; letter-spacing:0; }
+ .youtube-cta { grid-column:1 / -1; width:100%; margin-top:4px; }
+}
+@media(max-width:374px) {
+ .prod-grid .prod-tile { flex-basis:140px; }
+ .product-swipe-hint { font-size:10px; }
+ .product-carousel-controls button { width:38px; height:38px; }
+ .youtube-panel { gap:14px; padding:22px 16px; grid-template-columns:48px minmax(0,1fr); }
+ .youtube-emblem { width:48px; height:48px; }
+ .youtube-copy h2 { font-size:19px; }
+}
