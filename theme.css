@@ -105,3 +105,12 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
  .prod img { width:64px; height:64px; }
  .prod-tile .body { padding:12px; }
 }
+
+/* Approved illustration thumbnails: left image, right concern and action. */
+.card { display:grid; grid-template-columns:96px minmax(0,1fr); grid-template-rows:auto 1fr auto; column-gap:18px; row-gap:10px; min-height:164px; padding:20px; }
+.routine-thumb { grid-column:1; grid-row:1 / 4; width:96px; height:96px; object-fit:cover; align-self:center; border:1px solid var(--color-rule); border-radius:8px; }
+.card-top,.card h3,.card-bottom { grid-column:2; }
+.card h3 { font-size:16px; line-height:1.6; }
+.card-bottom { width:100%; font-weight:500; padding-top:9px; }
+@media(max-width:767px) { .card { grid-template-columns:84px minmax(0,1fr); padding:16px; column-gap:14px; min-height:152px; } .routine-thumb { width:84px; height:84px; } }
+@media(max-width:374px) { .card { grid-template-columns:70px minmax(0,1fr); padding:14px; column-gap:12px; } .routine-thumb { width:70px; height:70px; } .card h3 { font-size:14px; } }

@@ -362,11 +362,16 @@ const C = [
     lead: "건조한 공기와 큰 일교차가 겹치는 계절이에요. 실내 습도와 수분부터 챙겨 보세요.",
     memo: ["실내 습도 40~60% 유지하기", "찬물 대신 미지근한 물을 자주", "외출 후 손 씻고 가글하기"], tip: "환절기용 영양제는 일교차가 커지기 시작할 때부터 미리 챙기기",
     picks: [[72, "환절기 목이 먼저 신경 쓰이는 분께 추천해요. 도라지와 맥문동을 들고 다니기 편한 환으로 만들었어요."], [77, "삼백초와 맥문동을 함께 챙기고 싶은 분께 추천해요."]] },
-  { id: "vessel", cat: "care", color: "peach", tag: "혈관·부모님", q: "부모님 건강검진 결과가 신경 쓰여요",
-    title: "부모님 혈관 건강 루틴을 챙겨 드리고 싶다면",
+  { id: "vessel", cat: "care", color: "peach", tag: "혈관 건강", q: "내 혈관 건강, 평소에 어떻게 챙길까요",
+    title: "내 혈관 건강을 위한 생활 루틴을 만들고 싶다면",
     lead: "중년 이후에는 짠 음식과 운동 부족이 쌓이기 쉬워요. 검진 결과는 꼭 의사와 상의하고, 생활 루틴을 함께 바꿔 보세요.",
-    memo: ["짠 반찬과 가공식품 줄이기", "일주일에 150분 이상 걷기", "검진 결과지는 버리지 말고 해마다 비교해 보기"], tip: "부모님이 드시는 약이 있다면 영양제는 의사·약사와 먼저 상담하기",
-    picks: [[75, "혈관·혈행 루틴을 한 번에 챙겨 드리고 싶은 분께 추천해요."], ["fib", "콜레스테롤이 신경 쓰이는 분께 추천해요. 혈중 콜레스테롤 개선 기능성을 인정받은 차전자피 식이섬유예요."]] },
+    memo: ["짠 반찬과 가공식품 줄이기", "일주일에 150분 이상 걷기", "검진 결과지는 버리지 말고 해마다 비교해 보기"], tip: "복용 중인 약이 있다면 영양제는 의사·약사와 먼저 상담하기",
+    picks: [[75, "혈관·혈행 루틴을 한 번에 챙기고 싶은 분께 추천해요."], ["fib", "콜레스테롤이 신경 쓰이는 분께 추천해요. 혈중 콜레스테롤 개선 기능성을 인정받은 차전자피 식이섬유예요."]] },
+  { id: "parents", cat: "care", color: "peach", tag: "부모님 건강", q: "부모님 건강검진 결과가 신경 쓰여요",
+    title: "부모님 건강 루틴을 함께 챙기고 싶다면",
+    lead: "부모님이 실천하기 편한 작은 습관부터 함께 정해 보세요. 건강검진 결과와 복용 중인 약을 확인하고, 필요한 관리는 의사·약사와 상의해 주세요.",
+    memo: ["검진 결과지를 함께 살펴보고 필요한 진료 일정 챙기기", "부모님 컨디션에 맞춰 가볍게 걷는 시간 만들기", "식사·수면·복용 중인 약을 함께 확인하기"], tip: "부모님이 드시는 약이 있다면 영양제는 의사·약사와 먼저 상담하기",
+    picks: [[75, "혈관·혈행 관리가 필요한 부모님을 위해 살펴볼 수 있어요. 복용 중인 약과 검진 결과에 맞는지는 전문가와 먼저 상담해 주세요."], ["fib", "식이섬유 섭취를 챙기기 어려운 부모님을 위해 살펴볼 수 있어요. 물을 충분히 함께 드시고, 섭취 가능 여부를 전문가와 확인해 주세요."]] },
 ];
 
 const won = n => n.toLocaleString("ko-KR") + "원";
@@ -387,6 +392,7 @@ function renderGrid() {
   gridEl.innerHTML = list.length ? list.map(c => {
     return `
     <button type="button" class="card ${c.color}" data-id="${c.id}" aria-haspopup="dialog">
+      <img class="routine-thumb" src="assets/routine-${c.id}.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
       <span class="card-top"><span class="label">${esc(c.tag)}</span></span>
       <h3>${esc(c.q)}</h3>
       <span class="card-bottom"><span>고민 해결하기</span><span class="arrow" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span></span>
