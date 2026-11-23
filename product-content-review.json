@@ -1,0 +1,183 @@
+{
+  "reviewedAt": "2026-11-23",
+  "reportNames": [
+    "더블러드_제품분석_셀링포인트_리포트.docx",
+    "도네카_제품분석_셀링포인트_리포트.docx",
+    "도맥환_제품분석_셀링포인트_리포트.docx",
+    "리플로퀸_제품분석_셀링포인트_리포트.docx",
+    "멜라티움_제품분석_셀링포인트_리포트.docx",
+    "모로페린_제품분석_셀링포인트_리포트.docx",
+    "삼백청정_제품분석_셀링포인트_리포트.docx",
+    "아누오틴_제품분석_셀링포인트_리포트.docx",
+    "양감작_제품분석_셀링포인트_리포트.docx",
+    "오프밀정_제품분석_셀링포인트_리포트.docx",
+    "잇레티놀_제품분석_셀링포인트_리포트.docx",
+    "코크보틀_제품분석_셀링포인트_리포트.docx"
+  ],
+  "verifiedOfficialProducts": [
+    49,
+    51,
+    54,
+    59,
+    64,
+    72,
+    74,
+    75,
+    77
+  ],
+  "decisions": [
+    {
+      "product": "아누오틴",
+      "decision": "Omit 5,400mcg: report attributes it to biotin, official sales copy to procyanidin B2, and label lists biotin as a formula percentage. Do not convert container content to a daily amount."
+    },
+    {
+      "product": "멜라티움",
+      "decision": "Use fruit/vegetable processed food, not solid tea, according to current official label. Do not transfer Lactium ingredient functional claims to this ordinary food."
+    },
+    {
+      "product": "모로페린",
+      "decision": "Use 2 tablets/day according to label; remove old 1-tablet advice and unsupported C3G microgram figure."
+    },
+    {
+      "product": "도맥환",
+      "decision": "Use loose 60g pills, 2g/day; remove old portable stick/packet claim."
+    },
+    {
+      "product": "양감작",
+      "decision": "Use cabbage 65%; omit licorice percentage because official image itself lists both 3% and 5%."
+    },
+    {
+      "product": "도네카",
+      "decision": "Information only: no fabricated product image, seller URL, dosage or food classification. Current label and seller info remain unconfirmed."
+    },
+    {
+      "product": "오프밀정·리플로퀸",
+      "decision": "Source the supplied label-based reports; flag need to check current seller label, preserve existing brand photos and links."
+    }
+  ],
+  "excluded": [
+    "Unverified certificates, patents, refund promises, reviews and sell-out metrics",
+    "Disease treatment, instant results, guaranteed change and medicine substitution claims"
+  ],
+  "sources": [
+    {
+      "product": "51",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=51"
+        }
+      ]
+    },
+    {
+      "product": "off",
+      "urls": [
+        {
+          "label": "현재 판매처",
+          "url": "https://smartstore.naver.com/corevital/products/13041480467"
+        }
+      ]
+    },
+    {
+      "product": "49",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=49"
+        }
+      ]
+    },
+    {
+      "product": "74",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=74"
+        },
+        {
+          "label": "감초 섭취 시 주의사항 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/licorice-root"
+        }
+      ]
+    },
+    {
+      "product": "54",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=54"
+        },
+        {
+          "label": "멜라토닌 안전성 참고 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know"
+        }
+      ]
+    },
+    {
+      "product": "59",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=59"
+        },
+        {
+          "label": "비오틴과 검사 영향 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "product": "64",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=64"
+        }
+      ]
+    },
+    {
+      "product": "72",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=72"
+        }
+      ]
+    },
+    {
+      "product": "77",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=77"
+        }
+      ]
+    },
+    {
+      "product": "rfq",
+      "urls": [
+        {
+          "label": "현재 판매처",
+          "url": "https://smartstore.naver.com/corevital/products/13562421497"
+        }
+      ]
+    },
+    {
+      "product": "75",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=75"
+        },
+        {
+          "label": "홍국과 의약품 상호작용 참고 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/red-yeast-rice"
+        }
+      ]
+    },
+    {
+      "product": "doneka",
+      "urls": []
+    }
+  ]
+}

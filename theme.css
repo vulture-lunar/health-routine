@@ -324,3 +324,39 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
 .short-launch:focus-visible { outline-offset:-5px; }
 .short-video-shell iframe { display:block; width:100%; height:100%; border:0; }
 @media(max-width:374px) { .short-video-shell { width:210px; } }
+
+/* Reviewed product information, reachable from the carousel and concern recommendations. */
+.prod-tile { width:100%; padding:0; cursor:pointer; text-align:left; font:inherit; color:var(--color-ink); }
+.product-open-text { display:block; color:var(--color-gold); font-size:11px; margin-top:8px; }
+.product-wordmark { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; width:100%; aspect-ratio:1; background:var(--color-raised); color:var(--color-gold); font-size:19px; letter-spacing:.12em; }
+.product-wordmark > span { font-family:var(--font-display); font-size:25px; letter-spacing:-.03em; }
+.product-audience,.product-caution-preview { grid-column:1 / -1; margin:0; padding:12px; border-radius:10px; font-size:12px; line-height:1.8; }
+.product-audience { background:var(--color-paper); color:var(--color-muted); }
+.product-caution-preview { border:1px solid var(--color-rule); color:var(--color-muted); }
+.product-audience b,.product-caution-preview b { display:block; font-size:11px; font-weight:600; color:var(--color-gold); margin-bottom:4px; }
+.product-card-actions { grid-column:1 / -1; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+.product-card-actions .btn { grid-column:auto; font-size:12px; }
+.product-info-button { cursor:pointer; padding:10px 8px; min-height:46px; border:1px solid var(--color-gold-deep); border-radius:6px; font-size:12px; white-space:nowrap; color:var(--color-gold-light); background:var(--color-paper); }
+.product-info-button:hover { background:var(--color-raised); }
+.product-guide-head { padding-top:28px; }
+.product-guide-identity { display:flex; align-items:center; gap:16px; margin:18px 0; padding-right:10px; }
+.product-guide-identity img { width:84px; height:84px; object-fit:cover; border:1px solid var(--color-rule); border-radius:12px; }
+.product-guide-identity > div { flex:1; min-width:0; }
+.product-kind { display:block; font-size:10px; color:var(--color-gold); }
+.product-guide-identity h3 { margin:7px 0 0; padding:0; font-size:21px; line-height:1.6; }
+.sheet-head .guide-headline { color:var(--color-gold-light); font-size:17px; line-height:1.7; font-weight:600; margin-bottom:12px; }
+.guide-section { margin-top:24px; padding-bottom:22px; border-bottom:1px solid var(--color-rule-soft); }
+.guide-section h4 { color:var(--color-gold-light); margin:0 0 12px; font-size:15px; font-weight:600; line-height:1.6; }
+.guide-section p { margin:0; color:var(--color-ink); font-size:13px; line-height:1.9; }
+.guide-list { padding-left:18px; margin:0; display:grid; gap:8px; font-size:13px; color:var(--color-ink); line-height:1.9; }
+.guide-list li::marker { color:var(--color-gold); }
+.guide-ingredients { display:flex; flex-wrap:wrap; gap:7px; }
+.guide-ingredients > span { font-size:12px; padding:7px 10px; border-radius:8px; background:var(--color-raised); border:1px solid var(--color-rule-soft); line-height:1.65; }
+.guide-section .guide-small-note,.guide-small-note { font-size:11px; line-height:1.8; color:var(--color-muted); margin:12px 0 0; }
+.guide-cautions { padding:18px; border:1px solid var(--color-rule); border-radius:12px; background:var(--color-gold-faint); }
+.guide-cautions .guide-allergens { color:var(--color-gold-light); font-size:12px; font-weight:700; margin-bottom:12px; }
+.guide-sources { margin-top:22px; font-size:12px; color:var(--color-muted); }
+.guide-sources summary { cursor:pointer; padding-block:8px; }
+.guide-sources a { display:block; color:var(--color-gold); font-size:11px; line-height:1.8; padding:5px 0; }
+.guide-purchase { margin-top:24px; font-size:13px; }
+@media(max-width:374px) { .product-info-button,.product-card-actions .btn { font-size:11px; } .product-guide-identity { gap:12px; } .product-guide-identity img { width:64px; height:64px; } .product-guide-identity h3 { font-size:18px; } .guide-cautions { padding:14px; } }
