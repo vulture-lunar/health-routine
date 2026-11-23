@@ -294,3 +294,18 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
  .youtube-channel-info h2 { font-size:21px; }
  .youtube-channel-action { grid-column:1 / -1; justify-content:center; border-radius:10px; }
 }
+
+/* Clear main Short title, followed by a single row of thumbnail-only links. */
+.shorts-heading h4 { margin:0 0 20px; }
+.short-main { display:flex; flex-direction:column; align-items:center; gap:16px; border:0; padding:0; background:none; }
+.short-main > .short-poster { width:min(100%,240px); border:1px solid var(--color-rule); border-radius:14px; }
+.short-main-copy { display:block; width:100%; text-align:center; }
+.short-main-copy > strong { font-size:16px; font-weight:600; line-height:1.8; max-width:30em; margin-inline:auto; text-wrap:pretty; }
+.short-main:hover > .short-poster { border-color:var(--color-gold); }
+.short-related-label { margin:26px 0 14px; color:var(--color-gold-light); font-weight:500; }
+.short-related { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.short-small { display:block; min-width:0; padding:0; border:0; border-radius:8px; }
+.short-small .short-poster { width:100%; border-radius:8px; border:1px solid var(--color-rule-soft); }
+.short-small:hover .short-poster { border-color:var(--color-gold); }
+.short-small .short-play { display:none; }
+@media(max-width:374px) { .short-main > .short-poster { width:210px; max-width:100%; } .short-main-copy > strong { font-size:15px; } .short-related { gap:8px; } }

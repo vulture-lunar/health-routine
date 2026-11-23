@@ -462,19 +462,16 @@ function selectShorts(ids) {
   const related = videos.slice(1).sort((a, b) => b.views - a.views || Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, 3);
   return { main, related };
 }
-const shortDate = v => new Date(v.publishedAt).toLocaleDateString("ko-KR", { timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit" });
 function renderShorts(ids) {
   const { main, related } = selectShorts(ids);
   if (!main) return "";
   const poster = v => `<span class="short-poster"><img src="${esc(v.thumbnail)}" alt="" width="180" height="320" loading="lazy" referrerpolicy="no-referrer"><span class="short-play" aria-hidden="true">▶</span></span>`;
-  const meta = v => `${shortDate(v)} · 조회수 ${v.views.toLocaleString("ko-KR")}회`;
   return `<section class="shorts-section" aria-label="관련 유튜브 쇼츠">
-    <div class="shorts-heading"><span>백년 탐구생활 · Shorts</span><h4>영상으로 더 알아보기</h4></div>
+    <div class="shorts-heading"><h4>영상으로 더 알아보기</h4></div>
     <a class="short-main" href="https://www.youtube.com/shorts/${main.id}" target="_blank" rel="noopener noreferrer" aria-label="${esc(main.title)} — 유튜브에서 새 탭으로 보기">
-      ${poster(main)}<span class="short-main-copy"><small class="short-badge">가장 최근 올라온 관련 영상</small><strong>${esc(main.title)}</strong><span class="short-meta">${meta(main)}</span><span class="short-watch">YouTube에서 보기 ↗</span></span>
+      ${poster(main)}<span class="short-main-copy"><strong>${esc(main.title)}</strong></span>
     </a>
-    ${related.length ? `<p class="short-related-label">함께 보면 좋은 영상 <span>조회수순</span></p><div class="short-related">${related.map(v => `<a class="short-small" href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener noreferrer" aria-label="${esc(v.title)} — 유튜브에서 새 탭으로 보기">${poster(v)}<span><strong>${esc(v.title)}</strong><span class="short-meta">${meta(v)}</span></span><span class="short-out" aria-hidden="true">↗</span></a>`).join("")}</div>` : ""}
-    <p class="shorts-checked">업로드·조회수 확인: ${HEALTH_SHORTS.checkedAt.replaceAll("-", ".")} · 관련 영상이 있는 만큼 표시해요.</p>
+    ${related.length ? `<p class="short-related-label">함께 보면 좋은 영상</p><div class="short-related">${related.map(v => `<a class="short-small" href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener noreferrer" title="${esc(v.title)}" aria-label="${esc(v.title)} — 유튜브에서 새 탭으로 보기">${poster(v)}</a>`).join("")}</div>` : ""}
   </section>`;
 }
 
