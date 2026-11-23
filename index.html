@@ -239,10 +239,12 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
       <p class="hero-copy">속, 잠, 피부, 장 건강까지. 해당하는 고민을 모두 골라 보세요.<br>생활 습관과 추천 제품을 한 번에 정리해 드려요.</p>
       <div class="concern-search">
         <form id="concern-search-form" role="search" aria-label="건강 고민 검색">
-          <label for="concern-query">내 고민 직접 검색하기</label>
+          <label for="concern-query">요즘, 어떤 고민이 있으세요?</label>
+          <p class="search-hint" id="search-hint">신경 쓰이는 고민을 단어로 찾아보세요.</p>
           <div class="search-field">
-            <input id="concern-query" type="search" placeholder="예: 잠, 붓기, 피부, 부모님" autocomplete="off" maxlength="100" aria-controls="concern-search-results">
-            <button type="submit">검색</button>
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+            <input id="concern-query" type="search" placeholder="잠, 붓기, 피부, 부모님…" aria-describedby="search-hint" autocomplete="off" maxlength="100" aria-controls="concern-search-results">
+            <button type="submit">찾기</button>
           </div>
         </form>
         <div class="search-feedback" id="search-feedback" hidden>

@@ -13,6 +13,12 @@
   --color-walnut: #302017;
   --color-shadow: #020a12;
   --color-clear: transparent;
+  --color-surface-glow: #173449;
+  --color-gold-faint: #dfbb721a;
+  --color-line-faint: #dfbb7230;
+  --space-search-gap: 48px;
+  --radius-panel: 20px;
+  --ease-gentle: cubic-bezier(.2,.7,.2,1);
   --font-body: 'Noto Sans KR', sans-serif;
   --font-display: 'Noto Serif KR', serif;
   --space-sm: 12px;
