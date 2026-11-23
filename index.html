@@ -216,7 +216,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="tokens.css">
-<link rel="stylesheet" href="theme.css?v=shorts-horizontal-20261123">
+<link rel="stylesheet" href="theme.css?v=shorts-player-20261123">
 </head>
 <body>
 
@@ -462,15 +462,19 @@ function selectShorts(ids) {
   const related = videos.slice(1).sort((a, b) => b.views - a.views || Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, 3);
   return { main, related };
 }
+function shortLaunch(video) {
+  return `<button type="button" class="short-launch" data-video-id="${video.id}" aria-label="${esc(video.title)} 영상 재생"><img src="${esc(video.thumbnail)}" alt="" width="240" height="427" loading="lazy" referrerpolicy="no-referrer"><span class="short-play" aria-hidden="true">▶</span></button>`;
+}
 function renderShorts(ids) {
   const { main, related } = selectShorts(ids);
   if (!main) return "";
   const poster = v => `<span class="short-poster"><img src="${esc(v.thumbnail)}" alt="" width="180" height="320" loading="lazy" referrerpolicy="no-referrer"><span class="short-play" aria-hidden="true">▶</span></span>`;
   return `<section class="shorts-section" aria-label="관련 유튜브 쇼츠">
     <div class="shorts-heading"><h4>영상으로 더 알아보기</h4></div>
-    <a class="short-main" href="https://www.youtube.com/shorts/${main.id}" target="_blank" rel="noopener noreferrer" aria-label="${esc(main.title)} — 유튜브에서 새 탭으로 보기">
-      ${poster(main)}<span class="short-main-copy"><strong>${esc(main.title)}</strong></span>
-    </a>
+    <div class="short-main">
+      <div class="short-video-shell" data-video-id="${main.id}">${shortLaunch(main)}</div>
+      <span class="short-main-copy"><strong>${esc(main.title)}</strong></span>
+    </div>
     ${related.length ? `<p class="short-related-label">함께 보면 좋은 영상</p><div class="short-related">${related.map(v => `<a class="short-small" href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener noreferrer" title="${esc(v.title)}" aria-label="${esc(v.title)} — 유튜브에서 새 탭으로 보기">${poster(v)}</a>`).join("")}</div>` : ""}
   </section>`;
 }
@@ -571,10 +575,33 @@ resetEl.addEventListener("click", () => {
 });
 
 sheet.addEventListener("close", () => {
+  sheet.querySelectorAll(".short-video-shell.is-playing").forEach(shell => {
+    const video = HEALTH_SHORTS.videos.find(v => v.id === shell.dataset.videoId);
+    shell.replaceChildren();
+    if (video) shell.innerHTML = shortLaunch(video);
+    shell.classList.remove("is-playing");
+  });
   document.documentElement.style.overflow = "";
   if (location.hash) history.replaceState(null, "", location.pathname + location.search);
 });
 sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); });
+sheet.addEventListener("click", e => {
+  const button = e.target.closest(".short-launch");
+  if (!button) return;
+  const video = HEALTH_SHORTS.videos.find(v => v.id === button.dataset.videoId);
+  if (!video) return;
+  const shell = button.closest(".short-video-shell");
+  const frame = document.createElement("iframe");
+  frame.src = `https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&playsinline=1&rel=0&origin=${encodeURIComponent(location.origin)}`;
+  frame.title = video.title;
+  frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen; web-share";
+  frame.allowFullscreen = true;
+  frame.referrerPolicy = "strict-origin-when-cross-origin";
+  shell.classList.add("is-playing");
+  shell.replaceChildren(frame);
+  frame.focus({preventScroll:true});
+});
+
 
 gridEl.addEventListener("click", e => { const b = e.target.closest(".card"); if (b) openNote(b.dataset.id); });
 filtersEl.addEventListener("click", e => {
