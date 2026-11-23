@@ -309,3 +309,8 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
 .short-small:hover .short-poster { border-color:var(--color-gold); }
 .short-small .short-play { display:none; }
 @media(max-width:374px) { .short-main > .short-poster { width:210px; max-width:100%; } .short-main-copy > strong { font-size:15px; } .short-related { gap:8px; } }
+
+/* Keep secondary Shorts in one horizontal row at every viewport width. */
+.short-related { display:flex; flex-direction:row; flex-wrap:nowrap; align-items:flex-start; gap:10px; }
+.short-related .short-small { flex:0 0 calc((100% - 20px) / 3); min-width:0; }
+@media(max-width:374px) { .short-related { gap:8px; } .short-related .short-small { flex-basis:calc((100% - 16px) / 3); } }
