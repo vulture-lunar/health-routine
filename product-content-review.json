@@ -333,6 +333,18 @@
         {
           "label": "현재 판매처·기능정보 확인",
           "url": "https://smartstore.naver.com/corevital/products/13764044888"
+        },
+        {
+          "label": "차전자피의 수분 흡수와 섭취 방법 · MedlinePlus",
+          "url": "https://medlineplus.gov/druginfo/meds/a601104.html"
+        },
+        {
+          "label": "차전자피·이눌린의 젤 형성과 발효 특성 · 원료 연구",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8995815/"
+        },
+        {
+          "label": "차전자피·밀기울의 수분·발효 특성 비교 · 원료 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32619212/"
         }
       ]
     }
@@ -343,5 +355,7 @@
   ],
   "naturalCopyPolicy": "Emphasize verified proportions, origins, combinations and convenience; remove generic efficacy disclaimers and unmatched research claims; retain actionable allergy and medicine precautions.",
   "keywordCopyUpdatedAt": "2026-11-24",
-  "keywordCopyPolicy": "Short keyword points; each explanation maps a keyword to named ingredients and a role. Recognized functions, general nutrient roles, and composition/convenience are distinguished in the wording. No edema reduction assigned to Moroferin: label and provided report do not substantiate it."
+  "keywordCopyPolicy": "Short keyword points; each explanation maps a keyword to named ingredients and a role. Recognized functions, general nutrient roles, and composition/convenience are distinguished in the wording. No edema reduction assigned to Moroferin: label and provided report do not substantiate it.",
+  "psylliumDetailUpdatedAt": "2026-11-24",
+  "psylliumDetailPolicy": "Separate the bowel-function point from the ingredient-identity point. Explain raw psyllium gel formation, water retention and differences from inulin/bran without implying superiority across all fibers or transferring trial outcomes to this finished product."
 }
