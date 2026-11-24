@@ -316,7 +316,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <dialog class="sheet product-sheet" id="product-sheet" aria-labelledby="product-guide-title"></dialog>
 
 <script src="shorts-data.js"></script>
-<script src="product-guides.js?v=20261123"></script>
+<script src="product-guides.js?v=20261124"></script>
 <script>
 const MALL = "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=";
 const CP = "https://www.coupang.com/vp/products/";
@@ -459,7 +459,7 @@ function prodCard(no, why, tags) {
       <div class="prod-why">${esc(guide ? guide.headline : why)}</div>
       <div class="chips">${p.ings.slice(0, 3).map(i => `<span class="chip">${esc(i)}</span>`).join("")}</div>
     </div>
-    ${guide ? `<p class="product-audience"><b>이럴 때 살펴보세요</b>${esc(guide.audience[0])}</p><p class="product-caution-preview"><b>섭취 전 확인</b>${esc(guide.allergens.length ? guide.allergens.join("·") + " 함유. " : "")}${esc(guide.cautions[0])}</p>` : p.hf ? `<p class="hf-text"><b>식약처 인정 기능성</b>${esc(p.hf)}</p>` : ""}
+    ${guide ? `<p class="product-audience"><b>이럴 때 살펴보세요</b>${esc(guide.audience[0])}</p>` : p.hf ? `<p class="hf-text"><b>식약처 인정 기능성</b>${esc(p.hf)}</p>` : ""}
     <div class="product-card-actions"><button type="button" class="product-info-button" data-product-id="${no}" aria-haspopup="dialog">특징·주의사항 보기</button><a class="btn" href="${p.url}" target="_blank" rel="noopener">판매처 보기 ↗</a></div>
   </div>`;
 }
