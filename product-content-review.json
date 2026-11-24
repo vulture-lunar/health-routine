@@ -202,6 +202,26 @@
         {
           "label": "비타민B1의 역할 · NIH ODS",
           "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+        },
+        {
+          "label": "코로솔산과 GLUT4 이동 · 동물 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15256748/"
+        },
+        {
+          "label": "코로솔산과 포도당 흡수 · 세포 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18348886/"
+        },
+        {
+          "label": "코로솔산과 당 분해효소 · 시험관 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31206698/"
+        },
+        {
+          "label": "코로솔산과 설탕 분해 · 동물 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18635916/"
+        },
+        {
+          "label": "양춘사 물 추출물과 지방 합성 · 동물 연구",
+          "url": "https://jksus.org/amomum-villosumlour-fruit-extract-ameliorates-high-fat-diet-induced-body-mass-gain-and-adipogenic-pathways-in-c57bl-6-mice/"
         }
       ]
     },
@@ -617,5 +637,7 @@
       "source": "Same legal seller (business ID 5315101091) Gmarket detailed images reviewed; direct product sources listed.",
       "cautionsUnchanged": true
     }
-  ]
+  ],
+  "ingredientMechanismUpdatedAt": "2026-11-24",
+  "ingredientMechanismPolicy": "Remove seller-page narration from ingredient panels. Explain corosolic-acid GLUT4 translocation and enzyme inhibition with explicit cell/animal/in-vitro scope; do not extrapolate efficacy to the final Corkbottle formulation. Amomum mechanism is explicitly a separate water-extract animal study. No invented mechanisms for other unmatched botanical blends. Seller-only cautions unchanged."
 }

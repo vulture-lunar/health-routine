@@ -317,7 +317,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 
 <script src="concern-insights.js?v=20261124-1"></script>
 <script src="shorts-data.js"></script>
-<script src="product-guides.js?v=detail-positioning-20261124-1"></script>
+<script src="product-guides.js?v=ingredient-mechanisms-20261124-1"></script>
 <script>
 const MALL = "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=";
 const CP = "https://www.coupang.com/vp/products/";
@@ -504,7 +504,7 @@ function openProduct(id) {
     </div>
     <section class="guide-section"><h4>이런 분이 살펴보세요</h4>${list(guide.audience)}</section>
     <section class="guide-section product-point-section"><h4>핵심 포인트</h4>
-      <p class="point-hint">${guide.pointKind === "management-purpose" ? "브랜드가 제안하는 관리 방향이에요. 궁금한 포인트를 눌러보세요." : "궁금한 포인트를 누르면 관련 성분과 설명을 볼 수 있어요."}</p>
+      <p class="point-hint">포인트를 눌러 관련 성분과 작용을 살펴보세요.</p>
       <ul class="product-keywords">${guide.points.map((point, index) => `<li><button type="button" id="product-point-${index}" class="product-point-button" data-point-index="${index}" aria-expanded="false" aria-controls="product-point-panel">${esc(point)}<span aria-hidden="true">＋</span></button></li>`).join("")}</ul>
       <div id="product-point-panel" class="product-point-panel" role="region" hidden></div>
     </section>
