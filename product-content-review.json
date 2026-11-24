@@ -296,6 +296,10 @@
       "product": "off",
       "urls": [
         {
+          "label": "판매자 등록 상세페이지 · 관리 포인트 확인",
+          "url": "https://item.gmarket.co.kr/Item?goodsCode=4708774213"
+        },
+        {
           "label": "현재 판매처",
           "url": "https://smartstore.naver.com/corevital/products/13041480467"
         },
@@ -308,6 +312,10 @@
     {
       "product": "rfq",
       "urls": [
+        {
+          "label": "판매자 등록 상세페이지 · 관리 포인트 확인",
+          "url": "https://item.gmarket.co.kr/Item?goodsCode=4753838546"
+        },
         {
           "label": "현재 판매처",
           "url": "https://smartstore.naver.com/corevital/products/13562421497"
@@ -330,6 +338,10 @@
     {
       "product": "fib",
       "urls": [
+        {
+          "label": "판매자 등록 상세페이지 · 관리 포인트 확인",
+          "url": "https://item.gmarket.co.kr/Item?goodsCode=4867693472"
+        },
         {
           "label": "현재 판매처·기능정보 확인",
           "url": "https://smartstore.naver.com/corevital/products/13764044888"
@@ -468,5 +480,142 @@
     }
   ],
   "benefitPointsUpdatedAt": "2026-11-24",
-  "benefitPointsPolicy": "Replace ingredient percentages and dose convenience with recognized functional outcomes or general nutrient roles. Where a finished-product outcome is unverified, retain a factual intake purpose rather than invent glucose, edema, sleep or hair-growth efficacy. Preserve seller-only caution gating."
+  "benefitPointsPolicy": "Replace ingredient percentages and dose convenience with recognized functional outcomes or general nutrient roles. Where a finished-product outcome is unverified, retain a factual intake purpose rather than invent glucose, edema, sleep or hair-growth efficacy. Preserve seller-only caution gating.",
+  "positioningReviewUpdatedAt": "2026-11-24",
+  "positioningReviewPolicy": "Read seller narrative and target situations, not only labels. Short management-purpose keywords for ordinary foods explicitly introduced as seller suggestions; ingredient descriptions attribute positioning and avoid asserting unverified finished-product outcomes. Recognized functional claims preserved for functional foods. Seller-only cautions unchanged.",
+  "positioningEvidence": [
+    {
+      "product": "49",
+      "points": [
+        "다이어트·라인 루틴",
+        "식후 몸 관리"
+      ],
+      "type": "management-purpose",
+      "source": "Official seller detail images, including final animation frames, reviewed from the current page.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "51",
+      "points": [
+        "혈당·식후 관리",
+        "다이어트·라인 관리"
+      ],
+      "type": "management-purpose",
+      "source": "Official seller page: 75 images/animations reviewed; target-mechanism panels 29,31,39.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "54",
+      "points": [
+        "수면 리듬 관리",
+        "잠들기 전 편안함"
+      ],
+      "type": "management-purpose",
+      "source": "Official seller detail images, including final animation frames, reviewed from the current page.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "59",
+      "points": [
+        "머리숱·볼륨 고민",
+        "모발 영양 관리"
+      ],
+      "type": "management-purpose",
+      "source": "Official seller detail images, including final animation frames, reviewed from the current page.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "64",
+      "points": [
+        "피부 생기 관리",
+        "매끈한 피부결 관리"
+      ],
+      "type": "management-purpose",
+      "source": "Official seller detail images, including final animation frames, reviewed from the current page.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "72",
+      "points": [
+        "건조한 목 관리",
+        "목을 많이 쓰는 날"
+      ],
+      "type": "management-purpose",
+      "source": "Official seller detail images, including final animation frames, reviewed from the current page.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "74",
+      "points": [
+        "속 편안함 관리",
+        "식후 더부룩함 고민"
+      ],
+      "type": "management-purpose",
+      "source": "Official seller detail images, including final animation frames, reviewed from the current page.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "75",
+      "points": [
+        "혈압 관리",
+        "식후 혈당 관리",
+        "콜레스테롤 관리",
+        "혈행·기억력"
+      ],
+      "type": "recognized-function",
+      "source": "Official seller detail images, including final animation frames, reviewed from the current page.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "77",
+      "points": [
+        "환절기 코·목 관리",
+        "답답한 숨길 고민"
+      ],
+      "type": "management-purpose",
+      "source": "Official seller detail images, including final animation frames, reviewed from the current page.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "off",
+      "points": [
+        "식사량 고민",
+        "든든한 식이섬유 루틴"
+      ],
+      "type": "management-purpose",
+      "source": "Same legal seller (business ID 5315101091) Gmarket detailed images reviewed; direct product sources listed.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "rfq",
+      "points": [
+        "중년 여성 밸런스",
+        "일상 활력 영양"
+      ],
+      "type": "management-purpose",
+      "source": "Same legal seller (business ID 5315101091) Gmarket detailed images reviewed; direct product sources listed.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "col",
+      "points": [
+        "피부 보습",
+        "자외선 손상 케어"
+      ],
+      "type": "recognized-function",
+      "source": "Existing seller-linked functional information; current Naver page remains inaccessible, no new claims added.",
+      "cautionsUnchanged": true
+    },
+    {
+      "product": "fib",
+      "points": [
+        "원활한 배변",
+        "콜레스테롤 관리",
+        "변의 수분 유지"
+      ],
+      "type": "recognized-function",
+      "source": "Same legal seller (business ID 5315101091) Gmarket detailed images reviewed; direct product sources listed.",
+      "cautionsUnchanged": true
+    }
+  ]
 }
