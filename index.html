@@ -215,9 +215,8 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 .sheet-foot { margin: 18px 0 0; font-size: 11.5px; color: var(--muted); line-height: 1.6; }
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
-<link rel="stylesheet" href="tokens.css?v=navy-refined-20261124-1">
-<link rel="stylesheet" href="theme.css?v=journal-rhythm-20261124-1">
-<link rel="stylesheet" href="clean.css?v=navy-refined-20261124-1">
+<link rel="stylesheet" href="tokens.css?v=original-restored-20261124-1">
+<link rel="stylesheet" href="theme.css?v=original-restored-20261124-1">
 </head>
 <body>
 
@@ -235,12 +234,9 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
     <div class="hero-art" aria-hidden="true"></div>
     <span class="orbit orbit-2" aria-hidden="true"></span>
     <div class="inner">
-      <div class="hero-intro">
-      <p class="eyebrow">백년 탐구생활의 건강 노트</p>
-      <h1>건강을 위한 정보,<br><em>나에게 맞는 선택.</em></h1>
-      <p class="hero-copy">복잡한 건강 정보는 쉽게,<br> 나에게 맞는 선택은 신중하게.</p>
-      </div>
-      <div class="hero-tools">
+      <p class="eyebrow"><span>DAILY ROUTINE</span>고민별 건강 루틴</p>
+      <h1>건강이 궁금해지는 순간,<br>나에게 필요한 정보를 <em>만나보세요.</em></h1>
+      <p class="hero-copy">복잡한 건강 정보는 쉽게,<br>나에게 맞는 선택은 신중하게.</p>
       <div class="concern-search">
         <form id="concern-search-form" role="search" aria-label="건강 고민 검색">
           <label for="concern-query">요즘, 어떤 고민이 있으세요?</label>
@@ -263,13 +259,12 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
           <button type="button" class="picker-go" id="picker-go" disabled>고민을 골라 주세요</button>
         </div>
       </div>
-      </div>
     </div>
   </section>
 
   <section class="library" id="routines" aria-label="고민 목록">
     <div class="inner">
-      <div class="archive-heading"><h2>오늘의 몸을 살피는 작은 습관</h2><p>궁금했던 몸의 신호, 하나씩 알아보세요.</p></div>
+      <div class="archive-heading"><p>DAILY HEALTH ARCHIVE</p><h2>오늘의 몸을 살피는 작은 습관</h2></div>
       <div class="filters" id="filters" role="group" aria-label="카테고리"></div>
       <div class="card-grid" id="grid"></div>
     </div>
@@ -277,7 +272,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 
   <section class="products" aria-label="추천 제품">
     <div class="inner">
-      <h2>내 루틴에 더하는 제품</h2>
+      <p class="section-kicker products-kicker">ROUTINE COLLECTION</p><h2>내 루틴에 더하는 제품</h2>
       <p class="products-intro">제품을 눌러 원료, 섭취 방법과 주의사항을 먼저 살펴보세요.</p>
       <div class="product-carousel" role="region" aria-label="루틴 제품 넘겨보기" aria-roledescription="캐러셀">
         <div class="prod-grid" id="prod-grid" tabindex="0" role="group" aria-label="제품 목록, 좌우 방향키로 넘겨보세요"></div>
@@ -322,7 +317,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 
 <script src="concern-insights.js?v=20261124-1"></script>
 <script src="shorts-data.js"></script>
-<script src="product-guides.js?v=journal-rhythm-20261124-1"></script>
+<script src="product-guides.js?v=original-restored-20261124-1"></script>
 <script>
 const MALL = "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=";
 const CP = "https://www.coupang.com/vp/products/";
@@ -447,7 +442,7 @@ function renderGrid() {
       <img class="routine-thumb" src="assets/routine-${c.id}.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
       <span class="card-top"><span class="label">${esc(c.tag)}</span></span>
       <h3>${esc(c.q)}</h3>
-      <span class="card-bottom"><span>건강 노트 읽기</span><span class="arrow" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span></span>
+      <span class="card-bottom"><span>고민 해결하기</span><span class="arrow" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span></span>
     </button>`;
   }).join("") : "";
 }
@@ -534,7 +529,7 @@ function openProduct(id) {
     button.setAttribute("aria-expanded", "true");
     button.querySelector("span").textContent = "−";
     pointPanel.setAttribute("aria-labelledby", button.id);
-    pointPanel.innerHTML = details.length ? details.map(item => `<div class="point-explanation"><h5>${esc(item.name)}</h5>${item.what && item.why && item.how ? `<dl class="ingredient-steps">${[["What", "무엇인가요?", item.what], ["Why", "어떤 도움이 되나요?", item.why], ["How", "어떻게 작용하나요?", item.how]].map(([label, title, value]) => `<div class="ingredient-step ingredient-step-${label.toLowerCase()}"><dt><span class="ingredient-step-label" lang="en">${label}</span>${title}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl>` : item.role.split(String.fromCharCode(10, 10)).map(paragraph => `<p>${esc(paragraph)}</p>`).join("")}</div>`).join("") : `<p>${esc(guide.description)}</p>`;
+    pointPanel.innerHTML = details.length ? details.map(item => `<div class="point-explanation"><h5>${esc(item.name)}</h5>${item.what && item.why && item.how ? `<dl class="ingredient-steps">${[["What", "무엇인가요?", item.what], ["Why", "어떤 도움이 되나요?", item.why], ["How", "어떻게 작용하나요?", item.how]].map(([label, title, value]) => `<div class="ingredient-step"><dt><span class="ingredient-step-label" lang="en">${label}</span>${title}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl>` : item.role.split(String.fromCharCode(10, 10)).map(paragraph => `<p>${esc(paragraph)}</p>`).join("")}</div>`).join("") : `<p>${esc(guide.description)}</p>`;
   });
   document.getElementById("product-close").addEventListener("click", () => productSheet.close());
   if (!productSheet.open) productSheet.showModal();
