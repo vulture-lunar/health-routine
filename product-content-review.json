@@ -47,12 +47,12 @@
       "decision": "Use cabbage 65%; omit licorice percentage because official image itself lists both 3% and 5%."
     },
     {
-      "product": "도네카",
-      "decision": "Information only: no fabricated product image, seller URL, dosage or food classification. Current label and seller info remain unconfirmed."
-    },
-    {
       "product": "오프밀정·리플로퀸",
       "decision": "Source the supplied label-based reports; flag need to check current seller label, preserve existing brand photos and links."
+    },
+    {
+      "product": "도네카",
+      "decision": "Removed from product catalog and public guides at user request."
     }
   ],
   "excluded": [
@@ -174,10 +174,6 @@
           "url": "https://www.nccih.nih.gov/health/red-yeast-rice"
         }
       ]
-    },
-    {
-      "product": "doneka",
-      "urls": []
     }
   ],
   "benefitCopyUpdatedAt": "2026-11-24",
@@ -215,10 +211,6 @@
         {
           "label": "공식몰 제품 표시정보",
           "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=49"
-        },
-        {
-          "label": "표준화 모로오렌지 추출물 연구 · 원료·조건 확인용",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/35276783/"
         }
       ]
     },
@@ -245,14 +237,6 @@
         {
           "label": "멜라토닌 안전성 참고 · NCCIH",
           "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know"
-        },
-        {
-          "label": "락티움 수면 관련 인체 연구 · 2019",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/31252661/"
-        },
-        {
-          "label": "L-테아닌 원료 연구 · 2019",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/31623400/"
         }
       ]
     },
@@ -301,10 +285,6 @@
         {
           "label": "공식몰 제품 표시정보",
           "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=77"
-        },
-        {
-          "label": "LHF618 표준화 원료 연구 · 제품과 구분",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/40468211/"
         }
       ]
     },
@@ -314,10 +294,6 @@
         {
           "label": "현재 판매처",
           "url": "https://smartstore.naver.com/corevital/products/13562421497"
-        },
-        {
-          "label": "레드클로버의 연구 근거 · NCCIH",
-          "url": "https://www.nccih.nih.gov/health/red-clover"
         }
       ]
     },
@@ -331,15 +307,6 @@
         {
           "label": "홍국과 의약품 상호작용 참고 · NCCIH",
           "url": "https://www.nccih.nih.gov/health/red-yeast-rice"
-        }
-      ]
-    },
-    {
-      "product": "doneka",
-      "urls": [
-        {
-          "label": "L-테아닌 인체 연구 · 제품과 구분",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/31623400/"
         }
       ]
     },
@@ -361,5 +328,10 @@
         }
       ]
     }
-  ]
+  ],
+  "naturalCopyUpdatedAt": "2026-11-24",
+  "removedProducts": [
+    "doneka"
+  ],
+  "naturalCopyPolicy": "Emphasize verified proportions, origins, combinations and convenience; remove generic efficacy disclaimers and unmatched research claims; retain actionable allergy and medicine precautions."
 }

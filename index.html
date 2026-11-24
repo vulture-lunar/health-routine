@@ -316,7 +316,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <dialog class="sheet product-sheet" id="product-sheet" aria-labelledby="product-guide-title"></dialog>
 
 <script src="shorts-data.js"></script>
-<script src="product-guides.js?v=benefits-20261124-1"></script>
+<script src="product-guides.js?v=natural-20261124-2"></script>
 <script>
 const MALL = "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=";
 const CP = "https://www.coupang.com/vp/products/";
@@ -503,15 +503,13 @@ function openProduct(id) {
     </div>
     <section class="guide-section"><h4>이런 분이 살펴보세요</h4>${list(guide.audience)}</section>
     <section class="guide-section"><h4>이 제품의 핵심 포인트</h4>${list(guide.points)}</section>
-    <section class="guide-section"><h4>핵심 성분과 기대 역할</h4>
-      ${guide.ingredientRoles?.length ? `<div class="ingredient-roles">${guide.ingredientRoles.map(item => `<div class="ingredient-role"><div class="ingredient-role-head"><h5>${esc(item.name)}</h5><span>${esc(item.basis)}</span></div><p>${esc(item.role)}</p></div>`).join("")}</div>` : `<div class="guide-ingredients">${guide.ingredients.map(i => `<span>${esc(i)}</span>`).join("")}</div>`}
-      <p class="guide-small-note">${esc(guide.effectNote || "원료의 특성이 제품의 효과를 보장하는 것은 아닙니다.")}</p>
+    <section class="guide-section"><h4>함께 담은 성분 이야기</h4>
+      ${guide.ingredientRoles?.length ? `<div class="ingredient-roles">${guide.ingredientRoles.map(item => `<div class="ingredient-role"><div class="ingredient-role-head"><h5>${esc(item.name)}</h5></div><p>${esc(item.role)}</p></div>`).join("")}</div>` : `<div class="guide-ingredients">${guide.ingredients.map(i => `<span>${esc(i)}</span>`).join("")}</div>`}
     </section>
     <section class="guide-section"><h4>섭취 방법과 구성</h4><p>${esc(guide.usage)}</p><p class="guide-small-note">${esc(guide.unit)} · 구매한 제품의 최신 표시사항을 우선 확인해 주세요.</p></section>
     <section class="guide-section guide-cautions"><h4>선택 전에 꼭 확인하세요</h4>${guide.allergens.length ? `<p class="guide-allergens">${esc(guide.allergens.join("·"))} 함유</p>` : ""}${list(guide.cautions)}</section>
     ${guide.sources.length ? `<details class="guide-sources"><summary>제품 표시정보·참고 자료</summary>${guide.sources.map(source => `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)} ↗</a>`).join("")}</details>` : ""}
     ${p.url ? `<a class="btn guide-purchase" href="${p.url}" target="_blank" rel="noopener noreferrer">판매처에서 라벨·가격 확인 ↗</a>` : `<p class="guide-small-note">현재 제품 라벨과 판매처를 확인한 뒤 선택해 주세요.</p>`}
-    <p class="sheet-foot">제품 선택을 위한 정보이며 개인별 적합성이나 효과를 보장하지 않습니다. 의약품을 대신하거나 치료를 중단하는 용도로 사용하지 마세요.</p>
   </div>`;
   document.getElementById("product-close").addEventListener("click", () => productSheet.close());
   if (!productSheet.open) productSheet.showModal();
@@ -693,12 +691,11 @@ window.addEventListener("hashchange", routeHash);
 const ORDER = [];
 C.forEach(c => c.picks.forEach(([n]) => { if (!ORDER.includes(String(n))) ORDER.push(String(n)); }));
 const tagsOf = no => C.filter(c => c.picks.some(([n]) => String(n) === no)).map(c => c.tag).join(" · ");
-if (!ORDER.includes("doneka")) ORDER.push("doneka");
 const productPages = Array.from({length:Math.ceil(ORDER.length / 4)}, (_, i) => ORDER.slice(i * 4, i * 4 + 4));
 document.getElementById("prod-grid").innerHTML = productPages.map((page, index) => `
   <div class="product-page" role="group" aria-label="제품 ${index + 1}페이지">
     ${page.map(no => { const p = P[no]; const guide = PRODUCT_GUIDES[no]; return `<button type="button" class="prod-tile" data-product-id="${no}" aria-haspopup="dialog" aria-label="${esc(p.name)} 제품 정보 보기">
-      ${p.img ? `<img src="${p.img}" alt="" loading="lazy" draggable="false">` : `<span class="product-wordmark" aria-hidden="true">DONEKA<span>도네카</span></span>`}
+      ${p.img ? `<img src="${p.img}" alt="" loading="lazy" draggable="false">` : `<span class="product-wordmark" aria-hidden="true">제품 이미지 준비 중</span>`}
       <span class="body"><span class="n">${esc(p.name)}</span><span class="t">${esc(guide ? guide.headline : tagsOf(no))}</span><span class="product-open-text">제품 정보 보기 ↗</span></span>
     </button>`; }).join("")}
   </div>`).join("");
