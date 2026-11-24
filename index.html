@@ -216,7 +216,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="tokens.css">
-<link rel="stylesheet" href="theme.css?v=keywords-20261124-1">
+<link rel="stylesheet" href="theme.css?v=point-toggle-20261124-1">
 </head>
 <body>
 
@@ -317,7 +317,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 
 <script src="concern-insights.js?v=20261124-1"></script>
 <script src="shorts-data.js"></script>
-<script src="product-guides.js?v=keywords-20261124-1"></script>
+<script src="product-guides.js?v=point-toggle-20261124-1"></script>
 <script>
 const MALL = "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=";
 const CP = "https://www.coupang.com/vp/products/";
@@ -503,15 +503,34 @@ function openProduct(id) {
       <p>${esc(guide.description)}</p>
     </div>
     <section class="guide-section"><h4>이런 분이 살펴보세요</h4>${list(guide.audience)}</section>
-    <section class="guide-section"><h4>핵심 포인트</h4><ul class="product-keywords">${guide.points.map(point => `<li>${esc(point)}</li>`).join("")}</ul></section>
-    <section class="guide-section"><h4>키워드로 살펴보는 성분</h4>
-      ${guide.ingredientRoles?.length ? `<div class="ingredient-roles">${guide.ingredientRoles.map(item => `<div class="ingredient-role"><div class="ingredient-role-head">${item.keyword ? `<span class="ingredient-keyword">${esc(item.keyword)}</span><span class="ingredient-connector" aria-hidden="true">↓</span>` : ""}<h5>${esc(item.name)}</h5></div><p>${esc(item.role)}</p></div>`).join("")}</div>` : `<div class="guide-ingredients">${guide.ingredients.map(i => `<span>${esc(i)}</span>`).join("")}</div>`}
+    <section class="guide-section product-point-section"><h4>핵심 포인트</h4>
+      <p class="point-hint">궁금한 포인트를 누르면 관련 성분과 설명을 볼 수 있어요.</p>
+      <ul class="product-keywords">${guide.points.map((point, index) => `<li><button type="button" id="product-point-${index}" class="product-point-button" data-point-index="${index}" aria-expanded="false" aria-controls="product-point-panel">${esc(point)}<span aria-hidden="true">＋</span></button></li>`).join("")}</ul>
+      <div id="product-point-panel" class="product-point-panel" role="region" hidden></div>
     </section>
     <section class="guide-section"><h4>섭취 방법과 구성</h4><p>${esc(guide.usage)}</p><p class="guide-small-note">${esc(guide.unit)} · 구매한 제품의 최신 표시사항을 우선 확인해 주세요.</p></section>
     <section class="guide-section guide-cautions"><h4>선택 전에 꼭 확인하세요</h4>${guide.allergens.length ? `<p class="guide-allergens">${esc(guide.allergens.join("·"))} 함유</p>` : ""}${list(guide.cautions)}</section>
     ${guide.sources.length ? `<details class="guide-sources"><summary>제품 표시정보·참고 자료</summary>${guide.sources.map(source => `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)} ↗</a>`).join("")}</details>` : ""}
     ${p.url ? `<a class="btn guide-purchase" href="${p.url}" target="_blank" rel="noopener noreferrer">판매처에서 라벨·가격 확인 ↗</a>` : `<p class="guide-small-note">현재 제품 라벨과 판매처를 확인한 뒤 선택해 주세요.</p>`}
   </div>`;
+  const pointPanel = productSheet.querySelector("#product-point-panel");
+  productSheet.querySelector(".product-keywords").addEventListener("click", event => {
+    const button = event.target.closest("[data-point-index]");
+    if (!button) return;
+    const wasOpen = button.getAttribute("aria-expanded") === "true";
+    productSheet.querySelectorAll(".product-point-button").forEach(item => {
+      item.setAttribute("aria-expanded", "false");
+      item.querySelector("span").textContent = "＋";
+    });
+    pointPanel.hidden = wasOpen;
+    if (wasOpen) { pointPanel.replaceChildren(); pointPanel.removeAttribute("aria-labelledby"); return; }
+    const index = Number(button.dataset.pointIndex);
+    const details = guide.pointDetails?.[index] || guide.ingredientRoles || [];
+    button.setAttribute("aria-expanded", "true");
+    button.querySelector("span").textContent = "−";
+    pointPanel.setAttribute("aria-labelledby", button.id);
+    pointPanel.innerHTML = details.length ? details.map(item => `<div class="point-explanation"><h5>${esc(item.name)}</h5><p>${esc(item.role)}</p></div>`).join("") : `<p>${esc(guide.description)}</p>`;
+  });
   document.getElementById("product-close").addEventListener("click", () => productSheet.close());
   if (!productSheet.open) productSheet.showModal();
   syncScrollLock();

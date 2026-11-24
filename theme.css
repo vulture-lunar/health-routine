@@ -387,9 +387,16 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
 @media(prefers-reduced-motion:no-preference) { .insight-item[open] .insight-answer { animation:insight-reveal .18s ease-out; } }
 @keyframes insight-reveal { from { opacity:0; transform:translateY(-3px); } to { opacity:1; transform:translateY(0); } }
 
-/* Scan the key phrases, then follow each keyword to its ingredients. */
+/* Product keywords disclose their matching ingredient explanations. */
 .product-keywords { display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0; list-style:none; }
-.product-keywords li { color:var(--color-gold-light); background:var(--color-gold-faint); border:1px solid var(--color-line-faint); border-radius:7px; padding:8px 11px; font-size:12px; font-weight:600; line-height:1.6; }
-.ingredient-role-head > .ingredient-keyword { display:inline-block; color:var(--color-paper); background:var(--color-gold-light); border-radius:4px; padding:4px 8px; font-size:11px; font-weight:700; line-height:1.6; }
-.ingredient-role-head > .ingredient-connector { color:var(--color-gold); font-size:16px; line-height:1; margin-left:7px; }
-.ingredient-role-head h5 { overflow-wrap:anywhere; }
+.product-keywords li { margin:0; padding:0; }
+.product-point-button { display:flex; align-items:center; gap:10px; min-height:44px; padding:9px 12px; border:1px solid var(--color-gold-deep); border-radius:7px; background:var(--color-gold-faint); color:var(--color-gold-light); font:inherit; font-size:12px; font-weight:600; line-height:1.6; cursor:pointer; text-align:left; }
+.product-point-button > span { font-size:15px; font-weight:400; }
+.product-point-button:hover { background:var(--color-raised); }
+.product-point-button[aria-expanded="true"] { color:var(--color-paper); background:var(--color-gold-light); border-color:var(--color-gold-light); }
+.guide-section .point-hint { margin:-4px 0 14px; font-size:11px; color:var(--color-muted); line-height:1.8; }
+.product-point-panel { margin-top:14px; padding:17px; border:1px solid var(--color-rule-soft); border-radius:10px; background:var(--color-paper-2); }
+.product-point-panel[hidden] { display:none; }
+.point-explanation + .point-explanation { border-top:1px solid var(--color-rule-soft); padding-top:14px; margin-top:14px; }
+.point-explanation h5 { margin:0 0 8px; color:var(--color-gold-light); font-size:14px; line-height:1.7; overflow-wrap:anywhere; }
+.point-explanation p,.product-point-panel > p { margin:0; color:var(--color-ink); font-size:13px; line-height:1.9; }
