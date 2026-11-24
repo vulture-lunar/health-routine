@@ -1,6 +1,16 @@
 [
   {
     "date": "2026-11-24",
+    "macrostructure": "Index-First",
+    "theme": "custom channel navy with warm light reading surfaces",
+    "theme_axes": "light body / Korean sans / bronze accent",
+    "enrichment": "existing brand art, compact thumbnails",
+    "nav": "existing brand header",
+    "footer": "existing brand closure",
+    "brief": "Readability reset: remove featured concern and large Why callouts; consistent cards, larger sans text, one reading surface."
+  },
+  {
+    "date": "2026-11-24",
     "macrostructure": "Ecosystem Index",
     "theme": "custom brand-preserving editorial",
     "theme_axes": "dark / Korean roman-serif / warm gold",
