@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-24",
+  "scope": "single-page",
+  "framework": "vanilla HTML/CSS/JS",
+  "fonts": {
+    "display": "Noto Serif KR",
+    "body": "Noto Sans KR",
+    "source": "index.html:15,218; tokens.css:24"
+  },
+  "palette": "Existing navy, antique gold, walnut; tokens.css:3",
+  "motion": "native carousel only, no new animation",
+  "preserve": [
+    "routes",
+    "product safety data",
+    "search",
+    "picker",
+    "carousel",
+    "video links",
+    "brand artwork"
+  ],
+  "changes": "Editorial discovery layout and What/Why/How hierarchy"
+}

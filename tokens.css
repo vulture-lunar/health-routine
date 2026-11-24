@@ -39,3 +39,15 @@
   --font: var(--font-body);
   color-scheme: dark;
 }
+
+/* Reading rhythm, shared by the archive and ingredient notes. */
+:root {
+  --color-note: oklch(93% .025 85);
+  --color-note-ink: oklch(25% .035 245);
+  --space-xs: 8px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 88px;
+  --text-reading: 14px;
+  --text-statement: clamp(19px, 3vw, 23px);
+}

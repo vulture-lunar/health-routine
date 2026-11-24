@@ -709,5 +709,15 @@
   "cholesterolMechanismUpdatedAt": "2026-11-24",
   "cholesterolMechanismReview": "Separate red yeast rice monacolin K / hepatic HMG-CoA reductase inhibition from green tea catechin EGCG / reduced micellar cholesterol solubility and intestinal absorption. Explicit in-vitro/animal evidence scope for the latter; no finished-product effect size or drug-equivalence promise. Seller label precautions preserved.",
   "whatWhyHowUpdatedAt": "2026-11-24",
-  "whatWhyHowPolicy": "Every ingredient panel uses explicit What (definition), Why (expected role), How (mechanism). Mechanism evidence levels and uncertainty retained; no invented outcomes for insufficiently supported botanical blends. Clinical claims not transferred from unmatched raw ingredients. Seller-only caution, allergen, dosage and existing keyword records preserved."
+  "whatWhyHowPolicy": "Every ingredient panel uses explicit What (definition), Why (expected role), How (mechanism). Mechanism evidence levels and uncertainty retained; no invented outcomes for insufficiently supported botanical blends. Clinical claims not transferred from unmatched raw ingredients. Seller-only caution, allergen, dosage and existing keyword records preserved.",
+  "cabbageMechanismReview": {
+    "date": "2026-11-24",
+    "why": "SMM은 위 점막을 보호하는 작용과 관련해 연구되는 성분이에요.",
+    "how": "위 점액세포를 배양한 실험에서 SMM 계열 물질이 점액 성분인 뮤신의 분비를 늘리는 변화가 관찰됐어요. 뮤신은 위 표면을 덮는 점액층을 이루어 위산과 자극으로부터 점막을 보호합니다.",
+    "evidenceScope": "Methylmethionine sulfonium chloride in cultured rabbit gastric mucous cells and rat models; describes ingredient-level mucin secretion, not demonstrated efficacy of Yanggamjak.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/10719747/",
+      "https://pubmed.ncbi.nlm.nih.gov/8565766/"
+    ]
+  }
 }
