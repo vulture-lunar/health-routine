@@ -180,32 +180,6 @@
   "benefitCopyPolicy": "Benefit-led headlines; composition and differentiators in the lead; ingredient roles separated from finished-product efficacy; no transfer from unmatched formulations or dosages.",
   "benefitSources": [
     {
-      "product": "51",
-      "urls": [
-        {
-          "label": "공식몰 제품 표시정보",
-          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=51"
-        },
-        {
-          "label": "비오틴의 영양소 대사 역할 · NIH ODS",
-          "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/"
-        }
-      ]
-    },
-    {
-      "product": "off",
-      "urls": [
-        {
-          "label": "현재 판매처",
-          "url": "https://smartstore.naver.com/corevital/products/13041480467"
-        },
-        {
-          "label": "Carolean™ 원료 특성과 시험 범위 · Nexira",
-          "url": "https://www.nexira.com/brand/carolean-appetite-control/"
-        }
-      ]
-    },
-    {
       "product": "49",
       "urls": [
         {
@@ -215,15 +189,19 @@
       ]
     },
     {
-      "product": "74",
+      "product": "51",
       "urls": [
         {
           "label": "공식몰 제품 표시정보",
-          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=74"
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=51"
         },
         {
-          "label": "감초 섭취 시 주의사항 · NCCIH",
-          "url": "https://www.nccih.nih.gov/health/licorice-root"
+          "label": "비오틴의 영양소 대사 역할 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/"
+        },
+        {
+          "label": "비타민B1의 역할 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
         }
       ]
     },
@@ -280,20 +258,15 @@
       ]
     },
     {
-      "product": "77",
+      "product": "74",
       "urls": [
         {
           "label": "공식몰 제품 표시정보",
-          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=77"
-        }
-      ]
-    },
-    {
-      "product": "rfq",
-      "urls": [
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=74"
+        },
         {
-          "label": "현재 판매처",
-          "url": "https://smartstore.naver.com/corevital/products/13562421497"
+          "label": "감초 섭취 시 주의사항 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/licorice-root"
         }
       ]
     },
@@ -307,6 +280,41 @@
         {
           "label": "홍국과 의약품 상호작용 참고 · NCCIH",
           "url": "https://www.nccih.nih.gov/health/red-yeast-rice"
+        }
+      ]
+    },
+    {
+      "product": "77",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=77"
+        }
+      ]
+    },
+    {
+      "product": "off",
+      "urls": [
+        {
+          "label": "현재 판매처",
+          "url": "https://smartstore.naver.com/corevital/products/13041480467"
+        },
+        {
+          "label": "Carolean™ 원료 특성과 시험 범위 · Nexira",
+          "url": "https://www.nexira.com/brand/carolean-appetite-control/"
+        }
+      ]
+    },
+    {
+      "product": "rfq",
+      "urls": [
+        {
+          "label": "현재 판매처",
+          "url": "https://smartstore.naver.com/corevital/products/13562421497"
+        },
+        {
+          "label": "마그네슘의 역할 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
         }
       ]
     },
@@ -333,5 +341,7 @@
   "removedProducts": [
     "doneka"
   ],
-  "naturalCopyPolicy": "Emphasize verified proportions, origins, combinations and convenience; remove generic efficacy disclaimers and unmatched research claims; retain actionable allergy and medicine precautions."
+  "naturalCopyPolicy": "Emphasize verified proportions, origins, combinations and convenience; remove generic efficacy disclaimers and unmatched research claims; retain actionable allergy and medicine precautions.",
+  "keywordCopyUpdatedAt": "2026-11-24",
+  "keywordCopyPolicy": "Short keyword points; each explanation maps a keyword to named ingredients and a role. Recognized functions, general nutrient roles, and composition/convenience are distinguished in the wording. No edema reduction assigned to Moroferin: label and provided report do not substantiate it."
 }
