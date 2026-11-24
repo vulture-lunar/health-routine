@@ -317,7 +317,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 
 <script src="concern-insights.js?v=20261124-1"></script>
 <script src="shorts-data.js"></script>
-<script src="product-guides.js?v=psyllium-mechanism-20261124-1"></script>
+<script src="product-guides.js?v=seller-cautions-20261124-1"></script>
 <script>
 const MALL = "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=";
 const CP = "https://www.coupang.com/vp/products/";
@@ -509,7 +509,7 @@ function openProduct(id) {
       <div id="product-point-panel" class="product-point-panel" role="region" hidden></div>
     </section>
     <section class="guide-section"><h4>섭취 방법과 구성</h4><p>${esc(guide.usage)}</p><p class="guide-small-note">${esc(guide.unit)} · 구매한 제품의 최신 표시사항을 우선 확인해 주세요.</p></section>
-    <section class="guide-section guide-cautions"><h4>선택 전에 꼭 확인하세요</h4>${guide.allergens.length ? `<p class="guide-allergens">${esc(guide.allergens.join("·"))} 함유</p>` : ""}${list(guide.cautions)}</section>
+    ${guide.cautionSource && guide.cautions.length ? `<section class="guide-section guide-cautions"><h4>선택 전에 꼭 확인하세요</h4>${guide.allergens.length ? `<p class="guide-allergens">${esc(guide.allergens.join("·"))} 함유</p>` : ""}${list(guide.cautions)}<p class="guide-small-note"><a href="${esc(guide.cautionSource.url)}" target="_blank" rel="noopener noreferrer">${esc(guide.cautionSource.label)} ↗</a></p></section>` : ""}
     ${guide.sources.length ? `<details class="guide-sources"><summary>제품 표시정보·참고 자료</summary>${guide.sources.map(source => `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)} ↗</a>`).join("")}</details>` : ""}
     ${p.url ? `<a class="btn guide-purchase" href="${p.url}" target="_blank" rel="noopener noreferrer">판매처에서 라벨·가격 확인 ↗</a>` : `<p class="guide-small-note">현재 제품 라벨과 판매처를 확인한 뒤 선택해 주세요.</p>`}
   </div>`;

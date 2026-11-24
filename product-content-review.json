@@ -357,5 +357,114 @@
   "keywordCopyUpdatedAt": "2026-11-24",
   "keywordCopyPolicy": "Short keyword points; each explanation maps a keyword to named ingredients and a role. Recognized functions, general nutrient roles, and composition/convenience are distinguished in the wording. No edema reduction assigned to Moroferin: label and provided report do not substantiate it.",
   "psylliumDetailUpdatedAt": "2026-11-24",
-  "psylliumDetailPolicy": "Separate the bowel-function point from the ingredient-identity point. Explain raw psyllium gel formation, water retention and differences from inulin/bran without implying superiority across all fibers or transferring trial outcomes to this finished product."
+  "psylliumDetailPolicy": "Separate the bowel-function point from the ingredient-identity point. Explain raw psyllium gel formation, water retention and differences from inulin/bran without implying superiority across all fibers or transferring trial outcomes to this finished product.",
+  "cautionsUpdatedAt": "2026-11-24",
+  "cautionsPolicy": "Only direct seller detail-page caution/label text, lightly paraphrased without additional diagnoses or ingredient-derived advice. Render only with verified seller provenance. Do not infer caution text from general ingredient references or report-generated customer-service proposals.",
+  "cautionEvidence": [
+    {
+      "product": "49",
+      "status": "verified-detail-image",
+      "source": {
+        "label": "상세페이지의 섭취 시 주의사항",
+        "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=49"
+      },
+      "evidence": "official-49.html and label-49-1.jpg reviewed visually; cached 2026-11-23, rechecked 2026-11-24"
+    },
+    {
+      "product": "51",
+      "status": "verified-detail-image",
+      "source": {
+        "label": "상세페이지의 섭취 시 주의사항",
+        "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=51"
+      },
+      "evidence": "official-51.html and label-51-1.jpg reviewed visually; cached 2026-11-23, rechecked 2026-11-24"
+    },
+    {
+      "product": "54",
+      "status": "verified-detail-image",
+      "source": {
+        "label": "상세페이지의 섭취 시 주의사항",
+        "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=54"
+      },
+      "evidence": "official-54.html and label-54-1.jpg reviewed visually; cached 2026-11-23, rechecked 2026-11-24"
+    },
+    {
+      "product": "59",
+      "status": "verified-detail-image",
+      "source": {
+        "label": "상세페이지의 섭취 시 주의사항",
+        "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=59"
+      },
+      "evidence": "official-59.html and label-59-1.jpg reviewed visually; cached 2026-11-23, rechecked 2026-11-24"
+    },
+    {
+      "product": "64",
+      "status": "verified-detail-image",
+      "source": {
+        "label": "상세페이지의 섭취 시 주의사항",
+        "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=64"
+      },
+      "evidence": "official-64.html and label-64-1.jpg reviewed visually; cached 2026-11-23, rechecked 2026-11-24"
+    },
+    {
+      "product": "72",
+      "status": "verified-detail-image",
+      "source": {
+        "label": "상세페이지의 섭취 시 주의사항",
+        "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=72"
+      },
+      "evidence": "official-72.html and label-72-1.jpg reviewed visually; cached 2026-11-23, rechecked 2026-11-24"
+    },
+    {
+      "product": "74",
+      "status": "verified-detail-image",
+      "source": {
+        "label": "상세페이지의 섭취 시 주의사항",
+        "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=74"
+      },
+      "evidence": "official-74.html and label-74-1.jpg reviewed visually; cached 2026-11-23, rechecked 2026-11-24"
+    },
+    {
+      "product": "75",
+      "status": "verified-detail-image",
+      "source": {
+        "label": "상세페이지의 섭취 시 주의사항",
+        "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=75"
+      },
+      "evidence": "official-75.html and label-75-0.jpg reviewed visually; cached 2026-11-23, rechecked 2026-11-24"
+    },
+    {
+      "product": "77",
+      "status": "verified-detail-image",
+      "source": {
+        "label": "상세페이지의 섭취 시 주의사항",
+        "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=77"
+      },
+      "evidence": "official-77.html and label-77-1.jpg reviewed visually; cached 2026-11-23, rechecked 2026-11-24"
+    },
+    {
+      "product": "off",
+      "status": "not-displayed-pending-seller-verification",
+      "source": null,
+      "evidence": "Naver seller page inaccessible; browser requires security verification. General ingredient-derived cautions removed."
+    },
+    {
+      "product": "rfq",
+      "status": "not-displayed-pending-seller-verification",
+      "source": null,
+      "evidence": "Naver seller page inaccessible; browser requires security verification. General ingredient-derived cautions removed."
+    },
+    {
+      "product": "col",
+      "status": "not-displayed-pending-seller-verification",
+      "source": null,
+      "evidence": "Naver seller page inaccessible; browser requires security verification. General ingredient-derived cautions removed."
+    },
+    {
+      "product": "fib",
+      "status": "not-displayed-pending-seller-verification",
+      "source": null,
+      "evidence": "Naver seller page inaccessible; browser requires security verification. General ingredient-derived cautions removed."
+    }
+  ]
 }
