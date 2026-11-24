@@ -403,3 +403,9 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
 
 /* Short paragraphs keep ingredient notes easy to read on mobile. */
 .point-explanation p + p { margin-top:12px; }
+
+/* Definition → expected role → mechanism, consistently for each ingredient. */
+.ingredient-steps { display:grid; gap:16px; margin:14px 0 0; }
+.ingredient-step dt { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:0 0 6px; color:var(--color-gold-light); font-size:11px; font-weight:600; line-height:1.6; }
+.ingredient-step-label { display:inline-block; min-width:40px; color:var(--color-muted); font-size:10px; font-weight:500; letter-spacing:.02em; }
+.ingredient-step dd { margin:0; color:var(--color-ink); font-size:13px; line-height:1.9; overflow-wrap:anywhere; }

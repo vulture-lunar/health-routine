@@ -216,7 +216,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="tokens.css">
-<link rel="stylesheet" href="theme.css?v=ingredient-paragraphs-20261124-1">
+<link rel="stylesheet" href="theme.css?v=what-why-how-20261124-1">
 </head>
 <body>
 
@@ -317,7 +317,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 
 <script src="concern-insights.js?v=20261124-1"></script>
 <script src="shorts-data.js"></script>
-<script src="product-guides.js?v=cholesterol-mechanisms-20261124-1"></script>
+<script src="product-guides.js?v=what-why-how-20261124-1"></script>
 <script>
 const MALL = "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=";
 const CP = "https://www.coupang.com/vp/products/";
@@ -529,7 +529,7 @@ function openProduct(id) {
     button.setAttribute("aria-expanded", "true");
     button.querySelector("span").textContent = "−";
     pointPanel.setAttribute("aria-labelledby", button.id);
-    pointPanel.innerHTML = details.length ? details.map(item => `<div class="point-explanation"><h5>${esc(item.name)}</h5>${item.role.split(String.fromCharCode(10, 10)).map(paragraph => `<p>${esc(paragraph)}</p>`).join("")}</div>`).join("") : `<p>${esc(guide.description)}</p>`;
+    pointPanel.innerHTML = details.length ? details.map(item => `<div class="point-explanation"><h5>${esc(item.name)}</h5>${item.what && item.why && item.how ? `<dl class="ingredient-steps">${[["What", "무엇인가요?", item.what], ["Why", "어떤 도움이 되나요?", item.why], ["How", "어떻게 작용하나요?", item.how]].map(([label, title, value]) => `<div class="ingredient-step"><dt><span class="ingredient-step-label" lang="en">${label}</span>${title}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl>` : item.role.split(String.fromCharCode(10, 10)).map(paragraph => `<p>${esc(paragraph)}</p>`).join("")}</div>`).join("") : `<p>${esc(guide.description)}</p>`;
   });
   document.getElementById("product-close").addEventListener("click", () => productSheet.close());
   if (!productSheet.open) productSheet.showModal();

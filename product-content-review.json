@@ -185,6 +185,14 @@
         {
           "label": "공식몰 제품 표시정보",
           "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=49"
+        },
+        {
+          "label": "C3G의 항산화 작용 · 세포 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32046712/"
+        },
+        {
+          "label": "락토페린의 철 결합 구조 · 원료 연구",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5095980/"
         }
       ]
     },
@@ -239,6 +247,10 @@
         {
           "label": "트립토판의 역할 · MedlinePlus",
           "url": "https://medlineplus.gov/ency/article/002332.htm"
+        },
+        {
+          "label": "알파카소제핀과 GABA-A · 원료 실험",
+          "url": "https://faseb.onlinelibrary.wiley.com/doi/full/10.1096/fj.00-0685fje"
         }
       ]
     },
@@ -324,6 +336,10 @@
         {
           "label": "카테킨과 장내 콜레스테롤 흡수 · 동물 연구",
           "url": "https://pubmed.ncbi.nlm.nih.gov/1643098/"
+        },
+        {
+          "label": "은행잎 기전 검토 · EMA",
+          "url": "https://www.ema.europa.eu/en/documents/herbal-report/final-assessment-report-ginkgo-biloba-l-folium_en.pdf"
         }
       ]
     },
@@ -371,6 +387,10 @@
         {
           "label": "레드클로버·이소플라본 · NCCIH",
           "url": "https://www.nccih.nih.gov/health/red-clover"
+        },
+        {
+          "label": "이소플라본과 갱년기 연구 범위 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/menopausal-symptoms-in-depth"
         }
       ]
     },
@@ -380,6 +400,14 @@
         {
           "label": "현재 판매처·기능정보 확인",
           "url": "https://smartstore.naver.com/corevital/products/13871627589"
+        },
+        {
+          "label": "콜라겐 펩타이드·천연보습인자 · 별도 원료 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33774639/"
+        },
+        {
+          "label": "콜라겐 펩타이드·자외선 손상 · 별도 원료 동물 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19352014/"
         }
       ]
     },
@@ -405,6 +433,14 @@
         {
           "label": "차전자피·밀기울의 수분·발효 특성 비교 · 원료 연구",
           "url": "https://pubmed.ncbi.nlm.nih.gov/32619212/"
+        },
+        {
+          "label": "차전자피·담즙산 합성 · 인체 원료 연구",
+          "url": "https://www.jlr.org/article/S0022-2275%2820%2940770-9/fulltext"
+        },
+        {
+          "label": "차전자피 기전의 연구별 차이 · 인체 원료 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2827455/"
         }
       ]
     }
@@ -671,5 +707,7 @@
   "ingredientReadingCopyUpdatedAt": "2026-11-24",
   "ingredientReadingCopyPolicy": "Explanatory ingredient notes, not supplement promotion. Short definitions first, followed by role or research scope. Paragraphs rendered separately with escaping. Keep all selected keywords, dosage, allergy and seller-only caution records unchanged.",
   "cholesterolMechanismUpdatedAt": "2026-11-24",
-  "cholesterolMechanismReview": "Separate red yeast rice monacolin K / hepatic HMG-CoA reductase inhibition from green tea catechin EGCG / reduced micellar cholesterol solubility and intestinal absorption. Explicit in-vitro/animal evidence scope for the latter; no finished-product effect size or drug-equivalence promise. Seller label precautions preserved."
+  "cholesterolMechanismReview": "Separate red yeast rice monacolin K / hepatic HMG-CoA reductase inhibition from green tea catechin EGCG / reduced micellar cholesterol solubility and intestinal absorption. Explicit in-vitro/animal evidence scope for the latter; no finished-product effect size or drug-equivalence promise. Seller label precautions preserved.",
+  "whatWhyHowUpdatedAt": "2026-11-24",
+  "whatWhyHowPolicy": "Every ingredient panel uses explicit What (definition), Why (expected role), How (mechanism). Mechanism evidence levels and uncertainty retained; no invented outcomes for insufficiently supported botanical blends. Clinical claims not transferred from unmatched raw ingredients. Seller-only caution, allergen, dosage and existing keyword records preserved."
 }
