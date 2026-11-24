@@ -179,5 +179,187 @@
       "product": "doneka",
       "urls": []
     }
+  ],
+  "benefitCopyUpdatedAt": "2026-11-24",
+  "benefitCopyPolicy": "Benefit-led headlines; composition and differentiators in the lead; ingredient roles separated from finished-product efficacy; no transfer from unmatched formulations or dosages.",
+  "benefitSources": [
+    {
+      "product": "51",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=51"
+        },
+        {
+          "label": "비오틴의 영양소 대사 역할 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "product": "off",
+      "urls": [
+        {
+          "label": "현재 판매처",
+          "url": "https://smartstore.naver.com/corevital/products/13041480467"
+        },
+        {
+          "label": "Carolean™ 원료 특성과 시험 범위 · Nexira",
+          "url": "https://www.nexira.com/brand/carolean-appetite-control/"
+        }
+      ]
+    },
+    {
+      "product": "49",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=49"
+        },
+        {
+          "label": "표준화 모로오렌지 추출물 연구 · 원료·조건 확인용",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35276783/"
+        }
+      ]
+    },
+    {
+      "product": "74",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=74"
+        },
+        {
+          "label": "감초 섭취 시 주의사항 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/licorice-root"
+        }
+      ]
+    },
+    {
+      "product": "54",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=54"
+        },
+        {
+          "label": "멜라토닌 안전성 참고 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know"
+        },
+        {
+          "label": "락티움 수면 관련 인체 연구 · 2019",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31252661/"
+        },
+        {
+          "label": "L-테아닌 원료 연구 · 2019",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31623400/"
+        }
+      ]
+    },
+    {
+      "product": "59",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=59"
+        },
+        {
+          "label": "비오틴과 검사 영향 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "product": "64",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=64"
+        },
+        {
+          "label": "비타민C와 콜라겐 합성 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"
+        },
+        {
+          "label": "비타민A의 역할 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "product": "72",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=72"
+        }
+      ]
+    },
+    {
+      "product": "77",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=77"
+        },
+        {
+          "label": "LHF618 표준화 원료 연구 · 제품과 구분",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40468211/"
+        }
+      ]
+    },
+    {
+      "product": "rfq",
+      "urls": [
+        {
+          "label": "현재 판매처",
+          "url": "https://smartstore.naver.com/corevital/products/13562421497"
+        },
+        {
+          "label": "레드클로버의 연구 근거 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/red-clover"
+        }
+      ]
+    },
+    {
+      "product": "75",
+      "urls": [
+        {
+          "label": "공식몰 제품 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=75"
+        },
+        {
+          "label": "홍국과 의약품 상호작용 참고 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/red-yeast-rice"
+        }
+      ]
+    },
+    {
+      "product": "doneka",
+      "urls": [
+        {
+          "label": "L-테아닌 인체 연구 · 제품과 구분",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31623400/"
+        }
+      ]
+    },
+    {
+      "product": "col",
+      "urls": [
+        {
+          "label": "현재 판매처·기능정보 확인",
+          "url": "https://smartstore.naver.com/corevital/products/13871627589"
+        }
+      ]
+    },
+    {
+      "product": "fib",
+      "urls": [
+        {
+          "label": "현재 판매처·기능정보 확인",
+          "url": "https://smartstore.naver.com/corevital/products/13764044888"
+        }
+      ]
+    }
   ]
 }

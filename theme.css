@@ -360,3 +360,13 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
 .guide-sources a { display:block; color:var(--color-gold); font-size:11px; line-height:1.8; padding:5px 0; }
 .guide-purchase { margin-top:24px; font-size:13px; }
 @media(max-width:374px) { .product-info-button,.product-card-actions .btn { font-size:11px; } .product-guide-identity { gap:12px; } .product-guide-identity img { width:64px; height:64px; } .product-guide-identity h3 { font-size:18px; } .guide-cautions { padding:14px; } }
+
+/* Explain the ingredient-to-benefit connection in readable, distinct rows. */
+.ingredient-roles { display:grid; gap:16px; }
+.ingredient-role { padding:15px; border:1px solid var(--color-rule-soft); border-radius:10px; background:var(--color-paper-2); }
+.ingredient-role-head { display:flex; flex-direction:column; align-items:flex-start; gap:6px; margin-bottom:10px; }
+.ingredient-role-head h5 { color:var(--color-gold-light); font-size:14px; font-weight:600; line-height:1.7; margin:0; }
+.ingredient-role-head > span { font-size:10px; line-height:1.6; color:var(--color-muted); }
+.ingredient-role p { color:var(--color-ink); font-size:13px; line-height:1.9; }
+.product-guide-head > p:not(.guide-headline) { font-size:14px; line-height:1.95; }
+@media(max-width:374px) { .ingredient-role { padding:13px; } }
