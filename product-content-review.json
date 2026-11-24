@@ -312,6 +312,18 @@
         {
           "label": "홍국과 의약품 상호작용 참고 · NCCIH",
           "url": "https://www.nccih.nih.gov/health/red-yeast-rice"
+        },
+        {
+          "label": "모나콜린K·로바스타틴의 작용 · MedlinePlus",
+          "url": "https://medlineplus.gov/druginfo/meds/a688006.html"
+        },
+        {
+          "label": "녹차 EGCG와 콜레스테롤 미셀 · 시험관 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24628603/"
+        },
+        {
+          "label": "카테킨과 장내 콜레스테롤 흡수 · 동물 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1643098/"
         }
       ]
     },
@@ -657,5 +669,7 @@
   "ingredientMechanismUpdatedAt": "2026-11-24",
   "ingredientMechanismPolicy": "Remove seller-page narration from ingredient panels. Explain corosolic-acid GLUT4 translocation and enzyme inhibition with explicit cell/animal/in-vitro scope; do not extrapolate efficacy to the final Corkbottle formulation. Amomum mechanism is explicitly a separate water-extract animal study. No invented mechanisms for other unmatched botanical blends. Seller-only cautions unchanged.",
   "ingredientReadingCopyUpdatedAt": "2026-11-24",
-  "ingredientReadingCopyPolicy": "Explanatory ingredient notes, not supplement promotion. Short definitions first, followed by role or research scope. Paragraphs rendered separately with escaping. Keep all selected keywords, dosage, allergy and seller-only caution records unchanged."
+  "ingredientReadingCopyPolicy": "Explanatory ingredient notes, not supplement promotion. Short definitions first, followed by role or research scope. Paragraphs rendered separately with escaping. Keep all selected keywords, dosage, allergy and seller-only caution records unchanged.",
+  "cholesterolMechanismUpdatedAt": "2026-11-24",
+  "cholesterolMechanismReview": "Separate red yeast rice monacolin K / hepatic HMG-CoA reductase inhibition from green tea catechin EGCG / reduced micellar cholesterol solubility and intestinal absorption. Explicit in-vitro/animal evidence scope for the latter; no finished-product effect size or drug-equivalence promise. Seller label precautions preserved."
 }
