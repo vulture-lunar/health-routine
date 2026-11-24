@@ -235,6 +235,10 @@
         {
           "label": "멜라토닌 안전성 참고 · NCCIH",
           "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know"
+        },
+        {
+          "label": "트립토판의 역할 · MedlinePlus",
+          "url": "https://medlineplus.gov/ency/article/002332.htm"
         }
       ]
     },
@@ -265,6 +269,14 @@
         {
           "label": "비타민A의 역할 · NIH ODS",
           "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
+        },
+        {
+          "label": "글루타치온의 정의 · NCBI MeSH",
+          "url": "https://www.ncbi.nlm.nih.gov/mesh/?term=D005978"
+        },
+        {
+          "label": "히알루론산의 구조·수분 결합 · NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK482440/"
         }
       ]
     },
@@ -343,6 +355,10 @@
         {
           "label": "마그네슘의 역할 · NIH ODS",
           "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+        },
+        {
+          "label": "레드클로버·이소플라본 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/red-clover"
         }
       ]
     },
@@ -639,5 +655,7 @@
     }
   ],
   "ingredientMechanismUpdatedAt": "2026-11-24",
-  "ingredientMechanismPolicy": "Remove seller-page narration from ingredient panels. Explain corosolic-acid GLUT4 translocation and enzyme inhibition with explicit cell/animal/in-vitro scope; do not extrapolate efficacy to the final Corkbottle formulation. Amomum mechanism is explicitly a separate water-extract animal study. No invented mechanisms for other unmatched botanical blends. Seller-only cautions unchanged."
+  "ingredientMechanismPolicy": "Remove seller-page narration from ingredient panels. Explain corosolic-acid GLUT4 translocation and enzyme inhibition with explicit cell/animal/in-vitro scope; do not extrapolate efficacy to the final Corkbottle formulation. Amomum mechanism is explicitly a separate water-extract animal study. No invented mechanisms for other unmatched botanical blends. Seller-only cautions unchanged.",
+  "ingredientReadingCopyUpdatedAt": "2026-11-24",
+  "ingredientReadingCopyPolicy": "Explanatory ingredient notes, not supplement promotion. Short definitions first, followed by role or research scope. Paragraphs rendered separately with escaping. Keep all selected keywords, dosage, allergy and seller-only caution records unchanged."
 }

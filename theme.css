@@ -400,3 +400,6 @@ dialog.sheet::backdrop { background:var(--color-shadow); opacity:.85; }
 .point-explanation + .point-explanation { border-top:1px solid var(--color-rule-soft); padding-top:14px; margin-top:14px; }
 .point-explanation h5 { margin:0 0 8px; color:var(--color-gold-light); font-size:14px; line-height:1.7; overflow-wrap:anywhere; }
 .point-explanation p,.product-point-panel > p { margin:0; color:var(--color-ink); font-size:13px; line-height:1.9; }
+
+/* Short paragraphs keep ingredient notes easy to read on mobile. */
+.point-explanation p + p { margin-top:12px; }
