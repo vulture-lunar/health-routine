@@ -52,16 +52,16 @@
   --text-statement: clamp(19px, 3vw, 23px);
 }
 
-/* Clear reading surfaces; channel navy and antique gold stay in the masthead. */
+/* One navy reading system with antique gold for meaningful emphasis. */
 :root {
-  --color-reading-canvas: oklch(97.5% .005 85);
-  --color-reading-surface: oklch(99% .003 85);
-  --color-reading-soft: oklch(95% .008 245);
-  --color-reading-ink: oklch(28% .035 245);
-  --color-reading-muted: oklch(46% .025 245);
-  --color-reading-rule: oklch(87% .012 245);
-  --color-reading-accent: oklch(44% .08 80);
-  --color-reading-focus: oklch(44% .08 80);
+  --color-reading-canvas: oklch(19% .025 245);
+  --color-reading-surface: oklch(24% .029 245);
+  --color-reading-soft: oklch(29% .033 245);
+  --color-reading-ink: oklch(95% .012 85);
+  --color-reading-muted: oklch(78% .015 245);
+  --color-reading-rule: oklch(35% .026 245);
+  --color-reading-accent: oklch(78% .095 85);
+  --color-reading-focus: oklch(85% .085 85);
   --space-reading: 32px;
   --radius-reading: 14px;
 }

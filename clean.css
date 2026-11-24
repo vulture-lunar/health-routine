@@ -1,5 +1,5 @@
-/* Hallmark · macrostructure: Index-First · genre: modern-minimal
- * theme: channel navy masthead + warm reading surfaces · nav: existing brand header
+/* Hallmark · macrostructure: compact discovery hub · genre: atmospheric
+ * theme: unified navy / antique gold · nav: existing brand header
  * pre-emit critique: P4 H5 E4 S4 R5 V4
  */
 html,body { overflow-x:clip; }
@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5 { font-style:normal; overflow-wrap:anywhere; min-width:0; }
  --soft-bg:var(--color-reading-soft);
  color:var(--color-ink);
  background:var(--color-paper);
- color-scheme:light;
+ color-scheme:dark;
 }
 .channel-header .inner { padding-block:16px; }
 .channel-brand strong { font-size:19px; }
@@ -188,3 +188,126 @@ dialog.sheet { border:0; border-radius:20px 20px 0 0; }
 .sheet-head { margin:0; }
 .sheet-close { top:0; right:0; width:44px; height:44px; }
 .sheet-head > .label { display:inline-block; margin-right:52px; }
+
+/* Compact discovery: begin with the task, keep the channel artwork in the background. */
+.inner { max-width:1100px; }
+.channel-header { border:0; border-bottom:1px solid var(--color-rule-soft); }
+.channel-header .inner { padding-block:14px; }
+.channel-brand img { width:44px; height:44px; }
+.channel-brand strong { font-family:var(--font-display); color:var(--color-gold-light); font-weight:700; }
+.channel-brand small { font-size:10px; letter-spacing:.08em; }
+.hero { border-bottom:1px solid var(--color-rule-soft); }
+.hero .inner { padding-block:40px; }
+.hero-intro { padding-top:24px; }
+.hero h1 { font-family:var(--font-display); font-size:clamp(30px,3.2vw,40px); font-weight:600; line-height:1.65; letter-spacing:-.045em; }
+.hero .eyebrow { color:var(--color-muted); font-size:11px; letter-spacing:.03em; margin-bottom:12px; }
+.hero h1 em { color:var(--color-gold-light); }
+.hero .hero-copy { font-size:13px; line-height:1.9; margin-top:18px; }
+.hero-art { opacity:.2; }
+.concern-search label { color:var(--color-ink); font-size:19px; }
+.search-hint { font-size:12px; line-height:1.85; }
+.search-field { background:var(--color-paper-2); border-color:var(--color-rule-soft); border-radius:12px; }
+.search-field input { font-size:15px; padding-block:12px; }
+.hero-tools .concern-search { margin-bottom:28px; }
+.picker { padding-top:24px; }
+.picker-head b { font-size:15px; }
+.picker-head span { font-size:11px; }
+.picker-chips { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+.pick { justify-content:center; min-width:0; min-height:40px; padding:8px; background:var(--color-paper-2); border-radius:8px; font-size:12px; }
+.pick .tick { display:none; }
+.pick[aria-pressed="true"] { background:var(--color-gold-light); color:var(--color-paper); font-weight:800; border-color:var(--color-gold-light); }
+.picker-go { height:46px; font-size:13px; border-radius:8px; }
+.library { padding-block:40px 48px; }
+.archive-heading h2,.products h2 { font-family:var(--font-body); font-size:23px; font-weight:700; }
+.archive-heading p { font-size:13px; }
+.filters { gap:6px; padding-bottom:20px; }
+.filters button { min-height:36px; padding:7px 11px; border-radius:6px; background:none; border-color:var(--color-rule); font-size:12px; }
+.filters button span { display:none; }
+.filters button[aria-pressed="true"] { background:var(--color-gold); color:var(--color-paper); border-color:var(--color-gold); font-weight:700; }
+.card-grid { gap:12px; }
+.card { min-height:136px; padding:18px; border-color:var(--color-rule); border-radius:12px; grid-template-columns:72px minmax(0,1fr); gap:5px 16px; }
+.routine-thumb { width:72px; height:72px; border-radius:8px; }
+.card .label { font-size:11px; color:var(--color-muted); }
+.card h3 { font-size:16px; font-weight:500; line-height:1.7; }
+.card-bottom { font-size:11px; color:var(--color-muted); }
+.card .arrow { color:var(--color-gold); }
+.products { background:var(--color-paper); }
+.prod-tile { background:var(--color-paper-2); border-color:var(--color-rule); border-radius:12px; }
+.prod-grid .prod-tile .n { font-weight:500; }
+.product-carousel-controls button { background:var(--color-paper-2); }
+.youtube-banner { padding-block:32px; border-top:1px solid var(--color-rule-soft); }
+.youtube-channel-card { gap:18px; }
+.youtube-avatar { width:52px; height:52px; }
+.youtube-channel-info h2 { font-size:20px; }
+.youtube-channel-info p { font-size:12px; }
+.youtube-channel-action { font-size:12px; padding:11px 14px; }
+.landscape { height:100px; }
+dialog.sheet { background:var(--color-paper-2); border:1px solid var(--color-rule); border-radius:18px; }
+.sheet-head { border-bottom-color:var(--color-rule); }
+.sheet-close { background:var(--color-raised); color:var(--color-muted); }
+.sheet-head > .label { font-size:11px; background:none; padding:0; color:var(--color-gold); }
+.sheet-head h3 { font-family:var(--font-body); font-size:23px; line-height:1.6; }
+.product-point-button { background:none; }
+.product-point-button[aria-expanded="true"] { background:var(--color-gold); color:var(--color-paper); border-color:var(--color-gold); }
+.point-explanation h5 { font-size:17px; font-weight:700; }
+.ingredient-steps { gap:24px; }
+.ingredient-step dt { font-size:13px; gap:10px; }
+.ingredient-step-label,.ingredient-step-why .ingredient-step-label { background:none; color:var(--color-gold); border:1px solid var(--color-rule); min-width:58px; padding:3px 8px; }
+.ingredient-step dd,.ingredient-step-what dd,.ingredient-step-why dd,.ingredient-step-how dd { font-size:15px; line-height:1.9; }
+.guide-section h4 { font-size:16px; }
+.guide-list,.guide-section p { font-size:14px; }
+@media(min-width:60rem) {
+ .hero .inner { grid-template-columns:minmax(0,.9fr) minmax(0,1fr); gap:72px; }
+ .hero-art { inset:0 47% 0 0; opacity:.2; }
+ .hero-tools { padding:24px; border:1px solid var(--color-rule-soft); border-radius:16px; background:var(--color-paper); }
+}
+@media(max-width:47.99rem) {
+ .channel-header .inner { padding-block:12px; }
+ .hero .inner { padding-block:24px 28px; }
+ .hero-intro { padding-top:0; }
+ .hero .eyebrow { margin-bottom:8px; font-size:10px; }
+ .hero h1 { font-size:27px; line-height:1.6; }
+ .hero .hero-copy { font-size:12px; margin:12px 0 24px; }
+ .hero .hero-copy br { display:none; }
+ .hero-art { inset:0 0 auto 42%; height:220px; opacity:.17; background-position:center; }
+ .concern-search label { font-size:18px; }
+ .search-hint { font-size:12px; margin-bottom:12px; }
+ .hero-tools .concern-search { margin-bottom:24px; }
+ .picker { padding-top:20px; }
+ .picker-head span { font-size:10px; }
+ .pick { min-height:38px; }
+ .library { padding-block:28px 36px; }
+ .archive-heading { margin-bottom:18px; }
+ .archive-heading h2,.products h2 { font-size:21px; }
+ .archive-heading p { font-size:12px; }
+ .card { min-height:128px; padding:16px; grid-template-columns:64px minmax(0,1fr); gap:5px 14px; }
+ .routine-thumb { width:64px; height:64px; }
+ .card h3 { font-size:15px; }
+ .products { padding-block:28px 36px; }
+ .youtube-channel-action { width:auto; justify-content:flex-start; grid-column:2; margin-top:0; }
+ .youtube-channel-card { gap:10px 14px; }
+ .youtube-avatar { width:48px; height:48px; grid-row:1 / 3; align-self:start; }
+ .youtube-channel-info h2 { font-size:19px; }
+ .youtube-channel-info p { font-size:11px; }
+ dialog.sheet { border-radius:18px 18px 0 0; border-bottom:0; }
+}
+@media(max-width:23.4rem) {
+ .channel-brand strong { font-size:15px; }
+ .channel-brand small { font-size:9px; }
+ .channel-brand img { width:38px; height:38px; }
+ .hero h1 { font-size:24px; }
+ .picker-chips { gap:7px; }
+ .pick { padding-inline:4px; font-size:11px; }
+ .card { padding:14px; grid-template-columns:58px minmax(0,1fr); gap:5px 12px; }
+ .routine-thumb { width:58px; height:58px; }
+ .card h3 { font-size:14px; }
+}
+@media(max-width:47.99rem) {
+ .hero-art { background-image:linear-gradient(90deg,var(--color-paper),var(--color-clear) 80%),linear-gradient(0deg,var(--color-paper),var(--color-clear) 70%),url('assets/book-of-life.jpg'); }
+}
+@media(min-width:48rem) and (max-width:59.99rem) {
+ .hero .inner { padding-block:28px; }
+ .hero-intro { padding-top:0; }
+ .hero .hero-copy { margin-bottom:24px; }
+ .hero .hero-copy br { display:none; }
+}
