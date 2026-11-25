@@ -1,29 +1,40 @@
 // Automatically refreshed public YouTube Shorts metadata; curated topics are preserved.
 const HEALTH_SHORTS = {
-  "checkedAt": "2026-11-25",
+  "checkedAt": "2026-11-26",
   "channelId": "UCE9Si-9SKNSVv0HunJgyVuQ",
   "videos": [
+    {
+      "id": "ah8LmQofy9o",
+      "title": "3명 중 2명이 가진 바이러스, 치매와 연결됐다",
+      "publishedAt": "2026-11-25T09:00:30+00:00",
+      "views": 1197,
+      "topics": [
+        "parents"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/ah8LmQofy9o/hqdefault.jpg",
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
+    },
     {
       "id": "wN0epqkFI_o",
       "title": "지금 줄자로 재 보세요, 사망 위험 가장 낮았던 허리",
       "publishedAt": "2026-11-24T09:00:28+00:00",
-      "views": 15,
+      "views": 19,
       "topics": [
         "light"
       ],
       "thumbnail": "https://i.ytimg.com/vi/wN0epqkFI_o/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "nAyZlysEWPY",
       "title": "외로움이 오래가면, 치매가 2명 중 1명꼴",
       "publishedAt": "2026-11-23T09:00:37+00:00",
-      "views": 1400,
+      "views": 1406,
       "topics": [
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/nAyZlysEWPY/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "7CCALN68pXA",
@@ -34,7 +45,7 @@ const HEALTH_SHORTS = {
         "gut"
       ],
       "thumbnail": "https://i.ytimg.com/vi/7CCALN68pXA/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "DI8eC2hgcH8",
@@ -45,7 +56,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/DI8eC2hgcH8/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "VPYqyIq6b5g",
@@ -56,7 +67,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/VPYqyIq6b5g/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "NmUAfkcKdNI",
@@ -67,18 +78,18 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/NmUAfkcKdNI/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "sDq9SVSWnOY",
       "title": "잠들 때는 체온이 내려가는데, 왜 따뜻한 샤워가 도움이 될까요?",
       "publishedAt": "2026-11-19T09:00:25+00:00",
-      "views": 10,
+      "views": 11,
       "topics": [
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/sDq9SVSWnOY/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "6_QSTHthS2c",
@@ -89,7 +100,7 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/6_QSTHthS2c/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "GcZLfxpS0-0",
@@ -100,7 +111,7 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/GcZLfxpS0-0/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "kdQxAZS0XU8",
@@ -111,19 +122,19 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/kdQxAZS0XU8/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "SOH3DgQ3yhs",
       "title": "땅콩 하루 두 줌, 60그램. 그냥 고소한 간식일까요? #건강상식 #음식 #건강관리",
       "publishedAt": "2026-11-13T09:00:21+00:00",
-      "views": 1713,
+      "views": 1715,
       "topics": [
         "vessel",
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/SOH3DgQ3yhs/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "gtfw18tVAHc",
@@ -134,7 +145,7 @@ const HEALTH_SHORTS = {
         "meal"
       ],
       "thumbnail": "https://i.ytimg.com/vi/gtfw18tVAHc/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "SJ0P4qfX23I",
@@ -145,7 +156,7 @@ const HEALTH_SHORTS = {
         "hair"
       ],
       "thumbnail": "https://i.ytimg.com/vi/SJ0P4qfX23I/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "5fpTWyORhYY",
@@ -154,7 +165,7 @@ const HEALTH_SHORTS = {
       "views": 6,
       "topics": [],
       "thumbnail": "https://i.ytimg.com/vi/5fpTWyORhYY/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "1eBholT8ARI",
@@ -165,7 +176,7 @@ const HEALTH_SHORTS = {
         "meal"
       ],
       "thumbnail": "https://i.ytimg.com/vi/1eBholT8ARI/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "thu8TVrPafw",
@@ -176,7 +187,7 @@ const HEALTH_SHORTS = {
         "meal"
       ],
       "thumbnail": "https://i.ytimg.com/vi/thu8TVrPafw/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "yN-d20RHhYI",
@@ -187,7 +198,7 @@ const HEALTH_SHORTS = {
         "bowel"
       ],
       "thumbnail": "https://i.ytimg.com/vi/yN-d20RHhYI/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "0kyN8OLbesY",
@@ -199,7 +210,7 @@ const HEALTH_SHORTS = {
         "bowel"
       ],
       "thumbnail": "https://i.ytimg.com/vi/0kyN8OLbesY/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "xE2xB_1cIGI",
@@ -210,7 +221,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/xE2xB_1cIGI/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "W5ZZAvbaM3Q",
@@ -221,7 +232,7 @@ const HEALTH_SHORTS = {
         "hair"
       ],
       "thumbnail": "https://i.ytimg.com/vi/W5ZZAvbaM3Q/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "FUvu7TdhyUI",
@@ -232,7 +243,7 @@ const HEALTH_SHORTS = {
         "vessel"
       ],
       "thumbnail": "https://i.ytimg.com/vi/FUvu7TdhyUI/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "wndLJPn_DRg",
@@ -243,7 +254,7 @@ const HEALTH_SHORTS = {
         "meal"
       ],
       "thumbnail": "https://i.ytimg.com/vi/wndLJPn_DRg/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "UZS2WGfc8ig",
@@ -254,7 +265,7 @@ const HEALTH_SHORTS = {
         "vessel"
       ],
       "thumbnail": "https://i.ytimg.com/vi/UZS2WGfc8ig/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "GMbu4RE5w3k",
@@ -265,7 +276,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/GMbu4RE5w3k/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "4ZzH40vtbPA",
@@ -276,7 +287,7 @@ const HEALTH_SHORTS = {
         "vessel"
       ],
       "thumbnail": "https://i.ytimg.com/vi/4ZzH40vtbPA/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "lxsq1eGWCJ4",
@@ -287,18 +298,18 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/lxsq1eGWCJ4/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "HbB_-qWuMsM",
       "title": "이 소화 비밀 당장 확인하세요",
-      "views": 1387,
+      "views": 1388,
       "publishedAt": "2026-08-05T02:00:02-07:00",
       "topics": [
         "gut"
       ],
       "thumbnail": "https://i.ytimg.com/vi/HbB_-qWuMsM/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "3pzZC_i5EQM",
@@ -309,7 +320,7 @@ const HEALTH_SHORTS = {
         "meal"
       ],
       "thumbnail": "https://i.ytimg.com/vi/3pzZC_i5EQM/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBWc_iCwRoMCd79GqWCFbgjpTuyUg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "uD6OtDvy-fM",
@@ -320,18 +331,18 @@ const HEALTH_SHORTS = {
         "change"
       ],
       "thumbnail": "https://i.ytimg.com/vi/uD6OtDvy-fM/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLD5SUFi9hFMOUH2uN8msj64qdA-BA",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "mjYh_qsLxNY",
       "title": "요즘 다이어터들이 찾는다는 선인장 다이어트 오프밀정",
-      "views": 3716,
+      "views": 3740,
       "publishedAt": "2026-07-29T02:00:20-07:00",
       "topics": [
         "meal"
       ],
       "thumbnail": "https://i.ytimg.com/vi/mjYh_qsLxNY/oar3.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBPszmsRhvF6L67TL994G2IWuyJfA",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "qcakp3EEO4E",
@@ -342,7 +353,7 @@ const HEALTH_SHORTS = {
         "meal"
       ],
       "thumbnail": "https://i.ytimg.com/vi/qcakp3EEO4E/oar1.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA_s0HHJxTH-x78OVGo_Q8LVKdNqQ",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "Zbn-oickhUw",
@@ -353,7 +364,7 @@ const HEALTH_SHORTS = {
         "throat"
       ],
       "thumbnail": "https://i.ytimg.com/vi/Zbn-oickhUw/oar3.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA6MiE3gLMlR5q3CpLCu3K1TT5Z_w",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "z7_xu2Yd9fw",
@@ -364,7 +375,7 @@ const HEALTH_SHORTS = {
         "skin"
       ],
       "thumbnail": "https://i.ytimg.com/vi/z7_xu2Yd9fw/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBZ6XzeXCkj2EfDr0d4lieYh3t0pQ",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "d5RSIcCGmQo",
@@ -377,7 +388,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/d5RSIcCGmQo/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "vqRjXI5oor8",
@@ -388,7 +399,7 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/vqRjXI5oor8/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "oaleQg6V-Xg",
@@ -399,7 +410,7 @@ const HEALTH_SHORTS = {
         "throat"
       ],
       "thumbnail": "https://i.ytimg.com/vi/oaleQg6V-Xg/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "eAZeIVJREVU",
@@ -410,7 +421,7 @@ const HEALTH_SHORTS = {
         "throat"
       ],
       "thumbnail": "https://i.ytimg.com/vi/eAZeIVJREVU/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "-gIbxY_b7S4",
@@ -421,7 +432,7 @@ const HEALTH_SHORTS = {
         "skin"
       ],
       "thumbnail": "https://i.ytimg.com/vi/-gIbxY_b7S4/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "7NITf6LWXs0",
@@ -432,7 +443,7 @@ const HEALTH_SHORTS = {
         "bowel"
       ],
       "thumbnail": "https://i.ytimg.com/vi/7NITf6LWXs0/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "L1PEp2k5JDc",
@@ -443,7 +454,7 @@ const HEALTH_SHORTS = {
         "vessel"
       ],
       "thumbnail": "https://i.ytimg.com/vi/L1PEp2k5JDc/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "dS1Huqxp_YA",
@@ -454,7 +465,7 @@ const HEALTH_SHORTS = {
         "bowel"
       ],
       "thumbnail": "https://i.ytimg.com/vi/dS1Huqxp_YA/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "2w5JOMohrio",
@@ -465,7 +476,7 @@ const HEALTH_SHORTS = {
         "gut"
       ],
       "thumbnail": "https://i.ytimg.com/vi/2w5JOMohrio/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "SqIMMM9kRV0",
@@ -476,7 +487,7 @@ const HEALTH_SHORTS = {
         "vessel"
       ],
       "thumbnail": "https://i.ytimg.com/vi/SqIMMM9kRV0/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "RP7Itk_vqA4",
@@ -487,7 +498,7 @@ const HEALTH_SHORTS = {
         "throat"
       ],
       "thumbnail": "https://i.ytimg.com/vi/RP7Itk_vqA4/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC4_7NIWvwy5Ctr3B4DrB8YbQtEmw",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     },
     {
       "id": "b93qZvfof50",
@@ -498,8 +509,8 @@ const HEALTH_SHORTS = {
         "change"
       ],
       "thumbnail": "https://i.ytimg.com/vi/b93qZvfof50/oar1.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAnSoCjCwbuj7p-43-cvnAApZ9nXA",
-      "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
+      "viewsCheckedAt": "2026-11-25T23:29:30+00:00"
     }
   ],
-  "updatedAt": "2026-11-25T01:57:08+00:00"
+  "updatedAt": "2026-11-25T23:29:30+00:00"
 };
