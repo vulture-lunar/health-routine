@@ -217,7 +217,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="tokens.css?v=collection-20261125-1">
 <link rel="stylesheet" href="theme.css?v=original-restored-20261124-1">
-<link rel="stylesheet" href="collection.css?v=criterion-links-20261125-1">
+<link rel="stylesheet" href="collection.css?v=choice-copy-20261125-1">
 </head>
 <body>
 
@@ -578,25 +578,24 @@ function renderInsights(c) {
 
 
 const PRODUCT_CHOICE_GUIDES = {
-  meal: { art:"바나바잎 속 코로솔산 → 식후 혈당", criteria:[["식사량이 고민이라면", "점성을 만드는 식이섬유의 종류", "off"], ["식후 혈당이 고민이라면", "바나바잎 · 코로솔산 함량", "51"]] },
-  light: { art:"모로오렌지·C3G", criteria:[["먼저 구분할 것", "일시적인 붓기와 체지방 고민", "49"], ["원료를 비교할 때", "모로오렌지 추출물 · 락토페린의 연구 조건", "49"]] },
-  gut: { art:"양배추·SMM", criteria:[["원료를 볼 때", "양배추 · SMM과 함께 배합한 원료", "74"], ["구성을 비교할 때", "원료의 형태와 배합량", "74"]] },
-  bowel: { art:"차전자피 식이섬유", criteria:[["식이섬유를 볼 때", "차전자피 식이섬유의 양", "fib"], ["섭취 안내에서", "함께 마실 물의 양과 섭취 방법", "fib"]] },
-  skin: { art:"히알루론산·콜라겐", criteria:[["보습이 고민이라면", "콜라겐의 종류와 섭취량", "col"], ["함께 살펴볼 성분", "비타민C · 히알루론산 등 원료 구성", "64"]] },
-  hair: { art:"아누카사과·프로시아니딘", criteria:[["추출물을 볼 때", "아누카사과의 종류와 연구 조건", "59"], ["영양 구성을 볼 때", "비오틴 함량과 현재 섭취량", "59"]] },
-  change: { art:"레드클로버·대두배아의 이소플라본", criteria:[["식물성 성분을 볼 때", "이소플라본의 종류와 함량", "rfq"], ["함께 살펴볼 성분", "마그네슘 · 비타민B군의 구성", "rfq"]] },
-  sleep: { art:"멜라토닌", criteria:[["먼저 살펴볼 것", "잠드는 시간과 생활 리듬", "54"], ["성분을 비교할 때", "멜라토닌 · 락티움 · 테아닌의 역할", "54"]] },
-  throat: { art:"도라지·모과", criteria:[["원료를 볼 때", "도라지 · 삼백초의 형태와 배합량", "72"], ["연구와 비교할 때", "분말인지 추출물인지 구분", "77"]] },
-  vessel: { art:"코엔자임Q10", criteria:[["먼저 정할 기준", "혈압 · 혈당 · 콜레스테롤 중 관심 지표", "75"], ["구성을 비교할 때", "각 지표에 연결된 원료와 함량", "75"]] },
-  parents: { art:"은행잎추출물", criteria:[["부모님과 확인할 것", "검진에서 관리 중인 항목", "75"], ["원료를 비교할 때", "복용 중인 약 · 영양제와의 중복", "75"]] }
+  meal: {"art": "바나바잎 속 코로솔산 → 식후 혈당", "criteria": [["식사량이 고민이라면?", "점성 식이섬유부터 살펴보세요.", "off"], ["식후 혈당이 고민이라면?", "바나바잎 속 코로솔산을 살펴보세요.", "51"]]},
+  light: {"art": "모로오렌지·C3G", "criteria": [["체지방·라인이 고민이라면?", "모로오렌지의 성분과 연구를 살펴보세요.", "49"], ["다이어트 성분이 궁금하다면?", "락토페린의 작용부터 알아보세요.", "49"]]},
+  gut: {"art": "양배추·SMM", "criteria": [["속 편안함이 고민이라면?", "양배추 속 SMM을 살펴보세요.", "74"], ["함께 들어간 원료가 궁금하다면?", "생강과 식이섬유의 역할을 알아보세요.", "74"]]},
+  bowel: {"art": "차전자피 식이섬유", "criteria": [["배변이 고민이라면?", "차전자피 식이섬유를 살펴보세요.", "fib"], ["어떻게 먹는지 궁금하다면?", "물과 함께 먹는 방법을 확인해 보세요.", "fib"]]},
+  skin: {"art": "히알루론산·콜라겐", "criteria": [["피부 보습이 고민이라면?", "콜라겐의 종류와 섭취량을 살펴보세요.", "col"], ["피부 성분 조합이 궁금하다면?", "비타민C와 히알루론산을 살펴보세요.", "64"]]},
+  hair: {"art": "아누카사과·프로시아니딘", "criteria": [["모발 관리가 고민이라면?", "아누카사과 추출물을 살펴보세요.", "59"], ["비오틴이 궁금하다면?", "모발과 어떤 관계인지 알아보세요.", "59"]]},
+  change: {"art": "레드클로버·대두배아의 이소플라본", "criteria": [["변화하는 시기가 고민이라면?", "식물성 이소플라본을 살펴보세요.", "rfq"], ["영양 구성도 궁금하다면?", "마그네슘과 비타민B군을 살펴보세요.", "rfq"]]},
+  sleep: {"art": "멜라토닌", "criteria": [["잠의 리듬이 고민이라면?", "멜라토닌의 역할부터 알아보세요.", "54"], ["잠들기 전 긴장이 고민이라면?", "락티움과 테아닌을 살펴보세요.", "54"]]},
+  throat: {"art": "도라지·모과", "criteria": [["목 관리가 고민이라면?", "도라지·모과·맥문동을 살펴보세요.", "72"], ["삼백초 성분이 궁금하다면?", "원료의 형태와 연구를 살펴보세요.", "77"]]},
+  vessel: {"art": "코엔자임Q10", "criteria": [["혈관 건강이 고민이라면?", "관리할 지표별 원료를 살펴보세요.", "75"], ["콜레스테롤도 신경 쓰인다면?", "차전자피의 작용부터 알아보세요.", "fib"]]},
+  parents: {"art": "은행잎추출물", "criteria": [["부모님 혈관 건강이 고민이라면?", "관리 항목에 맞는 원료를 살펴보세요.", "75"], ["부모님 배변이 고민이라면?", "차전자피와 섭취 방법을 살펴보세요.", "fib"]]}
 };
-function renderProductChoice(concerns, productsHtml) {
+function renderProductChoice(concerns) {
   const art = INGREDIENT_ART[PRODUCT_CHOICE_GUIDES[concerns[0].id].art];
   return `<details class="routine-product-choice">
     <summary><img src="${esc(art)}" alt="" width="64" height="64" loading="lazy"><span><small>내 고민에 맞는 선택</small><strong>내게 맞는 제품은?</strong></span></summary>
     <div class="routine-choice-body">
-      ${concerns.map(c => `<div class="routine-choice-criteria">${concerns.length > 1 ? `<h4>${esc(c.tag)}</h4>` : ""}<ul class="routine-criteria-links">${PRODUCT_CHOICE_GUIDES[c.id].criteria.map(([label, value, id]) => `<li><button type="button" class="routine-criterion-button" data-product-id="${esc(id)}" aria-haspopup="dialog"><span class="criterion-label">${esc(label)}</span><span class="criterion-value">${esc(value)}</span><span class="criterion-arrow" aria-hidden="true">↗</span><span class="criterion-action">특징·주의사항 보기</span></button></li>`).join("")}</ul></div>`).join("")}
-      <details class="routine-product-reveal"><summary>이 기준으로 제품 보기</summary><div class="picks">${productsHtml}</div></details>
+      ${concerns.map(c => `<div class="routine-choice-criteria">${concerns.length > 1 ? `<h4>${esc(c.tag)}</h4>` : ""}<ul class="routine-criteria-links">${PRODUCT_CHOICE_GUIDES[c.id].criteria.map(([label, value, id]) => `<li><button type="button" class="routine-criterion-button" data-product-id="${esc(id)}" aria-haspopup="dialog"><span class="criterion-label">${esc(label)}</span><span class="criterion-value">${esc(value)}</span><span class="criterion-arrow" aria-hidden="true">↗</span></button></li>`).join("")}</ul></div>`).join("")}
     </div>
   </details>`;
 }
@@ -619,7 +618,7 @@ function openNote(id) {
         ${renderInsights(c)}
       </div>
       ${renderShorts([c.id])}
-      ${renderProductChoice([c], c.picks.map(([no, why]) => prodCard(no, why)).join(""))}
+      ${renderProductChoice([c])}
       <p class="sheet-foot">일반적인 생활 정보이며, 사람마다 느끼는 정도가 다를 수 있어요. 복용 중인 약이 있다면 전문가와 먼저 상담해 주세요.</p>
     </div>`;
   showSheet(c.id);
@@ -636,13 +635,6 @@ function showSheet(hash) {
 function openMix(ids) {
   const cs = C.filter(c => ids.includes(c.id));
   if (cs.length < 2) { if (cs[0]) openNote(cs[0].id); return; }
-  const map = new Map();
-  cs.forEach(c => c.picks.forEach(([n, why]) => {
-    const k = String(n);
-    if (!map.has(k)) map.set(k, { no: k, why, tags: [] });
-    map.get(k).tags.push(c.tag);
-  }));
-  const prods = [...map.values()].sort((a, b) => b.tags.length - a.tags.length);
   sheet.className = "sheet coral";
   sheet.innerHTML = `
     <div class="sheet-scroll">
@@ -659,7 +651,7 @@ function openMix(ids) {
           ${renderInsights(c)}
         </div>`).join("")}</div>
       ${renderShorts(cs.map(c => c.id))}
-      ${renderProductChoice(cs, prods.map(p => prodCard(p.no, p.why, p.tags)).join(""))}
+      ${renderProductChoice(cs)}
       <p class="sheet-foot">일반적인 생활 정보이며, 사람마다 느끼는 정도가 다를 수 있어요. 복용 중인 약이 있다면 전문가와 먼저 상담해 주세요.</p>
     </div>`;
   showSheet("mix-" + cs.map(c => c.id).join("-"));
