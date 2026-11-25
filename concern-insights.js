@@ -1,201 +1,425 @@
-// Reviewed against the linked public health guidance on 2026-11-24.
+// Questions connect each concern to its existing product picks and evidence-based ingredient roles.
 const ROUTINE_INSIGHTS = {
   "meal": [
     {
-      "question": "잠이 부족한 다음 날, 왜 더 먹고 싶을까요?",
-      "answer": "수면 부족은 배고픔과 포만감에 관여하는 호르몬의 균형에 영향을 줄 수 있어요. 군것질이 늘었다면 식사량만 탓하기 전에, 최근 며칠의 잠도 함께 돌아보세요.",
-      "source": {
-        "label": "미국 국립심폐혈액연구소 · 수면 부족의 영향",
-        "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/health-effects"
-      }
+      "question": "식사량 관리와 식후 혈당 관리, 같은 이야기일까요?",
+      "answer": "얼마나 먹는지와 먹은 뒤 포도당을 어떻게 처리하는지는 다른 문제예요. 점성을 만드는 식이섬유는 포만감 관련 연구에서, 바나바잎의 코로솔산은 포도당의 세포 유입 연구에서 살펴보는 성분입니다. 어떤 관리가 필요한지 나눠 보면 원료를 비교하기 쉬워요.",
+      "sources": [
+        {
+          "label": "Carolean™ 원료 특성·시험 범위 · Nexira",
+          "url": "https://www.nexira.com/brand/carolean-appetite-control/"
+        },
+        {
+          "label": "코로솔산·포도당 유입 원료 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15256748/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "off",
+          "label": "오프밀정 성분 보기"
+        },
+        {
+          "id": "51",
+          "label": "코크보틀 성분 보기"
+        }
+      ]
     },
     {
-      "question": "야식 메뉴보다 먼저 볼 것은 따로 있을까요?",
-      "answer": "밤에 속쓰림이나 역류가 있다면 먹은 뒤 눕기까지의 간격을 살펴보세요. 잠들기 최소 3시간 전에 식사를 마치는 것이 증상을 줄이는 데 도움이 될 수 있어요.",
-      "source": {
-        "label": "미국 국립당뇨·소화기·신장질환연구소 · 역류와 식사",
-        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults/eating-diet-nutrition"
-      }
+      "question": "물을 만나 걸쭉해지는 식이섬유는 왜 식전에 찾을까요?",
+      "answer": "일부 식이섬유는 수분을 머금어 점성이 있는 겔을 만들어요. 이 성질을 위 배출과 식사량 조절에 연결해 연구합니다. Carolean™도 이런 점성에 주목한 원료지만, 원료사의 모사·동물 시험과 실제 제품을 먹은 사람의 결과는 구분해서 봐야 해요.",
+      "sources": [
+        {
+          "label": "Carolean™ 원료 특성·시험 범위 · Nexira",
+          "url": "https://www.nexira.com/brand/carolean-appetite-control/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "off",
+          "label": "오프밀정 성분 보기"
+        }
+      ]
     }
   ],
   "light": [
     {
-      "question": "어제보다 늘어난 체중, 전부 살이 찐 걸까요?",
-      "answer": "짠 음식을 먹으면 몸에 수분이 더 머물러 붓거나 체중이 늘 수 있어요. 하루의 숫자로 체지방 변화를 단정하기보다, 전날 식사와 며칠간의 흐름을 함께 보는 편이 좋아요.",
-      "source": {
-        "label": "미국심장협회 · 나트륨과 수분 저류",
-        "url": "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sodium/effects-of-excess-sodium-infographic/"
-      }
+      "question": "어제보다 늘어난 체중, 수분일까요 체지방일까요?",
+      "answer": "짠 음식 뒤의 수분 저류와 오랜 기간 쌓인 체지방은 나눠서 봐야 해요. 모로오렌지 성분을 살펴볼 때 연결되는 부분도 붓기를 빼는 작용보다는 체지방·허리둘레를 다룬 원료 연구입니다.",
+      "sources": [
+        {
+          "label": "나트륨과 수분 저류 · 미국심장협회",
+          "url": "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sodium/effects-of-excess-sodium-infographic/"
+        },
+        {
+          "label": "모로오렌지 추출물·체지방 인체 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35276783/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "49",
+          "label": "모로페린 성분 보기"
+        }
+      ]
     },
     {
-      "question": "국물만 남기면 나트륨 걱정은 끝일까요?",
-      "answer": "나트륨은 국물뿐 아니라 빵·가공육·소스 등에도 들어 있어요. 짠맛의 정도만으로 판단하기보다, 자주 먹는 포장식품의 영양정보를 한 번 비교해 보세요.",
-      "source": {
-        "label": "미국심장협회 · 나트륨과 수분 저류",
-        "url": "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sodium/effects-of-excess-sodium-infographic/"
-      }
+      "question": "다이어트 성분은 왜 지방의 생성과 분해를 나눠 볼까요?",
+      "answer": "지방이 새로 만들어져 저장되는 과정과 저장된 지방을 분해하는 과정은 달라요. 모로오렌지의 동물 연구는 지방조직의 대사 변화를, 락토페린의 세포 연구는 지방방울과 분해 신호의 변화를 살펴봤어요. 성분 이름보다 어느 경로를 연구했는지 보는 편이 이해하기 쉽습니다.",
+      "sources": [
+        {
+          "label": "모로오렌지·지방조직 동물 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20029381/"
+        },
+        {
+          "label": "락토페린·지방 분해 세포 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23470763/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "49",
+          "label": "모로페린 성분 보기"
+        }
+      ]
     }
   ],
   "gut": [
     {
-      "question": "똑같은 음식을 먹어도, 눕는 시간이 중요한 이유는?",
-      "answer": "식사 직후 눕는 습관은 역류 증상에 영향을 줄 수 있어요. 특히 밤에 속이 쓰리다면 음식 종류와 함께 식사 후 눕기까지의 시간을 기록해 보세요.",
-      "source": {
-        "label": "미국 국립당뇨·소화기·신장질환연구소 · 역류와 식사",
-        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults/eating-diet-nutrition"
-      }
+      "question": "양배추 이야기에는 왜 위의 점액층이 등장할까요?",
+      "answer": "위 표면은 점액층으로 보호되고, 뮤신은 그 점액을 이루는 성분이에요. SMM 계열 물질의 위 점액세포 실험에서는 뮤신 분비가 늘어나는 변화가 관찰됐어요. 양배추의 SMM을 위 점막 방어와 연결해 설명하는 이유입니다.",
+      "sources": [
+        {
+          "label": "SMM 계열 물질·뮤신 분비 세포 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10719747/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "74",
+          "label": "양감작 성분 보기"
+        }
+      ]
     },
     {
-      "question": "속이 불편할 때, 무조건 피해야 할 음식이 있을까요?",
-      "answer": "커피·기름진 음식·매운 음식 등이 역류 증상과 관련될 수 있지만, 불편함을 느끼는 음식은 사람마다 달라요. 전부 끊기보다 무엇을 먹은 날 증상이 반복되는지 살펴보세요.",
-      "source": {
-        "label": "미국 국립당뇨·소화기·신장질환연구소 · 역류와 식사",
-        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults/eating-diet-nutrition"
-      }
+      "question": "식후 더부룩함은 위가 비워지는 속도와 관계있을까요?",
+      "answer": "위에서 음식이 내려가는 속도는 식후 불편함을 살펴보는 요소 중 하나예요. 생강의 소규모 인체 연구에서는 위 운동·배출의 변화가 있었지만, 더부룩함 등 증상 감소는 확인되지 않았어요. 작용 경로와 실제 느끼는 변화가 같은 뜻은 아니라는 점도 함께 살펴볼 만해요.",
+      "sources": [
+        {
+          "label": "생강·위 운동과 증상 소규모 인체 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21218090/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "74",
+          "label": "양감작 성분 보기"
+        }
+      ]
     }
   ],
   "bowel": [
     {
-      "question": "식이섬유를 늘렸는데, 왜 배가 더 빵빵할까요?",
-      "answer": "식이섬유를 갑자기 많이 늘리면 가스와 복부 팽만이 생길 수 있어요. 한 번에 양을 크게 늘리기보다 조금씩 더하면서 몸의 반응을 살펴보세요.",
-      "source": {
-        "label": "미국 국립당뇨·소화기·신장질환연구소 · 식이섬유",
-        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/eating-diet-nutrition"
-      }
+      "question": "차전자피를 고를 때, 왜 물도 함께 봐야 할까요?",
+      "answer": "차전자피는 물을 흡수해 부풀고 점성이 있는 젤을 만들어요. 이 젤이 변에 수분과 부피를 더하는 성질이 배변활동과 연결됩니다. 제품 표시사항에 맞춰 물과 함께 섭취하는 이유도 여기에 있어요.",
+      "sources": [
+        {
+          "label": "차전자피의 수분 흡수와 섭취 방법 · MedlinePlus",
+          "url": "https://medlineplus.gov/druginfo/meds/a601104.html"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "fib",
+          "label": "차전자피 성분 보기"
+        }
+      ]
     },
     {
-      "question": "식이섬유도 종류에 따라 다를까요?",
-      "answer": "물에 녹는 수용성, 잘 녹지 않는 불용성 식이섬유가 있어요. 과민성장증후군에서는 수용성 식이섬유가 증상 완화에 더 도움이 될 수 있어, 무조건 많은 양보다 종류도 살펴볼 만해요.",
-      "source": {
-        "label": "미국 국립당뇨·소화기·신장질환연구소 · 식이섬유",
-        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/eating-diet-nutrition"
-      }
+      "question": "장내균의 먹이가 되는 섬유와 물을 잡는 섬유는 같을까요?",
+      "answer": "이눌린은 장내 미생물에 의해 잘 발효되는 성질이, 차전자피는 점성 젤로 물을 붙잡는 성질이 두드러져요. 발효 과정에서는 가스가 생길 수 있어서, 배변과 복부 팽만을 함께 고민한다면 식이섬유의 종류도 살펴볼 만해요.",
+      "sources": [
+        {
+          "label": "차전자피·이눌린의 점성·발효 인체 연구",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8995815/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "fib",
+          "label": "차전자피 성분 보기"
+        }
+      ]
     }
   ],
   "skin": [
     {
-      "question": "같은 보습제도, 바르는 타이밍이 다를까요?",
-      "answer": "보습제는 피부의 수분을 붙잡아 두는 역할을 해요. 씻고 난 뒤 피부가 완전히 마르기 전에 바르면 수분을 유지하는 데 도움이 됩니다. 제품을 바꾸기 전, 바르는 순간부터 살펴보세요.",
-      "source": {
-        "label": "미국 국립의학도서관 · 건조한 피부 관리",
-        "url": "https://medlineplus.gov/ency/patientinstructions/000751.htm"
-      }
+      "question": "먹는 콜라겐 연구에서는 왜 피부의 보습인자를 볼까요?",
+      "answer": "각질층에는 수분을 붙잡는 천연보습인자가 있어요. 특정 콜라겐 펩타이드의 인체 연구에서 이 인자가 늘어나는 변화가 관찰돼, 피부 보습과 연결해 설명합니다. 보습 원료를 고를 때 콜라겐의 종류와 섭취 조건도 함께 살펴보는 이유예요.",
+      "sources": [
+        {
+          "label": "콜라겐 펩타이드·천연보습인자 별도 원료 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33774639/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "col",
+          "label": "콜라겐 성분 보기"
+        }
+      ]
     },
     {
-      "question": "뜨거운 샤워 뒤의 개운함, 피부도 좋아할까요?",
-      "answer": "뜨거운 물과 긴 목욕은 피부를 더 건조하게 만들 수 있어요. 샤워 후 유독 당긴다면 보습제뿐 아니라 물 온도와 씻는 시간도 함께 돌아보세요.",
-      "source": {
-        "label": "미국 국립의학도서관 · 건조한 피부 관리",
-        "url": "https://medlineplus.gov/ency/patientinstructions/000751.htm"
-      }
+      "question": "비타민C는 피부를 받치는 콜라겐과 어떤 관계일까요?",
+      "answer": "콜라겐은 피부의 지지 구조를 이루는 단백질이에요. 비타민C는 콜라겐 사슬을 안정시키는 효소가 작용하는 데 필요합니다. 피부 성분을 비교할 때 비타민C를 단순한 항산화라는 말보다 콜라겐 합성과 연결해 보는 이유예요.",
+      "sources": [
+        {
+          "label": "비타민C와 콜라겐 합성 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "64",
+          "label": "잇레티놀 성분 보기"
+        }
+      ]
     }
   ],
   "hair": [
     {
-      "question": "요즘 빠지는 머리카락, 몇 달 전 일과 관련 있을까요?",
-      "answer": "큰 스트레스나 질병, 체중 감소 뒤 모발 탈락이 몇 달 지나 눈에 띄기도 해요. 최근 샴푸만 떠올리기보다 지난 몇 달의 건강 상태와 식사 변화도 함께 돌아보세요.",
-      "source": {
-        "label": "미국피부과학회 · 모발 탈락",
-        "url": "https://www.aad.org/public/diseases/hair-loss/insider/shedding"
-      }
+      "question": "머리카락의 굵기와 케라틴은 어떤 관계일까요?",
+      "answer": "케라틴은 모발을 이루는 주요 단백질이에요. 특정 아누카사과 추출물 연구는 모발 변화와 함께 케라틴 생성을 살펴봤고, 동물 모낭 실험에서는 아미노산을 케라틴 합성에 활용하는 대사 변화가 관찰됐어요. 이런 연구를 볼 때는 어떤 추출물과 조건으로 시험했는지가 중요해요.",
+      "sources": [
+        {
+          "label": "특정 아누카사과 추출물·모발 인체 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28956697/"
+        },
+        {
+          "label": "아누카사과 추출물·모낭 대사 동물 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30279339/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "59",
+          "label": "아누오틴 성분 보기"
+        }
+      ]
     },
     {
-      "question": "많이 빠지는 것과, 새로 자라지 않는 것은 같을까요?",
-      "answer": "일시적으로 모발이 많이 빠지는 현상과 성장을 방해하는 탈모는 원인과 관리가 달라요. 영양 제품을 고르기 전, 정수리가 점점 비거나 탈락이 지속된다면 피부과에서 원인부터 확인하는 게 좋아요.",
-      "source": {
-        "label": "미국피부과학회 · 모발 탈락",
-        "url": "https://www.aad.org/public/diseases/hair-loss/insider/shedding"
-      }
+      "question": "비오틴을 많이 먹으면 머리카락도 더 자랄까요?",
+      "answer": "비오틴이 부족하면 모발 탈락이 생길 수 있어요. 하지만 결핍이 없는 사람이 더 먹었을 때 모발 성장이 늘어난다는 근거는 제한적입니다. 모발 영양 제품을 볼 때 함량의 크기뿐 아니라 부족한 영양이 무엇인지 함께 살펴볼 이유예요.",
+      "sources": [
+        {
+          "label": "비오틴의 역할과 모발 연구 범위 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "59",
+          "label": "아누오틴 성분 보기"
+        }
+      ]
     }
   ],
   "change": [
     {
-      "question": "갑자기 더워지는 순간, 공통점이 있을까요?",
-      "answer": "일부 사람은 뜨거운 음료·매운 음식·카페인·술을 접할 때 안면홍조가 두드러져요. 어떤 상황에서 더워졌는지 짧게 기록하면 나만의 유발 요인을 찾는 데 도움이 될 수 있어요.",
-      "source": {
-        "label": "미국 국립노화연구소 · 안면홍조",
-        "url": "https://www.nia.nih.gov/health/menopause/hot-flashes-what-can-i-do"
-      }
+      "question": "식물성 이소플라본이 왜 중년 여성의 변화와 연결될까요?",
+      "answer": "이소플라본은 에스트로겐과 구조가 비슷해 일부 수용체와 상호작용해요. 이 성질 때문에 갱년기 변화를 대상으로 연구하지만, 증상 완화 결과가 일관되지는 않습니다. 식물성이라는 표현보다 어떤 원료와 경로를 말하는지 보는 게 중요해요.",
+      "sources": [
+        {
+          "label": "레드클로버·이소플라본 연구 범위 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/red-clover"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "rfq",
+          "label": "리플로퀸 성분 보기"
+        }
+      ]
     },
     {
-      "question": "밤에 땀이 나는 것, 잠과도 이어질까요?",
-      "answer": "야간 발한과 안면홍조는 잠을 방해할 수 있어요. 피로만 따로 보지 말고 밤중에 깼는지, 덥거나 땀이 났는지도 함께 살펴보세요. 생활에 불편이 크다면 상담으로 관리 방법을 찾을 수 있어요.",
-      "source": {
-        "label": "미국 국립노화연구소 · 안면홍조",
-        "url": "https://www.nia.nih.gov/health/menopause/hot-flashes-what-can-i-do"
-      }
+      "question": "중년 여성의 변화와 일상 피로는 왜 나눠서 볼까요?",
+      "answer": "에스트로겐 신호와 관련된 변화와 영양 부족으로 인한 에너지 이용 문제는 구분해서 봐야 해요. 마그네슘과 비타민B군은 정상적인 신경·근육 기능과 에너지 대사에 관여합니다. 제품 안에서도 식물 원료와 영양소의 역할을 나눠 보면 구성을 이해하기 쉬워요.",
+      "sources": [
+        {
+          "label": "마그네슘의 역할 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+        },
+        {
+          "label": "비타민B1과 에너지 대사 · NIH ODS",
+          "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "rfq",
+          "label": "리플로퀸 성분 보기"
+        }
+      ]
     }
   ],
   "sleep": [
     {
-      "question": "점심에 마신 커피가 밤까지 남아 있을까요?",
-      "answer": "카페인의 영향은 최대 8시간 이어질 수 있어요. 오후 커피를 마신 날 잠들기 어렵다면, 양만 줄이기보다 마지막으로 마신 시간을 앞당겨 보세요.",
-      "source": {
-        "label": "미국 국립심폐혈액연구소 · 수면 습관",
-        "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits"
-      }
+      "question": "멜라토닌은 왜 수면의 시간 신호라고 할까요?",
+      "answer": "멜라토닌은 몸에 밤이 왔다는 정보를 전달하며 생체시계와 연결돼요. 잠드는 시점과 수면 리듬을 설명할 때 등장하는 이유입니다. 식물 유래 원료를 볼 때도 이름만으로 판단하기보다 실제 표시된 성분과 섭취량을 살펴보세요.",
+      "sources": [
+        {
+          "label": "멜라토닌과 생체시계 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "54",
+          "label": "멜라티움 성분 보기"
+        }
+      ]
     },
     {
-      "question": "잠을 보충한 주말, 왜 일요일 밤은 더 말똥할까요?",
-      "answer": "주중과 주말의 취침·기상 시간이 크게 달라지면 몸의 수면 리듬이 흔들릴 수 있어요. 억지로 일찍 눕기만 하기보다, 주말에도 일어나는 시간을 비슷하게 맞춰 보세요.",
-      "source": {
-        "label": "미국 국립심폐혈액연구소 · 수면 습관",
-        "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits"
-      }
+      "question": "잠들기 전 긴장을 푸는 것과 수면 리듬을 맞추는 것은 같을까요?",
+      "answer": "긴장으로 쉬기 어려운 상태와 잠드는 시간대가 밀린 상태는 구분해서 볼 수 있어요. 락티움의 특정 펩타이드는 신경 흥분을 억제하는 GABA-A 관련 원료 실험에서, 멜라토닌은 생체시계의 시간 신호에서 살펴보는 성분이에요. 두 역할을 나누면 수면 관련 배합을 이해하기 쉬워집니다.",
+      "sources": [
+        {
+          "label": "알파카소제핀·GABA-A 원료 실험",
+          "url": "https://faseb.onlinelibrary.wiley.com/doi/full/10.1096/fj.00-0685fje"
+        },
+        {
+          "label": "멜라토닌과 생체시계 · NCCIH",
+          "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "54",
+          "label": "멜라티움 성분 보기"
+        }
+      ]
     }
   ],
   "throat": [
     {
-      "question": "목이 쉬었을 때, 속삭이면 더 편할까요?",
-      "answer": "속삭이는 소리도 목소리에 부담을 줄 수 있어요. 목이 피곤한 날에는 억지로 작게 말하기보다 잠시 말을 쉬고, 소음 속에서 목소리를 높이는 상황도 줄여 보세요.",
-      "source": {
-        "label": "미국 국립청각·의사소통장애연구소 · 목소리 관리",
-        "url": "https://www.nidcd.nih.gov/health/taking-care-your-voice"
-      }
+      "question": "목·가래 이야기에는 왜 뮤신이 등장할까요?",
+      "answer": "뮤신은 기도 표면을 덮는 점액의 주요 성분이에요. 도라지 추출물과 일부 사포닌의 세포·동물 연구에서는 뮤신 생성·분비의 변화가 관찰됐어요. 원료를 볼 때 도라지의 양과 함께 어떤 성분·추출물을 시험했는지도 살펴보게 되는 이유예요.",
+      "sources": [
+        {
+          "label": "도라지 성분·기도 뮤신 세포·동물 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24290472/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "72",
+          "label": "도맥환 성분 보기"
+        }
+      ]
     },
     {
-      "question": "감기가 아닌데도 목이 자꾸 불편할 수 있을까요?",
-      "answer": "위산이 목이나 식도로 역류하면 목소리와 목의 불편함에 영향을 줄 수 있어요. 늦은 식사 뒤나 누웠을 때 반복되는지도 살펴보고, 증상이 이어지면 원인을 확인해 보세요.",
-      "source": {
-        "label": "미국 국립청각·의사소통장애연구소 · 목소리 관리",
-        "url": "https://www.nidcd.nih.gov/health/taking-care-your-voice"
-      }
+      "question": "코·목의 불편함과 알레르기성 염증은 어떻게 이어질까요?",
+      "answer": "알레르기성 염증은 점액 분비 등과 연결되는 원인 중 하나예요. 특정 삼백초 추출물의 동물 연구도 염증 신호와 점액 과다 생성을 살펴봤습니다. 삼백초라는 이름이 같아도 추출 방식과 성분 구성이 다를 수 있어요.",
+      "sources": [
+        {
+          "label": "특정 삼백초 추출물·기도 염증 동물 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33024647/"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "77",
+          "label": "삼백청정 성분 보기"
+        }
+      ]
     }
   ],
   "vessel": [
     {
-      "question": "커피 한 잔 뒤 잰 혈압, 평소 혈압일까요?",
-      "answer": "카페인·운동·흡연은 측정값에 영향을 줄 수 있어요. 측정 전 30분은 이를 피하고, 의자에 앉아 최소 5분간 조용히 쉰 뒤 재면 비교하기 좋은 기록을 남길 수 있어요.",
-      "source": {
-        "label": "미국심장협회 · 가정 혈압 측정",
-        "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home"
-      }
+      "question": "혈압·혈당·콜레스테롤은 왜 성분을 따로 볼까요?",
+      "answer": "혈관 건강이라는 말 안에서도 관리할 지표와 성분의 역할은 달라요. 코엔자임Q10은 혈관 이완 관련 연구, 바나바잎은 포도당의 세포 유입 연구, 홍국은 간의 콜레스테롤 합성 경로와 연결됩니다. 필요한 지표를 먼저 정하면 복합 원료의 구성을 비교하기 쉬워요.",
+      "sources": [
+        {
+          "label": "코엔자임Q10·혈관 내피 기능 인체 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11914748/"
+        },
+        {
+          "label": "코로솔산·포도당 유입 원료 연구",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15256748/"
+        },
+        {
+          "label": "모나콜린K·로바스타틴의 작용 · MedlinePlus",
+          "url": "https://medlineplus.gov/druginfo/meds/a688006.html"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "75",
+          "label": "더블러드 성분 보기"
+        }
+      ]
     },
     {
-      "question": "혈압이 한 번 높게 나오면, 그 숫자로 판단할까요?",
-      "answer": "혈압은 한 번의 수치보다 여러 날의 기록이 중요해요. 매번 비슷한 시간과 자세로 두 번씩, 1분 간격을 두고 측정해 기록을 진료 때 함께 보여 주세요.",
-      "source": {
-        "label": "미국심장협회 · 가정 혈압 측정",
-        "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home"
-      }
+      "question": "콜레스테롤은 간에서 만들기도 하고, 장과도 관계있을까요?",
+      "answer": "홍국의 모나콜린K는 간에서 콜레스테롤을 만드는 효소에 작용해요. 차전자피는 장내 점성과 담즙산의 재흡수·배설에 관련해 연구됩니다. 같은 콜레스테롤 관리라도 성분이 작용하는 위치와 경로는 다를 수 있어요.",
+      "sources": [
+        {
+          "label": "모나콜린K·로바스타틴의 작용 · MedlinePlus",
+          "url": "https://medlineplus.gov/druginfo/meds/a688006.html"
+        },
+        {
+          "label": "차전자피·담즙산 합성 인체 연구",
+          "url": "https://www.jlr.org/article/S0022-2275%2820%2940770-9/fulltext"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "75",
+          "label": "더블러드 성분 보기"
+        },
+        {
+          "id": "fib",
+          "label": "차전자피 성분 보기"
+        }
+      ]
     }
   ],
   "parents": [
     {
-      "question": "병원과 집에서 잰 혈압, 왜 다를까요?",
-      "answer": "긴장이나 측정 환경에 따라 혈압이 달라질 수 있어요. 병원 수치 하나만 보기보다 같은 조건에서 잰 집의 기록을 함께 보여드리면, 의료진이 판단하는 데 도움이 됩니다.",
-      "source": {
-        "label": "미국심장협회 · 가정 혈압 측정",
-        "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home"
-      }
+      "question": "부모님 제품은 왜 검진 항목과 복용 중인 약을 함께 볼까요?",
+      "answer": "혈압·혈당·콜레스테롤은 서로 다른 관리 항목이라 원료의 역할도 나눠 살펴봐야 해요. 복합 제품에는 홍국·은행잎처럼 복용 중인 약과 함께 확인할 성분도 있습니다. 검진 기록과 약·영양제 목록을 함께 확인하면 원료가 겹치는지도 비교하기 쉬워요.",
+      "sources": [
+        {
+          "label": "더블러드 제품 원료·주의사항 표시정보",
+          "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=75"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "75",
+          "label": "더블러드 성분 보기"
+        }
+      ]
     },
     {
-      "question": "부모님 혈압을 잴 때, 대화도 영향을 줄까요?",
-      "answer": "측정 중 말하거나 휴대폰을 보는 대신 조용히 쉬는 것이 좋아요. 등과 팔을 받치고 발은 바닥에 둔 채 측정해 보세요. 옆에서 대화를 잠시 멈추는 것도 도움이 됩니다.",
-      "source": {
-        "label": "미국심장협회 · 가정 혈압 측정",
-        "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home"
-      }
+      "question": "배변과 콜레스테롤 고민이 같은 식이섬유와 연결될 수 있을까요?",
+      "answer": "차전자피는 물을 머금는 젤을 만들어 변의 수분·부피와 연결돼요. 콜레스테롤 관리에서는 장내 점성과 담즙산의 재흡수·배설에 관련된 경로를 살펴봅니다. 두 포인트가 같은 원료에 연결되는 이유를 알면 구성을 이해하기 쉬워요.",
+      "sources": [
+        {
+          "label": "차전자피의 수분 흡수와 섭취 방법 · MedlinePlus",
+          "url": "https://medlineplus.gov/druginfo/meds/a601104.html"
+        },
+        {
+          "label": "차전자피·담즙산 합성 인체 연구",
+          "url": "https://www.jlr.org/article/S0022-2275%2820%2940770-9/fulltext"
+        }
+      ],
+      "relatedProducts": [
+        {
+          "id": "fib",
+          "label": "차전자피 성분 보기"
+        }
+      ]
     }
   ]
 };

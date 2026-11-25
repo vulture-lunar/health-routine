@@ -719,5 +719,68 @@
       "https://pubmed.ncbi.nlm.nih.gov/10719747/",
       "https://pubmed.ncbi.nlm.nih.gov/8565766/"
     ]
+  },
+  "pointAlignmentReview": {
+    "date": "2026-11-25",
+    "policy": "Each Why identifies the selected point and ingredient role; each How explains that role, with study type and formulation scope. Do not infer a benefit from an unrelated generic ingredient property.",
+    "decisions": [
+      "Moro orange and lactoferrin linked to adipose metabolism, not generic antioxidant/iron-binding explanations.",
+      "Inulin moved from meal bloating to a separate gut-environment point; fermentation can produce gas.",
+      "Lactoferrin, airway and fiber headings narrowed to the researched role.",
+      "Product usage, seller-only cautions, allergens, amounts and imagery preserved.",
+      "The Liriope-derived note is linked to airway mucin, without a voice recovery claim."
+    ],
+    "newSources": {
+      "49": [
+        "https://pubmed.ncbi.nlm.nih.gov/35276783/",
+        "https://pubmed.ncbi.nlm.nih.gov/20029381/",
+        "https://pubmed.ncbi.nlm.nih.gov/23470763/",
+        "https://pubmed.ncbi.nlm.nih.gov/20691130/"
+      ],
+      "54": [
+        "https://pubmed.ncbi.nlm.nih.gov/34562208/",
+        "https://pubmed.ncbi.nlm.nih.gov/18296328/"
+      ],
+      "59": [
+        "https://pubmed.ncbi.nlm.nih.gov/28956697/",
+        "https://pubmed.ncbi.nlm.nih.gov/30279339/"
+      ],
+      "64": [
+        "https://pubmed.ncbi.nlm.nih.gov/28490897/",
+        "https://pubmed.ncbi.nlm.nih.gov/33774639/"
+      ],
+      "72": [
+        "https://pubmed.ncbi.nlm.nih.gov/24290472/",
+        "https://pubmed.ncbi.nlm.nih.gov/24060215/"
+      ],
+      "74": [
+        "https://pubmed.ncbi.nlm.nih.gov/21218090/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8995815/"
+      ],
+      "75": [
+        "https://pubmed.ncbi.nlm.nih.gov/11914748/",
+        "https://pubmed.ncbi.nlm.nih.gov/10832071/"
+      ],
+      "77": [
+        "https://pubmed.ncbi.nlm.nih.gov/33024647/",
+        "https://pubmed.ncbi.nlm.nih.gov/24290472/"
+      ]
+    }
+  },
+  "productLinkedInsightsReview": {
+    "date": "2026-11-25",
+    "concerns": 11,
+    "questions": 22,
+    "flow": "Concern question → ingredient-related explanation → an existing related-product composition button.",
+    "policy": "Every linked product must be in the concern’s current picks. Preserve research type and formulation scope; do not turn preliminary mechanisms into finished-product efficacy.",
+    "validation": {
+      "allQuestionsRendered": 22,
+      "allProductTargetsMatchConcernPicks": true,
+      "productPanelsRendered": 30,
+      "ingredientNotesWithWhatWhyHow": 37,
+      "mobile320NoInsightOverflow": true,
+      "nestedProductDialogReturnsToOpenQuestion": true,
+      "sellerOnlyCautionsAndUsagePreserved": true
+    }
   }
 }
