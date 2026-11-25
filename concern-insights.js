@@ -23,20 +23,7 @@ const ROUTINE_INSIGHTS = {
           "id": "51",
           "label": "식후 혈당 관리에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "바나바잎 속 코로솔산 → 식후 혈당",
-        "criteria": [
-          {
-            "label": "식사량이 고민이라면",
-            "value": "점성을 만드는 식이섬유의 종류"
-          },
-          {
-            "label": "식후 혈당이 고민이라면",
-            "value": "바나바잎 · 코로솔산 함량"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "물을 만나 걸쭉해지는 식이섬유는 왜 식전에 찾을까요?",
@@ -52,20 +39,7 @@ const ROUTINE_INSIGHTS = {
           "id": "off",
           "label": "식전 루틴에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "Carolean™·점성 겔",
-        "criteria": [
-          {
-            "label": "원료를 볼 때",
-            "value": "식이섬유의 종류와 점성"
-          },
-          {
-            "label": "구성을 비교할 때",
-            "value": "1회 섭취량과 물 섭취 안내"
-          }
-        ]
-      }
+      ]
     }
   ],
   "light": [
@@ -87,20 +61,7 @@ const ROUTINE_INSIGHTS = {
           "id": "49",
           "label": "라인 관리에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "모로오렌지·C3G",
-        "criteria": [
-          {
-            "label": "먼저 구분할 것",
-            "value": "일시적인 붓기와 체지방 고민"
-          },
-          {
-            "label": "모로오렌지를 볼 때",
-            "value": "추출물의 종류와 연구 조건"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "다이어트 성분은 왜 지방의 생성과 분해를 나눠 볼까요?",
@@ -120,20 +81,7 @@ const ROUTINE_INSIGHTS = {
           "id": "49",
           "label": "이 고민에 추천하는 성분 조합은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "락토페린",
-        "criteria": [
-          {
-            "label": "모로오렌지",
-            "value": "지방조직 대사를 살펴본 연구"
-          },
-          {
-            "label": "락토페린",
-            "value": "지방 분해를 살펴본 연구 · 제형 확인"
-          }
-        ]
-      }
+      ]
     }
   ],
   "gut": [
@@ -151,20 +99,7 @@ const ROUTINE_INSIGHTS = {
           "id": "74",
           "label": "속 편안함을 위해 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "양배추·SMM",
-        "criteria": [
-          {
-            "label": "살펴볼 성분",
-            "value": "양배추 · SMM"
-          },
-          {
-            "label": "비교할 기준",
-            "value": "양배추 원료의 형태와 배합량"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "식후 더부룩함은 위가 비워지는 속도와 관계있을까요?",
@@ -180,20 +115,7 @@ const ROUTINE_INSIGHTS = {
           "id": "74",
           "label": "식후 고민에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "작약·감초·생강",
-        "criteria": [
-          {
-            "label": "살펴볼 원료",
-            "value": "생강 등 복합 원료의 구성"
-          },
-          {
-            "label": "연구를 읽을 때",
-            "value": "위 배출 변화와 증상 개선은 구분"
-          }
-        ]
-      }
+      ]
     }
   ],
   "bowel": [
@@ -211,20 +133,7 @@ const ROUTINE_INSIGHTS = {
           "id": "fib",
           "label": "배변 관리에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "차전자피 식이섬유",
-        "criteria": [
-          {
-            "label": "원료를 볼 때",
-            "value": "차전자피 식이섬유의 양"
-          },
-          {
-            "label": "섭취 안내에서",
-            "value": "함께 마실 물의 양과 섭취 방법"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "장내균의 먹이가 되는 섬유와 물을 잡는 섬유는 같을까요?",
@@ -240,20 +149,7 @@ const ROUTINE_INSIGHTS = {
           "id": "fib",
           "label": "이 식이섬유로 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "물을 만나 만드는 젤",
-        "criteria": [
-          {
-            "label": "차전자피",
-            "value": "물을 머금는 겔 형성에 주목"
-          },
-          {
-            "label": "이눌린",
-            "value": "발효 특성과 가스 발생 여부 확인"
-          }
-        ]
-      }
+      ]
     }
   ],
   "skin": [
@@ -271,20 +167,7 @@ const ROUTINE_INSIGHTS = {
           "id": "col",
           "label": "피부 보습에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "저분자콜라겐펩타이드 AG",
-        "criteria": [
-          {
-            "label": "콜라겐을 볼 때",
-            "value": "펩타이드의 종류와 섭취량"
-          },
-          {
-            "label": "연구와 비교할 때",
-            "value": "시험한 원료와 제품 원료의 일치 여부"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "비타민C는 피부를 받치는 콜라겐과 어떤 관계일까요?",
@@ -300,20 +183,7 @@ const ROUTINE_INSIGHTS = {
           "id": "64",
           "label": "피부를 위해 추천하는 성분 조합은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "비타민C",
-        "criteria": [
-          {
-            "label": "살펴볼 성분",
-            "value": "콜라겐 합성에 관여하는 비타민C"
-          },
-          {
-            "label": "함께 비교할 것",
-            "value": "다른 피부 원료와 1일 섭취량"
-          }
-        ]
-      }
+      ]
     }
   ],
   "hair": [
@@ -335,20 +205,7 @@ const ROUTINE_INSIGHTS = {
           "id": "59",
           "label": "모발 관리에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "아누카사과·프로시아니딘",
-        "criteria": [
-          {
-            "label": "살펴볼 원료",
-            "value": "아누카사과 추출물"
-          },
-          {
-            "label": "연구와 비교할 때",
-            "value": "추출물의 종류 · 시험 조건"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "비오틴을 많이 먹으면 머리카락도 더 자랄까요?",
@@ -364,20 +221,7 @@ const ROUTINE_INSIGHTS = {
           "id": "59",
           "label": "모발을 위해 추천하는 성분 조합은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "비오틴",
-        "criteria": [
-          {
-            "label": "비오틴을 볼 때",
-            "value": "결핍 여부와 현재 섭취량"
-          },
-          {
-            "label": "구성을 비교할 때",
-            "value": "비오틴 외 모발 관련 원료"
-          }
-        ]
-      }
+      ]
     }
   ],
   "change": [
@@ -395,20 +239,7 @@ const ROUTINE_INSIGHTS = {
           "id": "rfq",
           "label": "변화하는 시기에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "레드클로버·대두배아의 이소플라본",
-        "criteria": [
-          {
-            "label": "살펴볼 성분",
-            "value": "레드클로버 · 대두배아 이소플라본"
-          },
-          {
-            "label": "비교할 기준",
-            "value": "원료 종류와 이소플라본 함량"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "중년 여성의 변화와 일상 피로는 왜 나눠서 볼까요?",
@@ -428,20 +259,7 @@ const ROUTINE_INSIGHTS = {
           "id": "rfq",
           "label": "이 시기에 추천하는 성분 조합은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "마그네슘·비타민B군",
-        "criteria": [
-          {
-            "label": "변화기 관련 원료",
-            "value": "이소플라본의 종류와 함량"
-          },
-          {
-            "label": "영양 구성을 볼 때",
-            "value": "마그네슘 · 비타민B군의 역할"
-          }
-        ]
-      }
+      ]
     }
   ],
   "sleep": [
@@ -459,20 +277,7 @@ const ROUTINE_INSIGHTS = {
           "id": "54",
           "label": "잠의 리듬을 위해 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "멜라토닌",
-        "criteria": [
-          {
-            "label": "먼저 살펴볼 것",
-            "value": "잠드는 시간과 생활 리듬"
-          },
-          {
-            "label": "성분을 볼 때",
-            "value": "멜라토닌 함량과 섭취 안내"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "잠들기 전 긴장을 푸는 것과 수면 리듬을 맞추는 것은 같을까요?",
@@ -492,20 +297,7 @@ const ROUTINE_INSIGHTS = {
           "id": "54",
           "label": "잠들기 전 루틴에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "락티움",
-        "criteria": [
-          {
-            "label": "리듬 관련 성분",
-            "value": "멜라토닌"
-          },
-          {
-            "label": "긴장 관련 성분",
-            "value": "락티움 · 테아닌의 구성"
-          }
-        ]
-      }
+      ]
     }
   ],
   "throat": [
@@ -523,20 +315,7 @@ const ROUTINE_INSIGHTS = {
           "id": "72",
           "label": "목 관리에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "도라지·모과",
-        "criteria": [
-          {
-            "label": "살펴볼 원료",
-            "value": "도라지와 함께 배합한 원료"
-          },
-          {
-            "label": "연구와 비교할 때",
-            "value": "추출 방식 · 도라지 성분의 차이"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "코·목의 불편함과 알레르기성 염증은 어떻게 이어질까요?",
@@ -552,20 +331,7 @@ const ROUTINE_INSIGHTS = {
           "id": "77",
           "label": "이 고민에 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "삼백초·퀘르세틴·퀘르시트린",
-        "criteria": [
-          {
-            "label": "삼백초를 볼 때",
-            "value": "분말인지 추출물인지 구분"
-          },
-          {
-            "label": "연구와 비교할 때",
-            "value": "시험 원료와 제품 원료의 차이"
-          }
-        ]
-      }
+      ]
     }
   ],
   "vessel": [
@@ -591,20 +357,7 @@ const ROUTINE_INSIGHTS = {
           "id": "75",
           "label": "혈관 관리를 위해 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "코엔자임Q10",
-        "criteria": [
-          {
-            "label": "먼저 정할 기준",
-            "value": "혈압 · 혈당 · 콜레스테롤 중 관심 지표"
-          },
-          {
-            "label": "구성을 비교할 때",
-            "value": "각 지표에 연결된 원료와 함량"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "콜레스테롤은 간에서 만들기도 하고, 장과도 관계있을까요?",
@@ -628,20 +381,7 @@ const ROUTINE_INSIGHTS = {
           "id": "fib",
           "label": "식이섬유로 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "차전자피 식이섬유",
-        "criteria": [
-          {
-            "label": "간의 합성 경로",
-            "value": "홍국 · 모나콜린K"
-          },
-          {
-            "label": "장의 담즙산 경로",
-            "value": "차전자피 식이섬유"
-          }
-        ]
-      }
+      ]
     }
   ],
   "parents": [
@@ -650,7 +390,7 @@ const ROUTINE_INSIGHTS = {
       "answer": "혈압·혈당·콜레스테롤은 서로 다른 관리 항목이라 원료의 역할도 나눠 살펴봐야 해요. 복합 제품에는 홍국·은행잎처럼 복용 중인 약과 함께 확인할 성분도 있습니다. 검진 기록과 약·영양제 목록을 함께 확인하면 원료가 겹치는지도 비교하기 쉬워요.",
       "sources": [
         {
-          "label": "제품 원료·주의사항 표시정보",
+          "label": "더블러드 제품 원료·주의사항 표시정보",
           "url": "https://xn--in2b81owrpjjc.com/product/detail.html?product_no=75"
         }
       ],
@@ -659,20 +399,7 @@ const ROUTINE_INSIGHTS = {
           "id": "75",
           "label": "부모님께 추천하는 성분 조합은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "은행잎추출물",
-        "criteria": [
-          {
-            "label": "부모님과 확인할 것",
-            "value": "검진에서 관리 중인 항목"
-          },
-          {
-            "label": "원료를 비교할 때",
-            "value": "복용 중인 약 · 영양제와의 중복"
-          }
-        ]
-      }
+      ]
     },
     {
       "question": "배변과 콜레스테롤 고민이 같은 식이섬유와 연결될 수 있을까요?",
@@ -692,20 +419,7 @@ const ROUTINE_INSIGHTS = {
           "id": "fib",
           "label": "두 고민을 위해 추천하는 제품은?"
         }
-      ],
-      "selectionGuide": {
-        "ingredient": "차전자피 식이섬유",
-        "criteria": [
-          {
-            "label": "두 고민에 연결된 원료",
-            "value": "차전자피 식이섬유"
-          },
-          {
-            "label": "섭취 안내에서",
-            "value": "식이섬유의 양과 충분한 물"
-          }
-        ]
-      }
+      ]
     }
   ]
 };
