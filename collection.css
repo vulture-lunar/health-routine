@@ -210,3 +210,49 @@ dialog.sheet { background:var(--color-paper); border:1px solid var(--color-colle
 .insight-product-link:disabled { opacity:.5; cursor:not-allowed; }
 .insight-sources { margin-top:12px; }
 .insight-answer .insight-sources a { display:block; margin-top:0; padding-block:3px; }
+
+/* Hallmark · component: ingredient selection disclosure · existing navy/gold tokens
+ * pre-emit critique: P5 H4 E4 S5 R5 V4 · native disclosure; no network-dependent states
+ */
+/* Isolate the three disclosure levels so each has its own open indicator. */
+.insight-item > summary::after { content:'+'; }
+.insight-item[open] > summary::after { content:'−'; }
+.selection-guide { margin-top:20px; border:1px solid var(--color-collection-rule); border-radius:12px; background:var(--color-paper); }
+.insight-item .selection-guide > summary { justify-content:flex-start; gap:12px; min-height:88px; padding:12px; border-radius:11px; }
+.selection-guide > summary > img { flex:none; width:64px; height:64px; object-fit:contain; }
+.selection-guide-title { min-width:0; }
+.selection-guide-title small { display:block; margin-bottom:4px; color:var(--color-muted); font-size:10px; font-weight:400; line-height:1.5; }
+.selection-guide-title strong { display:block; color:var(--color-gold-light); font-size:14px; font-weight:600; white-space:nowrap; }
+.insight-item .selection-guide > summary::after { content:'+'; margin-left:auto; color:var(--color-gold); }
+.insight-item .selection-guide[open] > summary::after { content:'−'; }
+.selection-guide[open] > summary { border-radius:11px 11px 0 0; }
+.selection-guide-body { padding:0 14px 14px; }
+.selection-criteria { display:grid; gap:0; margin:0; border-top:1px solid var(--color-collection-rule-soft); }
+.selection-criteria > div { position:relative; padding:14px 0 14px 15px; border-bottom:1px solid var(--color-collection-rule-soft); }
+.selection-criteria > div::before { content:''; position:absolute; top:19px; left:0; width:4px; height:14px; border-radius:2px; background:var(--color-gold-deep); }
+.selection-criteria dt { color:var(--color-muted); font-size:11px; line-height:1.7; }
+.selection-criteria dd { margin:5px 0 0; color:var(--color-ink); font-size:13px; line-height:1.8; overflow-wrap:anywhere; }
+.insight-item .selection-products > summary { justify-content:space-between; gap:8px; min-height:44px; margin-top:12px; padding:8px 0; color:var(--color-gold-light); font-size:12px; font-weight:500; white-space:nowrap; }
+.insight-item .selection-products > summary::after { content:'↓'; font-size:17px; color:var(--color-gold); }
+.insight-item .selection-products[open] > summary::after { content:'↑'; }
+.selection-product-list { display:grid; gap:12px; padding-top:8px; }
+.selection-product { display:grid; grid-template-columns:64px minmax(0,1fr); align-items:center; gap:12px; padding:12px 0; border-top:1px solid var(--color-collection-rule-soft); }
+.selection-product > img { width:64px; height:64px; object-fit:contain; border-radius:8px; background:var(--color-ink); }
+.selection-product h5 { margin:0; color:var(--color-ink); font-family:var(--font-body); font-size:13px; font-weight:600; line-height:1.7; }
+.selection-product-open { display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:6px 0; border:0; border-radius:4px; background:none; color:var(--color-gold-light); font:inherit; font-size:11px; white-space:nowrap; cursor:pointer; }
+.selection-product-open:focus-visible { outline:2px solid var(--color-gold-light); outline-offset:3px; }
+.selection-product-open:active,.selection-guide summary:active { opacity:.75; }
+.selection-product-open:disabled { opacity:.5; cursor:not-allowed; }
+@media(hover:hover) {
+ .selection-guide > summary:hover { background:var(--color-paper-2); }
+ .selection-products > summary:hover,.selection-product-open:hover { color:var(--color-ink); }
+}
+@media(max-width:23rem) {
+ .insight-item .selection-guide > summary { gap:8px; padding:10px; }
+ .selection-guide > summary > img { width:48px; height:56px; }
+ .selection-guide-title strong { font-size:13px; }
+ .selection-guide-body { padding-inline:10px; }
+ .selection-product { grid-template-columns:52px minmax(0,1fr); gap:8px; }
+ .selection-product > img { width:52px; height:58px; }
+ .insight-item .selection-products > summary { font-size:11px; }
+}

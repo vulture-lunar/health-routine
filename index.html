@@ -217,7 +217,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="tokens.css?v=collection-20261125-1">
 <link rel="stylesheet" href="theme.css?v=original-restored-20261124-1">
-<link rel="stylesheet" href="collection.css?v=recommendation-links-20261125-1">
+<link rel="stylesheet" href="collection.css?v=selection-guide-20261125-1">
 </head>
 <body>
 
@@ -301,7 +301,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <dialog class="sheet" id="sheet" aria-labelledby="sheet-title"></dialog>
 <dialog class="sheet product-sheet" id="product-sheet" aria-labelledby="product-guide-title"></dialog>
 
-<script src="concern-insights.js?v=recommendation-links-20261125-1"></script>
+<script src="concern-insights.js?v=selection-guide-20261125-1"></script>
 <script src="shorts-data.js"></script>
 <script src="product-guides.js?v=point-aligned-20261125-1"></script>
 <script src="ingredient-art.js?v=20261125-1"></script>
@@ -564,13 +564,32 @@ function renderShorts(ids) {
   </section>`;
 }
 
+function renderSelectionGuide(item, products) {
+  const guide = item.selectionGuide;
+  if (!guide || !products.length) return "";
+  const art = INGREDIENT_ART[guide.ingredient];
+  return `<details class="selection-guide">
+    <summary>${art ? `<img src="${esc(art)}" alt="" width="64" height="64" loading="lazy">` : ""}<span class="selection-guide-title"><small>내게 맞는 선택</small><strong>성분 선택 가이드</strong></span></summary>
+    <div class="selection-guide-body">
+      <dl class="selection-criteria">${guide.criteria.map(criterion => `<div><dt>${esc(criterion.label)}</dt><dd>${esc(criterion.value)}</dd></div>`).join("")}</dl>
+      <details class="selection-products">
+        <summary>이 기준으로 제품 살펴보기</summary>
+        <div class="selection-product-list">${products.map(product => {
+          const p = P[product.id];
+          return `<article class="selection-product">${p.img ? `<img src="${esc(p.img)}" alt="${esc(p.name)} 제품 사진" width="72" height="72" loading="lazy">` : ""}<div><h5>${esc(p.name)}</h5><button type="button" class="selection-product-open" data-product-id="${esc(String(product.id))}" aria-haspopup="dialog" aria-label="${esc(p.name)} 성분 살펴보기">성분 살펴보기 <span aria-hidden="true">↗</span></button></div></article>`;
+        }).join("")}</div>
+      </details>
+    </div>
+  </details>`;
+}
+
 function renderInsights(c) {
   const allowedProducts = new Set(c.picks.map(([id]) => String(id)));
   return `<div class="insight-list">${c.insights.map(item => {
     const sources = item.sources || (item.source ? [item.source] : []);
     const products = (item.relatedProducts || []).filter(product => allowedProducts.has(String(product.id)) && P[product.id]);
     return `<details class="insight-item"><summary>${esc(item.question)}</summary><div class="insight-answer"><p>${esc(item.answer)}</p>
-      ${products.length ? `<div class="insight-product-links">${products.map(product => `<button type="button" class="insight-product-link" data-product-id="${esc(String(product.id))}" aria-haspopup="dialog">${esc(product.label)}<span aria-hidden="true">↗</span></button>`).join("")}</div>` : ""}
+      ${renderSelectionGuide(item, products)}
       <div class="insight-sources">${sources.map(source => `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">참고 · ${esc(source.label)} ↗</a>`).join("")}</div>
     </div></details>`;
   }).join("")}</div>`;
@@ -590,12 +609,10 @@ function openNote(id) {
       </div>
       <div class="memo">
         <b>알고 나면 달라지는 건강 이야기</b>
-        <p class="insight-intro">질문으로 원리를 알아보고, 관련 성분도 이어서 살펴보세요.</p>
+        <p class="insight-intro">궁금한 원리를 알아보고, 나에게 맞는 선택 기준도 살펴보세요.</p>
         ${renderInsights(c)}
       </div>
       ${renderShorts([c.id])}
-      <p class="picks-label">이 고민에 추천하는 제품</p>
-      <div class="picks">${c.picks.map(([no, why]) => prodCard(no, why)).join("")}</div>
       <p class="sheet-foot">일반적인 생활 정보이며, 사람마다 느끼는 정도가 다를 수 있어요. 복용 중인 약이 있다면 전문가와 먼저 상담해 주세요.</p>
     </div>`;
   showSheet(c.id);
@@ -612,13 +629,6 @@ function showSheet(hash) {
 function openMix(ids) {
   const cs = C.filter(c => ids.includes(c.id));
   if (cs.length < 2) { if (cs[0]) openNote(cs[0].id); return; }
-  const map = new Map();
-  cs.forEach(c => c.picks.forEach(([n, why]) => {
-    const k = String(n);
-    if (!map.has(k)) map.set(k, { no: k, why, tags: [] });
-    map.get(k).tags.push(c.tag);
-  }));
-  const prods = [...map.values()].sort((a, b) => b.tags.length - a.tags.length);
   sheet.className = "sheet coral";
   sheet.innerHTML = `
     <div class="sheet-scroll">
@@ -635,8 +645,6 @@ function openMix(ids) {
           ${renderInsights(c)}
         </div>`).join("")}</div>
       ${renderShorts(cs.map(c => c.id))}
-      <p class="picks-label">고른 고민에 추천하는 제품 ${prods.length}개</p>
-      <div class="picks">${prods.map(p => prodCard(p.no, p.why, p.tags)).join("")}</div>
       <p class="sheet-foot">일반적인 생활 정보이며, 사람마다 느끼는 정도가 다를 수 있어요. 복용 중인 약이 있다면 전문가와 먼저 상담해 주세요.</p>
     </div>`;
   showSheet("mix-" + cs.map(c => c.id).join("-"));
