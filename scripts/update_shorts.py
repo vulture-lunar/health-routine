@@ -4,6 +4,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 import json
+import hashlib
 from pathlib import Path
 import re
 import time
@@ -145,17 +146,28 @@ def refresh(existing, now, feed_xml=None, lookup=watch_views):
     return result, report
 
 
+def write_snapshot(data_path, index_path, result):
+    output = '// Automatically refreshed public YouTube Shorts metadata; curated topics are preserved.\n'
+    output += 'const HEALTH_SHORTS = ' + json.dumps(result, ensure_ascii=False, indent=2) + ';\n'
+    version = hashlib.sha256(output.encode('utf-8')).hexdigest()[:12]
+    index, replacements = re.subn(r'src="shorts-data\.js(?:\?[^"]*)?"',
+                                  f'src="shorts-data.js?v={version}"', index_path.read_text(encoding='utf-8'))
+    if replacements != 1:
+        raise ValueError('Expected exactly one Shorts data script; refusing to publish a stale page.')
+    temporary = data_path.with_suffix('.js.tmp')
+    temporary.write_text(output, encoding='utf-8')
+    temporary.replace(data_path)
+    index_path.write_text(index, encoding='utf-8')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data', type=Path, default=DATA)
+    parser.add_argument('--index', type=Path, default=ROOT / 'index.html')
     args = parser.parse_args()
     result, report = refresh(load_data(args.data), datetime.now(timezone.utc))
-    output = '// Automatically refreshed public YouTube Shorts metadata; curated topics are preserved.\n'
-    output += 'const HEALTH_SHORTS = ' + json.dumps(result, ensure_ascii=False, indent=2) + ';\n'
-    # Write only after a valid feed was parsed; an interrupted fetch never empties the live list.
-    temporary = args.data.with_suffix('.js.tmp')
-    temporary.write_text(output, encoding='utf-8')
-    temporary.replace(args.data)
+    # Validate both outputs before writing; failures prevent the workflow commit.
+    write_snapshot(args.data, args.index, result)
     print(json.dumps(report, ensure_ascii=False, indent=2))
     for warning in report['warnings']:
         print('::warning::' + warning)

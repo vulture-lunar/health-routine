@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 import importlib.util
 from pathlib import Path
 import unittest
+import tempfile
 
 SPEC = importlib.util.spec_from_file_location('update_shorts', Path(__file__).resolve().parents[1] / 'scripts/update_shorts.py')
 u = importlib.util.module_from_spec(SPEC)
@@ -51,6 +52,24 @@ class ShortsUpdateTests(unittest.TestCase):
         for xml in [feed(channel='other-channel'), feed(views='bad'), feed(views='-1'), '<feed/>', 'invalid xml']:
             with self.subTest(xml=xml[:80]), self.assertRaises((ValueError, u.ET.ParseError)):
                 u.refresh(self.existing, NOW, xml, lambda *_: 0)
+
+    def test_snapshot_versions_browser_data_and_validates_before_writing(self):
+        with tempfile.TemporaryDirectory() as folder:
+            data_path, index_path = Path(folder) / 'shorts-data.js', Path(folder) / 'index.html'
+            data_path.write_text('previous')
+            index_path.write_text('<script src="shorts-data.js"></script>')
+            u.write_snapshot(data_path, index_path, self.existing)
+            first = index_path.read_text()
+            self.assertRegex(first, r'shorts-data\.js\?v=[0-9a-f]{12}')
+            updated = copy.deepcopy(self.existing)
+            updated['videos'][0]['views'] += 1
+            u.write_snapshot(data_path, index_path, updated)
+            self.assertNotEqual(first, index_path.read_text())
+            data_before = data_path.read_text()
+            index_path.write_text('<html>missing script</html>')
+            with self.assertRaises(ValueError):
+                u.write_snapshot(data_path, index_path, self.existing)
+            self.assertEqual(data_before, data_path.read_text())
 
     def test_long_video_and_future_publication_are_not_shorts(self):
         self.assertEqual(u.parse_feed(feed(short=False), CHANNEL, NOW), [])
