@@ -78,8 +78,9 @@ class ShortsUpdateTests(unittest.TestCase):
     def test_ambiguous_new_videos_do_not_get_unrelated_default_topic(self):
         self.assertEqual(u.classify('새로운 이야기', '설명에 혈당, 피부, 수면을 모두 적어도'), [])
         self.assertEqual(u.classify('새로운 이야기', '#수면 #백년탐구생활'), ['sleep'])
-        self.assertEqual(u.classify('지금 줄자로 재 보세요, 사망 위험 가장 낮았던 허리', ''), ['light'])
+        self.assertEqual(u.classify('지금 줄자로 재 보세요, 사망 위험 가장 낮았던 허리', '#허리둘레 #뱃살'), ['light'])
         self.assertEqual(u.classify('외로움이 오래가면, 치매가 2명 중 1명꼴', ''), ['parents'])
+        self.assertEqual(u.classify('허리 통증 줄이는 법', '#허리통증'), [])
 
 
 if __name__ == '__main__':

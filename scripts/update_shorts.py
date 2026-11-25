@@ -19,7 +19,7 @@ NS = {'a': 'http://www.w3.org/2005/Atom', 'y': 'http://www.youtube.com/xml/schem
 # Curated IDs retain their editorial assignments. These rules apply to new titles only.
 RULES = {
     'meal': r'혈당|식후|식사량|식욕|폭식|과식|야식|군것질|간식|식전|당뇨',
-    'light': r'다이어트|체지방|복부비만|내장지방|뱃살|허리둘레|허리|체중|감량|붓기|부종',
+    'light': r'다이어트|체지방|복부비만|내장지방|뱃살|허리둘레|체중|감량|붓기|부종',
     'gut': r'위장|위염|위산|속쓰림|소화|더부룩|양배추|위\s?점막|위\s?속',
     'bowel': r'변비|배변|대변|화장실|차전자피|장\s?건강|장내|유산균|식이섬유|이눌린',
     'skin': r'피부|콜라겐|히알루론산|주름|기미|글루타치온|레티놀',
