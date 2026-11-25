@@ -12,7 +12,7 @@ const HEALTH_SHORTS = {
         "light"
       ],
       "thumbnail": "https://i.ytimg.com/vi/wN0epqkFI_o/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "nAyZlysEWPY",
@@ -23,7 +23,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/nAyZlysEWPY/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "7CCALN68pXA",
@@ -34,7 +34,7 @@ const HEALTH_SHORTS = {
         "gut"
       ],
       "thumbnail": "https://i.ytimg.com/vi/7CCALN68pXA/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "DI8eC2hgcH8",
@@ -45,7 +45,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/DI8eC2hgcH8/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "VPYqyIq6b5g",
@@ -56,7 +56,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/VPYqyIq6b5g/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "NmUAfkcKdNI",
@@ -67,7 +67,7 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/NmUAfkcKdNI/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "sDq9SVSWnOY",
@@ -78,7 +78,7 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/sDq9SVSWnOY/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "6_QSTHthS2c",
@@ -89,7 +89,7 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/6_QSTHthS2c/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "GcZLfxpS0-0",
@@ -100,7 +100,7 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/GcZLfxpS0-0/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "kdQxAZS0XU8",
@@ -111,7 +111,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/kdQxAZS0XU8/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "SOH3DgQ3yhs",
@@ -123,7 +123,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/SOH3DgQ3yhs/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "gtfw18tVAHc",
@@ -134,7 +134,7 @@ const HEALTH_SHORTS = {
         "meal"
       ],
       "thumbnail": "https://i.ytimg.com/vi/gtfw18tVAHc/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "SJ0P4qfX23I",
@@ -145,7 +145,7 @@ const HEALTH_SHORTS = {
         "hair"
       ],
       "thumbnail": "https://i.ytimg.com/vi/SJ0P4qfX23I/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "5fpTWyORhYY",
@@ -154,7 +154,7 @@ const HEALTH_SHORTS = {
       "views": 6,
       "topics": [],
       "thumbnail": "https://i.ytimg.com/vi/5fpTWyORhYY/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "1eBholT8ARI",
@@ -165,7 +165,7 @@ const HEALTH_SHORTS = {
         "meal"
       ],
       "thumbnail": "https://i.ytimg.com/vi/1eBholT8ARI/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-25T01:54:52+00:00"
+      "viewsCheckedAt": "2026-11-25T01:57:08+00:00"
     },
     {
       "id": "thu8TVrPafw",
@@ -501,5 +501,5 @@ const HEALTH_SHORTS = {
       "viewsCheckedAt": "2026-11-25T01:53:11+00:00"
     }
   ],
-  "updatedAt": "2026-11-25T01:54:52+00:00"
+  "updatedAt": "2026-11-25T01:57:08+00:00"
 };
