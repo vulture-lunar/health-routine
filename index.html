@@ -229,7 +229,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
     </a>
     <details class="channel-menu">
       <summary aria-label="메뉴 열기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary>
-      <nav aria-label="페이지 메뉴"><a href="#top">고민 선택하기</a><a href="#routines">건강 정보 보기</a><a href="#products">루틴 제품 보기</a><a href="#youtube">유튜브 채널</a></nav>
+      <nav aria-label="페이지 메뉴"><a href="#top">고민 선택하기</a><a href="#routines">건강 정보 보기</a><a href="#youtube">유튜브 채널</a></nav>
     </details>
   </div>
 </header>
@@ -273,26 +273,6 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
       <div class="archive-heading"><p>DAILY HEALTH ARCHIVE</p><h2>오늘의 몸을 살피는 작은 습관</h2></div>
       <div class="filters" id="filters" role="group" aria-label="카테고리"></div>
       <div class="card-grid" id="grid"></div>
-    </div>
-  </section>
-
-  <section class="products" id="products" aria-label="추천 제품">
-    <div class="inner">
-      <p class="section-kicker products-kicker">ROUTINE COLLECTION</p><h2>내 루틴에 더하는 제품</h2>
-      <p class="products-intro">제품을 눌러 원료, 섭취 방법과 주의사항을 먼저 살펴보세요.</p>
-      <div class="product-carousel" role="region" aria-label="루틴 제품 넘겨보기" aria-roledescription="캐러셀">
-        <div class="prod-grid" id="prod-grid" tabindex="0" role="group" aria-label="제품 목록, 좌우 방향키로 넘겨보세요"></div>
-        <div class="product-carousel-toolbar">
-          <p class="product-swipe-hint">4개씩 넘겨 살펴보세요</p>
-          <div class="product-carousel-controls">
-            <span id="product-position" aria-live="polite" aria-atomic="true"></span>
-            <button type="button" id="product-prev" aria-label="이전 제품" aria-controls="prod-grid" disabled>←</button>
-            <button type="button" id="product-next" aria-label="다음 제품" aria-controls="prod-grid">→</button>
-          </div>
-        </div>
-      </div>
-      <p class="hero-note"><b>✓</b>공식 판매처에서 파는 제품만 소개해요</p>
-      <p class="page-note">일반적인 생활 정보이며, 사람마다 느끼는 정도가 다를 수 있어요. 복용 중인 약이 있다면 전문가와 먼저 상담해 주세요.</p>
     </div>
   </section>
 
@@ -734,84 +714,7 @@ function routeHash() {
 }
 window.addEventListener("hashchange", routeHash);
 
-const ORDER = [];
-C.forEach(c => c.picks.forEach(([n]) => { if (!ORDER.includes(String(n))) ORDER.push(String(n)); }));
 const tagsOf = no => C.filter(c => c.picks.some(([n]) => String(n) === no)).map(c => c.tag).join(" · ");
-const productPages = Array.from({length:Math.ceil(ORDER.length / 4)}, (_, i) => ORDER.slice(i * 4, i * 4 + 4));
-document.getElementById("prod-grid").innerHTML = productPages.map((page, index) => `
-  <div class="product-page" role="group" aria-label="제품 ${index + 1}페이지">
-    ${page.map(no => { const p = P[no]; const guide = PRODUCT_GUIDES[no]; return `<button type="button" class="prod-tile" data-product-id="${no}" aria-haspopup="dialog" aria-label="${esc(p.name)} 제품 정보 보기">
-      ${p.img ? `<img src="${p.img}" alt="" loading="lazy" draggable="false">` : `<span class="product-wordmark" aria-hidden="true">제품 이미지 준비 중</span>`}
-      <span class="body"><span class="n">${esc(p.name)}</span><span class="t">${esc(guide ? guide.headline : tagsOf(no))}</span><span class="product-open-text">제품 정보 보기 ↗</span></span>
-    </button>`; }).join("")}
-  </div>`).join("");
-
-const productTrack = document.getElementById("prod-grid");
-const productPrev = document.getElementById("product-prev");
-const productNext = document.getElementById("product-next");
-const productStep = () => productTrack.querySelector(".product-page").getBoundingClientRect().width + parseFloat(getComputedStyle(productTrack).gap);
-const currentProductPage = () => Math.max(0, Math.min(productPages.length - 1, Math.round(productTrack.scrollLeft / productStep())));
-function updateProductPosition() {
-  document.getElementById("product-position").textContent = `${currentProductPage() + 1} / ${productPages.length}`;
-  productPrev.disabled = productTrack.scrollLeft <= 2;
-  productNext.disabled = productTrack.scrollLeft >= productTrack.scrollWidth - productTrack.clientWidth - 2;
-}
-function goToProductPage(index) {
-  const page = Math.max(0, Math.min(productPages.length - 1, index));
-  productTrack.scrollTo({left:page * productStep(), behavior:matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"});
-}
-productPrev.addEventListener("click", () => goToProductPage(currentProductPage() - 1));
-productNext.addEventListener("click", () => goToProductPage(currentProductPage() + 1));
-productTrack.addEventListener("scroll", updateProductPosition, {passive:true});
-productTrack.addEventListener("keydown", e => {
-  if (e.target !== productTrack) return;
-  if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); goToProductPage(currentProductPage() + (e.key === "ArrowRight" ? 1 : -1)); }
-});
-let productDrag = null;
-let suppressProductClickUntil = 0;
-productTrack.addEventListener("dragstart", e => e.preventDefault());
-productTrack.addEventListener("pointerdown", e => {
-  if (e.pointerType === "touch" || e.button !== 0) return;
-  productDrag = {id:e.pointerId, x:e.clientX, left:productTrack.scrollLeft, page:currentProductPage(), moved:false};
-});
-productTrack.addEventListener("pointermove", e => {
-  if (!productDrag || e.pointerId !== productDrag.id) return;
-  const delta = e.clientX - productDrag.x;
-  if (!productDrag.moved && Math.abs(delta) > 8) {
-    productDrag.moved = true;
-    productTrack.classList.add("is-dragging");
-    productTrack.setPointerCapture(e.pointerId);
-  }
-  if (productDrag.moved) { e.preventDefault(); productTrack.scrollLeft = productDrag.left - delta; }
-});
-function endProductDrag(e) {
-  if (!productDrag || e.pointerId !== productDrag.id) return;
-  const drag = productDrag;
-  const delta = productTrack.scrollLeft - drag.left;
-  productDrag = null;
-  productTrack.classList.remove("is-dragging");
-  if (drag.moved) {
-    suppressProductClickUntil = performance.now() + 400;
-    if (productTrack.hasPointerCapture(e.pointerId)) productTrack.releasePointerCapture(e.pointerId);
-    goToProductPage(drag.page + (Math.abs(delta) > 40 ? Math.sign(delta) : 0));
-  }
-}
-productTrack.addEventListener("pointerup", endProductDrag);
-productTrack.addEventListener("pointercancel", endProductDrag);
-productTrack.addEventListener("pointerleave", e => { if (productDrag && !productDrag.moved) productDrag = null; });
-productTrack.addEventListener("click", e => {
-  if (performance.now() < suppressProductClickUntil) { e.preventDefault(); e.stopPropagation(); }
-}, true);
-let productWidth = productTrack.clientWidth;
-new ResizeObserver(() => {
-  if (productWidth !== productTrack.clientWidth) {
-    const oldPage = Number(document.getElementById("product-position").textContent.split("/")[0]) - 1 || 0;
-    productWidth = productTrack.clientWidth;
-    productTrack.scrollTo({left:oldPage * productStep(), behavior:"instant"});
-  }
-  updateProductPosition();
-}).observe(productTrack);
-updateProductPosition();
 
 // Search only the existing concern archive; input is never sent to a server.
 const queryEl = document.getElementById("concern-query");
