@@ -488,7 +488,7 @@ function openProduct(id) {
   const list = values => `<ul class="guide-list">${values.map(value => `<li>${esc(value)}</li>`).join("")}</ul>`;
   productSheet.innerHTML = `<div class="sheet-scroll">
     <div class="sheet-head product-guide-head">
-      <div class="product-sheet-brand"><img src="assets/channel-emblem.jpg" alt="" width="32" height="32"><span>백년 탐구생활</span></div>
+      <div class="product-sheet-brand"><img src="assets/channel-emblem.jpg" alt="" width="32" height="32"><span>백년 탐구생활's PICK</span></div>
       <button type="button" class="sheet-close" id="product-close" aria-label="제품 정보 닫기">×</button>
       <span class="label">${esc(guide.tag)}</span>
       <div class="product-guide-identity">${p.img ? `<img src="${p.img}" alt="${esc(p.name)} 제품 사진" width="84" height="84">` : ""}<div><span class="product-kind">${esc(guide.kind)}</span><h3 id="product-guide-title">${esc(p.name)}</h3></div></div>
