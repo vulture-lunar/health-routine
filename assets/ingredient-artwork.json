@@ -1,0 +1,319 @@
+{
+  "date": "2026-11-25",
+  "tool": "built-in image_gen.imagegen",
+  "style": "antique gold engraved illustrations, transparent background",
+  "assets": [
+    {
+      "key": "blood-orange",
+      "label": "모로오렌지",
+      "path": "assets/ingredient-blood-orange.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: One whole blood orange and one cut half with clearly segmented deep citrus flesh, a small citrus leaf. Gold engraving only; do not add unrelated fruits.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 134984
+    },
+    {
+      "key": "milk-protein",
+      "label": "우유 유래 단백질",
+      "path": "assets/ingredient-milk-protein.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A stylized droplet of milk next to a short folded ribbon-like protein chain and three tiny peptide beads. Clean educational protein concept, not a specific chemical structure. No glass of milk, no bottle, no lettering.",
+      "width": 640,
+      "height": 606,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 74328
+    },
+    {
+      "key": "banaba",
+      "label": "바나바잎",
+      "path": "assets/ingredient-banaba.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A small branch of banaba (Lagerstroemia speciosa) with two or three broad oval leaves with visible lateral veins. No flower bouquet, no ginkgo fan leaves, no tea cup.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 114950
+    },
+    {
+      "key": "amomum",
+      "label": "양춘사",
+      "path": "assets/ingredient-amomum.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A botanical cluster of Amomum villosum fruits, one oval ridged dried seed pod opened to reveal small grouped seeds, a narrow lanceolate leaf. Clearly a botanical food ingredient, not an orange or a medicine bottle.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 138714
+    },
+    {
+      "key": "annurca-apple",
+      "label": "아누카사과",
+      "path": "assets/ingredient-annurca-apple.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A whole small round apple with stem and leaf, with one neatly cut apple half showing seed pockets. A natural-history fruit etching, no other fruits.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 120942
+    },
+    {
+      "key": "micronutrients",
+      "label": "비타민·미네랄",
+      "path": "assets/ingredient-micronutrients.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A tiny unbranded laboratory glass vial with a few small crystalline nutrient grains beside it. Elegant simplified nutrient concept illustration, not a medication package or product photograph. No lettering or chemical symbols.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 74508
+    },
+    {
+      "key": "yeast",
+      "label": "맥주건조효모",
+      "path": "assets/ingredient-yeast.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A small cluster of oval yeast cells with visible budding, and a small mound of dried yeast granules below. An elegant natural-history microscopic concept engraving, no bread, no beer glass, no exact microscopy claim.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 127234
+    },
+    {
+      "key": "glutathione",
+      "label": "글루타치온",
+      "path": "assets/ingredient-glutathione.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A short chain of THREE clearly connected softly faceted amino-acid-like beads forming a small graceful curved tripeptide. A simple conceptual educational depiction, not a literal chemical structural formula. No chemical letters, no cellular shield or magical symbols.",
+      "width": 640,
+      "height": 585,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 49108
+    },
+    {
+      "key": "collagen",
+      "label": "콜라겐·히알루론산",
+      "path": "assets/ingredient-collagen.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A small gracefully twisted bundle of three thin collagen fiber strands beside a clean water droplet. Elegant connective-tissue and water concept, no face or skin portrait, no exaggerated anti-aging imagery, no chemical letters.",
+      "width": 640,
+      "height": 602,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 76982
+    },
+    {
+      "key": "liposome",
+      "label": "리포좀",
+      "path": "assets/ingredient-liposome.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A small isolated cutaway spherical liposome vesicle with a visibly DOUBLE lipid membrane of tiny bead heads and short paired tails, with a few small particles inside. Refined educational gold engraving, not a planet or an atom, no background.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 134296
+    },
+    {
+      "key": "bellflower-quince",
+      "label": "도라지·모과",
+      "path": "assets/ingredient-bellflower-quince.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A short bellflower root with its tapering branches next to a whole quince fruit and one small cut quince wedge with seeds. A compact botanical still life of these two food ingredients, no flower bouquet.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 136646
+    },
+    {
+      "key": "lily-tangerine",
+      "label": "맥문동·진피",
+      "path": "assets/ingredient-lily-tangerine.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A small grouping of slender spindle-shaped Ophiopogon japonicus tuberous roots next to a curl of dried tangerine peel and a tiny citrus segment. Clearly dried botanical food materials, no lilies or unrelated flowers.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 85732
+    },
+    {
+      "key": "chicory-fiber",
+      "label": "치커리식이섬유",
+      "path": "assets/ingredient-chicory-fiber.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A cut chicory root with one slender leafy sprig, a small mound of fine dietary-fiber powder and a few grain husks. Compact natural-history fiber ingredient illustration, gold engraving only, no labels.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 136560
+    },
+    {
+      "key": "peony-licorice-ginger",
+      "label": "작약·감초·생강",
+      "path": "assets/ingredient-peony-licorice-ginger.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A compact grouping of three botanical food materials: peony root slices, a small licorice root stick with a cut cross-section, and a recognizable knobbly ginger rhizome. No flower bouquet, no unrelated medicine bottle.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 100016
+    },
+    {
+      "key": "coq10",
+      "label": "코엔자임Q10",
+      "path": "assets/ingredient-coq10.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A small mitochondrion cutaway with inner folded cristae and three tiny connected carrier particles beside it. A clearly conceptual educational illustration of cellular energy transport, engraved gold natural-history style, no lightning bolt, no lettering or numeric formula.",
+      "width": 640,
+      "height": 604,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 91724
+    },
+    {
+      "key": "red-yeast-rice",
+      "label": "홍국",
+      "path": "assets/ingredient-red-yeast-rice.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A compact small heap of fermented rice grains, with two enlarged individual ridged rice grains in the foreground. Clearly rice as a fermented food ingredient, not wheat or seeds of another plant. Antique gold only, no red coloring, no bowl or text.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 110922
+    },
+    {
+      "key": "green-tea",
+      "label": "녹차·테아닌",
+      "path": "assets/ingredient-green-tea.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A small tea sprig of two leaves and one bud, beside a few tiny linked amino-acid-like beads. Primarily recognizable tea leaves with a subtle educational plant-compound concept. No teacup, no chemical formula.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 75962
+    },
+    {
+      "key": "ginkgo",
+      "label": "은행잎",
+      "path": "assets/ingredient-ginkgo.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: Two unmistakable fan-shaped GINKGO BILOBA leaves with their fine radiating veins and slender stems. One slightly overlapping the other. No seeds, no medicine packaging, no ordinary oval leaves.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 109038
+    },
+    {
+      "key": "saururus",
+      "label": "삼백초",
+      "path": "assets/ingredient-saururus.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A slender Saururus chinensis botanical sprig with broad heart-shaped leaves and one thin curved spike of tiny flowers. A restrained small natural-history herb etching, not a tea cup or an unrelated flower bouquet.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 94212
+    },
+    {
+      "key": "bellflower-ginseng",
+      "label": "도라지·홍삼",
+      "path": "assets/ingredient-bellflower-ginseng.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A small tapering bellflower root beside a distinct branching ginseng root with its fine rootlets. Two different botanical food roots in a compact gold engraving. No human figure, no mythical symbols.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 185538
+    },
+    {
+      "key": "carolean",
+      "label": "Carolean 원료",
+      "path": "assets/ingredient-carolean.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A carob pod with a few small seeds next to a small prickly-pear cactus paddle and a modest translucent gel droplet. A botanical food-fiber blend concept, not a claim about a specific commercial product. No text or logo.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 127170
+    },
+    {
+      "key": "red-clover-soy",
+      "label": "레드클로버·대두배아",
+      "path": "assets/ingredient-red-clover-soy.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A delicate red-clover sprig with its three leaflets and one round flower head next to a split soybean pod showing two soybeans. Antique gold monochrome botanical engraving, no red or green coloring.",
+      "width": 640,
+      "height": 602,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 121894
+    },
+    {
+      "key": "psyllium",
+      "label": "차전자피",
+      "path": "assets/ingredient-psyllium.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: A small heap of delicate pale psyllium husks beside a few smooth oval seeds and a slender Plantago ovata seed spike. Make the thin husks and plant spike recognizable, no rice bowl, no wheat stalk.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 121468
+    },
+    {
+      "key": "water-gel",
+      "label": "수분·점성 젤",
+      "path": "assets/ingredient-water-gel.webp",
+      "prompt": "Use case: scientific-educational illustration, final web UI ingredient thumbnail. Single isolated subject, TRANSPARENT BACKGROUND. Match a premium Korean navy-and-antique-gold health education website: hand-engraved botanical/natural-history copperplate etching, very fine antique GOLD #dfbb72 linework, restrained warm ivory highlights, detailed crosshatching, elegant matte engraved rendering, not photorealistic. Subject centered with generous transparent margin, roughly square composition, clearly identifiable at 108px wide. Gold only, no green or multicolor, no black rectangle, no background, no glow, no diffuse halo, no cast shadow, no circles or frames, no text or letters, no labels, no arrows, no UI, no fake medicinal claims. Any molecular or cellular structure is a clearly conceptual illustration, not an exact chemical formula or experimental result. Primary subject: One graceful transparent water droplet meeting a soft rounded viscous gel form with a few tiny fiber strands suspended inside. Clearly a simple educational water-retaining dietary-fiber concept, not a glass of beverage or a chemical formula.",
+      "width": 640,
+      "height": 640,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 91278
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-25",
+  "scope": "Ingredient illustration extension of approved Visual Collection design",
+  "products": 13,
+  "descriptionPanels": 37,
+  "namedTopics": 35,
+  "newIllustrations": 24,
+  "reusedIllustrations": 2,
+  "checks": {
+    "coverage": "37 of 37 notes have an illustration",
+    "allAssetsDecode": "26 of 26 passed",
+    "viewportWidths": [
+      320,
+      375,
+      414,
+      768
+    ],
+    "panelOverflow": false,
+    "whatWhyHowLabels": "present in all notes",
+    "all24IllustrationsReviewedOnNavyBackground": true,
+    "representativeScreens": [
+      "Moro orange explanation",
+      "Red yeast rice and green tea explanations"
+    ],
+    "productDescriptionsCautionsAndSources": "unchanged",
+    "designStylesAndVideoLinks": "unchanged",
+    "scripts": "compile",
+    "gitDiffCheck": "passed"
+  }
+}
