@@ -39,3 +39,12 @@
   --font: var(--font-body);
   color-scheme: dark;
 }
+
+/* Approved Visual Collection proposal (04), November 2026. */
+:root {
+  --color-collection-surface: oklch(22% .035 245);
+  --color-collection-rule: oklch(44% .025 245);
+  --color-collection-rule-soft: oklch(31% .028 245);
+  --collection-card-radius: 12px;
+  --collection-card-gap: 12px;
+}

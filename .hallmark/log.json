@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-11-25",
+    "macrostructure": "Visual Collection",
+    "theme": "user-approved proposal 04, navy and gold",
+    "theme_axes": "dark / Korean serif brand + sans reading / antique gold",
+    "enrichment": "generated botanical open-book banner and cabbage illustration; existing concern illustrations",
+    "brief": "Implement the user-selected fourth image proposal: two-column mobile image cards and gold What/Why/How ingredient notes.",
+    "constraints": [
+      "Preserve all product content and seller-only cautions",
+      "Preserve search, multi-select, four-product carousel and video behavior",
+      "Use actual existing product photographs"
+    ]
+  },
+  {
     "date": "2026-11-24",
     "macrostructure": "compact discovery hub",
     "theme": "custom unified navy / antique gold",

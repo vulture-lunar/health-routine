@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-25",
+  "reference": "User-approved proposal 04 — VISUAL COLLECTION / 이미지 카드형",
+  "checks": {
+    "responsiveWidths": [
+      320,
+      375,
+      414,
+      768,
+      1280
+    ],
+    "horizontalOverflow": false,
+    "mobileConcernColumns": 2,
+    "concernCount": 11,
+    "productCount": 13,
+    "ingredientNotes": 37,
+    "interactivePanels": 29,
+    "menuEscapeAndAnchorNavigation": "passed",
+    "searchResultOpensConcern": "passed",
+    "multiConcernSelection": "passed",
+    "fourProductCarouselKeyboardNavigation": "passed",
+    "allProductPointExpandCollapse": "passed at 320/375/414/768",
+    "sellerOnlyCautionVisibility": "passed for all 13 products",
+    "productAndVideoData": "unchanged",
+    "inlineScriptSyntax": "passed",
+    "gitDiffCheck": "passed"
+  },
+  "scope": "Existing app implementation; no screenshot-as-UI, no product information rewrite."
+}

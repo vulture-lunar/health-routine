@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-25",
+  "tool": "built-in image_gen.imagegen",
+  "approved_direction": "04 VISUAL COLLECTION / 이미지 카드형",
+  "assets": [
+    {
+      "path": "assets/collection-book-banner.webp",
+      "prompt": "A final website masthead illustration, landscape 3:1: fine gold engraved open botanical book slightly right of center, a small celestial compass in the far upper right, delicate botanical branches in the left corner, sparse stars and a low mountain horizon, on uniform deep ink navy #071725. Antique gold copperplate engraving, thin cross-hatching, botanical leaf sketches on book pages. No lettering, labels, logos, border, wooden frame, UI, giant DNA helix, or oversaturated glow. Opaque navy background.",
+      "processing": "WebP encoding, quality 88, original 2172 × 724 composition preserved."
+    },
+    {
+      "path": "assets/ingredient-cabbage.webp",
+      "prompt": "A single gold engraved cabbage head with a few outer leaves, centered with transparent margin. Botanical copperplate etching, antique gold #dfbb72 lines and restrained warm ivory/gold highlights, realistic leaf veins, three-quarter view. One full round cabbage and two spreading leaves. Transparent background. No text, SMM label, badge, circle, frame, UI, plate, floor shadow, or photographic green colors.",
+      "processing": "WebP encoding, quality 88, proportional 720 × 480 thumbnail, alpha preserved."
+    }
+  ]
+}
