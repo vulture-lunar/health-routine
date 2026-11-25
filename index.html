@@ -217,7 +217,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="tokens.css?v=collection-20261125-1">
 <link rel="stylesheet" href="theme.css?v=original-restored-20261124-1">
-<link rel="stylesheet" href="collection.css?v=bottom-product-choice-20261125-1">
+<link rel="stylesheet" href="collection.css?v=criterion-links-20261125-1">
 </head>
 <body>
 
@@ -245,10 +245,9 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
       <div class="concern-search">
         <form id="concern-search-form" role="search" aria-label="건강 고민 검색">
           <label for="concern-query">요즘, 어떤 고민이 있으세요?</label>
-          <p class="search-hint" id="search-hint">잠, 피부, 장 건강 등등 해당하는 고민을 모두 골라 보세요.<br>생활 습관과 추천 제품을 한 번에 정리해 드려요.</p>
           <div class="search-field">
             <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
-            <input id="concern-query" type="search" placeholder="잠, 붓기, 피부, 혈관…" aria-describedby="search-hint" autocomplete="off" maxlength="100" aria-controls="concern-search-results">
+            <input id="concern-query" type="search" placeholder="잠, 붓기, 피부, 혈관…" autocomplete="off" maxlength="100" aria-controls="concern-search-results">
           </div>
         </form>
         <div class="search-feedback" id="search-feedback" hidden>
@@ -256,8 +255,9 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
           <div class="search-results" id="concern-search-results"></div>
         </div>
       </div>
-      <div class="picker" role="group" aria-labelledby="picker-title">
+      <div class="picker" role="group" aria-labelledby="picker-title" aria-describedby="picker-hint">
         <div class="picker-head"><b id="picker-title">내 고민 고르기</b><span>여러 개 골라도 돼요</span></div>
+        <p class="picker-hint" id="picker-hint">잠, 피부, 장 건강 등등 해당하는 고민을 모두 골라 보세요.<br>생활 습관과 추천 제품을 한 번에 정리해 드려요.</p>
         <div class="picker-chips" id="picker-chips"></div>
         <div class="picker-actions">
           <button type="button" class="picker-reset" id="picker-reset" hidden>선택 해제</button>
@@ -578,24 +578,24 @@ function renderInsights(c) {
 
 
 const PRODUCT_CHOICE_GUIDES = {
-  meal: { art:"바나바잎 속 코로솔산 → 식후 혈당", criteria:[["식사량이 고민이라면", "점성을 만드는 식이섬유의 종류"], ["식후 혈당이 고민이라면", "바나바잎 · 코로솔산 함량"]] },
-  light: { art:"모로오렌지·C3G", criteria:[["먼저 구분할 것", "일시적인 붓기와 체지방 고민"], ["원료를 비교할 때", "모로오렌지 추출물 · 락토페린의 연구 조건"]] },
-  gut: { art:"양배추·SMM", criteria:[["원료를 볼 때", "양배추 · SMM과 함께 배합한 원료"], ["구성을 비교할 때", "원료의 형태와 배합량"]] },
-  bowel: { art:"차전자피 식이섬유", criteria:[["식이섬유를 볼 때", "차전자피 식이섬유의 양"], ["섭취 안내에서", "함께 마실 물의 양과 섭취 방법"]] },
-  skin: { art:"히알루론산·콜라겐", criteria:[["보습이 고민이라면", "콜라겐의 종류와 섭취량"], ["함께 살펴볼 성분", "비타민C · 히알루론산 등 원료 구성"]] },
-  hair: { art:"아누카사과·프로시아니딘", criteria:[["추출물을 볼 때", "아누카사과의 종류와 연구 조건"], ["영양 구성을 볼 때", "비오틴 함량과 현재 섭취량"]] },
-  change: { art:"레드클로버·대두배아의 이소플라본", criteria:[["식물성 성분을 볼 때", "이소플라본의 종류와 함량"], ["함께 살펴볼 성분", "마그네슘 · 비타민B군의 구성"]] },
-  sleep: { art:"멜라토닌", criteria:[["먼저 살펴볼 것", "잠드는 시간과 생활 리듬"], ["성분을 비교할 때", "멜라토닌 · 락티움 · 테아닌의 역할"]] },
-  throat: { art:"도라지·모과", criteria:[["원료를 볼 때", "도라지 · 삼백초의 형태와 배합량"], ["연구와 비교할 때", "분말인지 추출물인지 구분"]] },
-  vessel: { art:"코엔자임Q10", criteria:[["먼저 정할 기준", "혈압 · 혈당 · 콜레스테롤 중 관심 지표"], ["구성을 비교할 때", "각 지표에 연결된 원료와 함량"]] },
-  parents: { art:"은행잎추출물", criteria:[["부모님과 확인할 것", "검진에서 관리 중인 항목"], ["원료를 비교할 때", "복용 중인 약 · 영양제와의 중복"]] }
+  meal: { art:"바나바잎 속 코로솔산 → 식후 혈당", criteria:[["식사량이 고민이라면", "점성을 만드는 식이섬유의 종류", "off"], ["식후 혈당이 고민이라면", "바나바잎 · 코로솔산 함량", "51"]] },
+  light: { art:"모로오렌지·C3G", criteria:[["먼저 구분할 것", "일시적인 붓기와 체지방 고민", "49"], ["원료를 비교할 때", "모로오렌지 추출물 · 락토페린의 연구 조건", "49"]] },
+  gut: { art:"양배추·SMM", criteria:[["원료를 볼 때", "양배추 · SMM과 함께 배합한 원료", "74"], ["구성을 비교할 때", "원료의 형태와 배합량", "74"]] },
+  bowel: { art:"차전자피 식이섬유", criteria:[["식이섬유를 볼 때", "차전자피 식이섬유의 양", "fib"], ["섭취 안내에서", "함께 마실 물의 양과 섭취 방법", "fib"]] },
+  skin: { art:"히알루론산·콜라겐", criteria:[["보습이 고민이라면", "콜라겐의 종류와 섭취량", "col"], ["함께 살펴볼 성분", "비타민C · 히알루론산 등 원료 구성", "64"]] },
+  hair: { art:"아누카사과·프로시아니딘", criteria:[["추출물을 볼 때", "아누카사과의 종류와 연구 조건", "59"], ["영양 구성을 볼 때", "비오틴 함량과 현재 섭취량", "59"]] },
+  change: { art:"레드클로버·대두배아의 이소플라본", criteria:[["식물성 성분을 볼 때", "이소플라본의 종류와 함량", "rfq"], ["함께 살펴볼 성분", "마그네슘 · 비타민B군의 구성", "rfq"]] },
+  sleep: { art:"멜라토닌", criteria:[["먼저 살펴볼 것", "잠드는 시간과 생활 리듬", "54"], ["성분을 비교할 때", "멜라토닌 · 락티움 · 테아닌의 역할", "54"]] },
+  throat: { art:"도라지·모과", criteria:[["원료를 볼 때", "도라지 · 삼백초의 형태와 배합량", "72"], ["연구와 비교할 때", "분말인지 추출물인지 구분", "77"]] },
+  vessel: { art:"코엔자임Q10", criteria:[["먼저 정할 기준", "혈압 · 혈당 · 콜레스테롤 중 관심 지표", "75"], ["구성을 비교할 때", "각 지표에 연결된 원료와 함량", "75"]] },
+  parents: { art:"은행잎추출물", criteria:[["부모님과 확인할 것", "검진에서 관리 중인 항목", "75"], ["원료를 비교할 때", "복용 중인 약 · 영양제와의 중복", "75"]] }
 };
 function renderProductChoice(concerns, productsHtml) {
   const art = INGREDIENT_ART[PRODUCT_CHOICE_GUIDES[concerns[0].id].art];
   return `<details class="routine-product-choice">
     <summary><img src="${esc(art)}" alt="" width="64" height="64" loading="lazy"><span><small>내 고민에 맞는 선택</small><strong>내게 맞는 제품은?</strong></span></summary>
     <div class="routine-choice-body">
-      ${concerns.map(c => `<div class="routine-choice-criteria">${concerns.length > 1 ? `<h4>${esc(c.tag)}</h4>` : ""}<dl>${PRODUCT_CHOICE_GUIDES[c.id].criteria.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl></div>`).join("")}
+      ${concerns.map(c => `<div class="routine-choice-criteria">${concerns.length > 1 ? `<h4>${esc(c.tag)}</h4>` : ""}<ul class="routine-criteria-links">${PRODUCT_CHOICE_GUIDES[c.id].criteria.map(([label, value, id]) => `<li><button type="button" class="routine-criterion-button" data-product-id="${esc(id)}" aria-haspopup="dialog"><span class="criterion-label">${esc(label)}</span><span class="criterion-value">${esc(value)}</span><span class="criterion-arrow" aria-hidden="true">↗</span><span class="criterion-action">특징·주의사항 보기</span></button></li>`).join("")}</ul></div>`).join("")}
       <details class="routine-product-reveal"><summary>이 기준으로 제품 보기</summary><div class="picks">${productsHtml}</div></details>
     </div>
   </details>`;
