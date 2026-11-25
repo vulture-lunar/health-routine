@@ -217,7 +217,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="tokens.css?v=collection-20261125-1">
 <link rel="stylesheet" href="theme.css?v=original-restored-20261124-1">
-<link rel="stylesheet" href="collection.css?v=recommendation-links-20261125-1">
+<link rel="stylesheet" href="collection.css?v=bottom-product-choice-20261125-1">
 </head>
 <body>
 
@@ -576,6 +576,31 @@ function renderInsights(c) {
   }).join("")}</div>`;
 }
 
+
+const PRODUCT_CHOICE_GUIDES = {
+  meal: { art:"바나바잎 속 코로솔산 → 식후 혈당", criteria:[["식사량이 고민이라면", "점성을 만드는 식이섬유의 종류"], ["식후 혈당이 고민이라면", "바나바잎 · 코로솔산 함량"]] },
+  light: { art:"모로오렌지·C3G", criteria:[["먼저 구분할 것", "일시적인 붓기와 체지방 고민"], ["원료를 비교할 때", "모로오렌지 추출물 · 락토페린의 연구 조건"]] },
+  gut: { art:"양배추·SMM", criteria:[["원료를 볼 때", "양배추 · SMM과 함께 배합한 원료"], ["구성을 비교할 때", "원료의 형태와 배합량"]] },
+  bowel: { art:"차전자피 식이섬유", criteria:[["식이섬유를 볼 때", "차전자피 식이섬유의 양"], ["섭취 안내에서", "함께 마실 물의 양과 섭취 방법"]] },
+  skin: { art:"히알루론산·콜라겐", criteria:[["보습이 고민이라면", "콜라겐의 종류와 섭취량"], ["함께 살펴볼 성분", "비타민C · 히알루론산 등 원료 구성"]] },
+  hair: { art:"아누카사과·프로시아니딘", criteria:[["추출물을 볼 때", "아누카사과의 종류와 연구 조건"], ["영양 구성을 볼 때", "비오틴 함량과 현재 섭취량"]] },
+  change: { art:"레드클로버·대두배아의 이소플라본", criteria:[["식물성 성분을 볼 때", "이소플라본의 종류와 함량"], ["함께 살펴볼 성분", "마그네슘 · 비타민B군의 구성"]] },
+  sleep: { art:"멜라토닌", criteria:[["먼저 살펴볼 것", "잠드는 시간과 생활 리듬"], ["성분을 비교할 때", "멜라토닌 · 락티움 · 테아닌의 역할"]] },
+  throat: { art:"도라지·모과", criteria:[["원료를 볼 때", "도라지 · 삼백초의 형태와 배합량"], ["연구와 비교할 때", "분말인지 추출물인지 구분"]] },
+  vessel: { art:"코엔자임Q10", criteria:[["먼저 정할 기준", "혈압 · 혈당 · 콜레스테롤 중 관심 지표"], ["구성을 비교할 때", "각 지표에 연결된 원료와 함량"]] },
+  parents: { art:"은행잎추출물", criteria:[["부모님과 확인할 것", "검진에서 관리 중인 항목"], ["원료를 비교할 때", "복용 중인 약 · 영양제와의 중복"]] }
+};
+function renderProductChoice(concerns, productsHtml) {
+  const art = INGREDIENT_ART[PRODUCT_CHOICE_GUIDES[concerns[0].id].art];
+  return `<details class="routine-product-choice">
+    <summary><img src="${esc(art)}" alt="" width="64" height="64" loading="lazy"><span><small>내 고민에 맞는 선택</small><strong>내게 맞는 제품은?</strong></span></summary>
+    <div class="routine-choice-body">
+      ${concerns.map(c => `<div class="routine-choice-criteria">${concerns.length > 1 ? `<h4>${esc(c.tag)}</h4>` : ""}<dl>${PRODUCT_CHOICE_GUIDES[c.id].criteria.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl></div>`).join("")}
+      <details class="routine-product-reveal"><summary>이 기준으로 제품 보기</summary><div class="picks">${productsHtml}</div></details>
+    </div>
+  </details>`;
+}
+
 function openNote(id) {
   const c = C.find(x => x.id === id);
   if (!c) return;
@@ -594,8 +619,7 @@ function openNote(id) {
         ${renderInsights(c)}
       </div>
       ${renderShorts([c.id])}
-      <p class="picks-label">이 고민에 추천하는 제품</p>
-      <div class="picks">${c.picks.map(([no, why]) => prodCard(no, why)).join("")}</div>
+      ${renderProductChoice([c], c.picks.map(([no, why]) => prodCard(no, why)).join(""))}
       <p class="sheet-foot">일반적인 생활 정보이며, 사람마다 느끼는 정도가 다를 수 있어요. 복용 중인 약이 있다면 전문가와 먼저 상담해 주세요.</p>
     </div>`;
   showSheet(c.id);
@@ -635,8 +659,7 @@ function openMix(ids) {
           ${renderInsights(c)}
         </div>`).join("")}</div>
       ${renderShorts(cs.map(c => c.id))}
-      <p class="picks-label">고른 고민에 추천하는 제품 ${prods.length}개</p>
-      <div class="picks">${prods.map(p => prodCard(p.no, p.why, p.tags)).join("")}</div>
+      ${renderProductChoice(cs, prods.map(p => prodCard(p.no, p.why, p.tags)).join(""))}
       <p class="sheet-foot">일반적인 생활 정보이며, 사람마다 느끼는 정도가 다를 수 있어요. 복용 중인 약이 있다면 전문가와 먼저 상담해 주세요.</p>
     </div>`;
   showSheet("mix-" + cs.map(c => c.id).join("-"));

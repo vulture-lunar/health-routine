@@ -210,3 +210,42 @@ dialog.sheet { background:var(--color-paper); border:1px solid var(--color-colle
 .insight-product-link:disabled { opacity:.5; cursor:not-allowed; }
 .insight-sources { margin-top:12px; }
 .insight-answer .insight-sources a { display:block; margin-top:0; padding-block:3px; }
+
+/* Hallmark · component: bottom product selection disclosure · approved navy/gold
+ * pre-emit critique: P5 H4 E4 S5 R5 V4 · scope: product collection below videos only
+ */
+.routine-product-choice { margin-top:32px; border:1px solid var(--color-collection-rule); border-radius:12px; background:var(--color-paper-2); }
+.routine-product-choice summary { display:flex; align-items:center; list-style:none; cursor:pointer; color:var(--color-gold-light); }
+.routine-product-choice summary::-webkit-details-marker { display:none; }
+.routine-product-choice > summary { gap:14px; min-height:96px; padding:16px; border-radius:11px; }
+.routine-product-choice > summary img { width:64px; height:64px; object-fit:contain; flex:none; }
+.routine-product-choice > summary small { display:block; margin-bottom:5px; color:var(--color-muted); font-size:11px; line-height:1.6; }
+.routine-product-choice > summary strong { display:block; color:var(--color-gold-light); font-size:16px; font-weight:600; line-height:1.6; white-space:nowrap; }
+.routine-product-choice > summary::after { content:'+'; margin-left:auto; flex:none; color:var(--color-gold); font-size:22px; font-weight:400; }
+.routine-product-choice[open] > summary::after { content:'−'; }
+.routine-product-choice summary:focus-visible { outline:2px solid var(--color-gold-light); outline-offset:3px; }
+.routine-product-choice summary:active { opacity:.75; }
+.routine-choice-body { padding:0 16px 16px; }
+.routine-choice-criteria { border-top:1px solid var(--color-collection-rule-soft); }
+.routine-choice-criteria h4 { margin:16px 0 0; color:var(--color-gold-light); font-size:13px; line-height:1.7; }
+.routine-choice-criteria dl { margin:0; }
+.routine-choice-criteria dl > div { position:relative; padding:16px 0 16px 16px; border-bottom:1px solid var(--color-collection-rule-soft); }
+.routine-choice-criteria dl > div::before { content:''; position:absolute; left:0; top:22px; width:4px; height:12px; border-radius:2px; background:var(--color-gold-deep); }
+.routine-choice-criteria dt { color:var(--color-muted); font-size:11px; line-height:1.7; }
+.routine-choice-criteria dd { margin:5px 0 0; color:var(--color-ink); font-size:14px; line-height:1.8; overflow-wrap:anywhere; }
+.routine-product-reveal > summary { justify-content:space-between; gap:12px; min-height:48px; margin-top:12px; padding-block:8px; font-size:13px; line-height:1.7; white-space:nowrap; }
+.routine-product-reveal > summary::after { content:'↓'; flex:none; font-size:20px; }
+.routine-product-reveal[open] > summary::after { content:'↑'; }
+.routine-product-reveal .picks { display:grid; grid-template-columns:minmax(0,1fr); gap:16px; margin-top:12px; }
+@media(hover:hover) {
+ .routine-product-choice > summary:hover { background:var(--color-raised); }
+ .routine-product-reveal > summary:hover { color:var(--color-ink); }
+}
+@media(max-width:23rem) {
+ .routine-product-choice > summary { gap:10px; padding:12px; }
+ .routine-product-choice > summary img { width:52px; height:60px; }
+ .routine-product-choice > summary strong { font-size:14px; }
+ .routine-product-choice > summary small { font-size:10px; }
+ .routine-choice-body { padding-inline:12px; }
+ .routine-choice-criteria dd { font-size:13px; }
+}
