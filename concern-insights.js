@@ -17,11 +17,11 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "off",
-          "label": "오프밀정 성분 보기"
+          "label": "식사량 관리, 관련 제품은?"
         },
         {
           "id": "51",
-          "label": "코크보틀 성분 보기"
+          "label": "식후 혈당, 관련 제품은?"
         }
       ]
     },
@@ -37,7 +37,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "off",
-          "label": "오프밀정 성분 보기"
+          "label": "이 식이섬유를 담은 제품은?"
         }
       ]
     }
@@ -59,7 +59,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "49",
-          "label": "모로페린 성분 보기"
+          "label": "이 성분을 담은 제품은?"
         }
       ]
     },
@@ -79,7 +79,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "49",
-          "label": "모로페린 성분 보기"
+          "label": "두 원료를 함께 담은 제품은?"
         }
       ]
     }
@@ -97,7 +97,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "74",
-          "label": "양감작 성분 보기"
+          "label": "양배추 성분을 담은 제품은?"
         }
       ]
     },
@@ -113,7 +113,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "74",
-          "label": "양감작 성분 보기"
+          "label": "이 원료가 들어간 제품은?"
         }
       ]
     }
@@ -131,7 +131,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "fib",
-          "label": "차전자피 성분 보기"
+          "label": "이 식이섬유를 담은 제품은?"
         }
       ]
     },
@@ -147,7 +147,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "fib",
-          "label": "차전자피 성분 보기"
+          "label": "물과 만나는 식이섬유, 제품은?"
         }
       ]
     }
@@ -165,7 +165,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "col",
-          "label": "콜라겐 성분 보기"
+          "label": "이 보습 성분을 담은 제품은?"
         }
       ]
     },
@@ -181,7 +181,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "64",
-          "label": "잇레티놀 성분 보기"
+          "label": "피부를 위한 성분 조합은?"
         }
       ]
     }
@@ -203,7 +203,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "59",
-          "label": "아누오틴 성분 보기"
+          "label": "이 사과 성분을 담은 제품은?"
         }
       ]
     },
@@ -219,7 +219,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "59",
-          "label": "아누오틴 성분 보기"
+          "label": "모발을 위한 성분 조합은?"
         }
       ]
     }
@@ -237,7 +237,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "rfq",
-          "label": "리플로퀸 성분 보기"
+          "label": "이 식물 성분을 담은 제품은?"
         }
       ]
     },
@@ -257,7 +257,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "rfq",
-          "label": "리플로퀸 성분 보기"
+          "label": "이 성분들을 함께 담은 제품은?"
         }
       ]
     }
@@ -275,7 +275,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "54",
-          "label": "멜라티움 성분 보기"
+          "label": "잠의 리듬, 관련 제품은?"
         }
       ]
     },
@@ -295,7 +295,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "54",
-          "label": "멜라티움 성분 보기"
+          "label": "이 성분들을 함께 담은 제품은?"
         }
       ]
     }
@@ -313,7 +313,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "72",
-          "label": "도맥환 성분 보기"
+          "label": "도라지 성분을 담은 제품은?"
         }
       ]
     },
@@ -329,7 +329,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "77",
-          "label": "삼백청정 성분 보기"
+          "label": "이 식물 성분을 담은 제품은?"
         }
       ]
     }
@@ -355,7 +355,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "75",
-          "label": "더블러드 성분 보기"
+          "label": "이 성분들을 함께 담은 제품은?"
         }
       ]
     },
@@ -375,11 +375,11 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "75",
-          "label": "더블러드 성분 보기"
+          "label": "간의 경로, 관련 제품은?"
         },
         {
           "id": "fib",
-          "label": "차전자피 성분 보기"
+          "label": "장의 경로, 관련 제품은?"
         }
       ]
     }
@@ -397,7 +397,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "75",
-          "label": "더블러드 성분 보기"
+          "label": "이 성분 조합의 제품은?"
         }
       ]
     },
@@ -417,7 +417,7 @@ const ROUTINE_INSIGHTS = {
       "relatedProducts": [
         {
           "id": "fib",
-          "label": "차전자피 성분 보기"
+          "label": "두 고민에 연결된 제품은?"
         }
       ]
     }
