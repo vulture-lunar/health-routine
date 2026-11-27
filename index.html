@@ -215,32 +215,46 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 .sheet-foot { margin: 18px 0 0; font-size: 11.5px; color: var(--muted); line-height: 1.6; }
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
-<link rel="stylesheet" href="tokens.css?v=collection-20261125-1">
+<link rel="stylesheet" href="tokens.css?v=links-20261127-1">
 <link rel="stylesheet" href="theme.css?v=original-restored-20261124-1">
 <link rel="stylesheet" href="collection.css?v=choice-copy-20261125-1">
+<link rel="stylesheet" href="links.css?v=20261127-1">
 </head>
 <body>
 
 <header class="channel-header">
   <div class="inner">
-    <a class="channel-brand" href="#top" aria-label="백년 탐구생활 건강 루틴 홈">
-      <img src="assets/channel-emblem.jpg" width="54" height="54" alt="백년 탐구생활 채널 로고">
-      <span><strong>백년 탐구생활</strong><small>건강한 일상을 탐구하다</small></span>
-    </a>
     <details class="channel-menu">
-      <summary aria-label="메뉴 열기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary>
-      <nav aria-label="페이지 메뉴"><a href="#top">고민 선택하기</a><a href="#routines">건강 정보 보기</a><a href="#youtube">유튜브 채널</a></nav>
+      <summary aria-label="메뉴 열기"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary>
+      <nav aria-label="페이지 메뉴"><a href="#top">프로필</a><a href="#routines">건강 정보 보기</a><a href="#discovery">검색 · 고민 선택</a><a href="#youtube">유튜브 채널</a></nav>
     </details>
+    <button class="profile-share" type="button" aria-label="프로필 공유하기"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M7 10H5v11h14V10h-2"/></svg></button>
   </div>
 </header>
 <main>
   <section class="hero" id="top">
     <div class="inner">
       <div class="collection-intro">
-      <img class="collection-banner" src="assets/collection-book-banner.webp" alt="" width="2172" height="724" fetchpriority="high">
-      <h1>건강이 궁금해지는 순간,<span>나에게 필요한 정보를 만나보세요.</span></h1>
-      <p class="hero-copy">복잡한 건강 정보는 쉽게,<br> 나에게 맞는 선택은 신중하게.</p>
+        <img class="profile-avatar" src="assets/channel-emblem.jpg" alt="백년 탐구생활 채널 프로필" width="96" height="96" fetchpriority="high">
+        <h1>백년 탐구생활</h1>
+        <p class="hero-copy">복잡한 건강 정보는 쉽게,<br>나에게 맞는 선택은 신중하게.</p>
+        <p class="profile-description">궁금한 고민을 눌러 생활 습관과 추천 제품을 살펴보세요.</p>
       </div>
+
+    </div>
+  </section>
+
+  <section class="library" id="routines" aria-label="고민 목록">
+    <div class="inner">
+      <h2 class="visually-hidden">고민별 건강 정보</h2>
+      <div class="card-grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="discovery" id="discovery" aria-label="건강 정보 찾아보기">
+    <div class="inner">
+      <details class="discovery-tools">
+        <summary>검색 · 여러 고민 함께 보기<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
       <div class="collection-tools">
       <div class="concern-search">
         <form id="concern-search-form" role="search" aria-label="건강 고민 검색">
@@ -265,14 +279,8 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
         </div>
       </div>
       </div>
-    </div>
-  </section>
-
-  <section class="library" id="routines" aria-label="고민 목록">
-    <div class="inner">
-      <div class="archive-heading"><p>DAILY HEALTH ARCHIVE</p><h2>오늘의 몸을 살피는 작은 습관</h2></div>
       <div class="filters" id="filters" role="group" aria-label="카테고리"></div>
-      <div class="card-grid" id="grid"></div>
+      </details>
     </div>
   </section>
 
@@ -280,7 +288,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
     <div class="inner">
       <a class="youtube-channel-card" href="https://www.youtube.com/@%EB%B0%B1%EB%85%84_%ED%83%90%EA%B5%AC%EC%83%9D%ED%99%9C" target="_blank" rel="noopener noreferrer" aria-label="백년 탐구생활 유튜브 채널 보기 (새 탭)">
         <img class="youtube-avatar" src="assets/channel-emblem.jpg" alt="" width="64" height="64" loading="lazy">
-        <div class="youtube-channel-info"><span class="youtube-wordmark"><svg width="24" height="18" viewBox="0 0 24 18" aria-hidden="true"><rect width="24" height="18" rx="5" fill="currentColor"/><path d="m10 5 6 4-6 4V5Z" fill="var(--color-ink)"/></svg>YouTube</span><h2 id="youtube-heading">백년 탐구생활</h2><p>궁금한 건강 이야기, 영상으로 더 쉽게.</p></div>
+        <div class="youtube-channel-info"><span class="youtube-wordmark"><svg width="24" height="18" viewBox="0 0 24 18" aria-hidden="true"><rect width="24" height="18" rx="5" fill="currentColor"/><path d="m10 5 6 4-6 4V5Z" fill="var(--color-ink)"/></svg>YouTube</span><h2 id="youtube-heading">백년 탐구생활 유튜브</h2><p>궁금한 건강 이야기, 영상으로 더 쉽게.</p></div>
         <span class="youtube-channel-action">채널 보러 가기 <span aria-hidden="true">↗</span></span>
       </a>
     </div>
@@ -288,7 +296,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 
 </main>
 
-<div class="landscape" role="img" aria-label="남색 하늘과 금빛 산맥 사이로 떠오르는 해"></div>
+
 
 <footer>
   <div class="inner">
@@ -298,6 +306,13 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 </footer>
 
 
+<dialog class="share-dialog" id="share-dialog" aria-labelledby="share-heading">
+  <div class="share-heading"><h2 id="share-heading">링크 공유하기</h2><button type="button" id="share-close" aria-label="공유 창 닫기">×</button></div>
+  <label class="visually-hidden" for="share-url">공유할 링크</label>
+  <input id="share-url" type="url" readonly>
+  <button type="button" id="share-copy">링크 복사</button>
+  <p id="share-status" role="status" aria-live="polite"></p>
+</dialog>
 <dialog class="sheet" id="sheet" aria-labelledby="sheet-title"></dialog>
 <dialog class="sheet product-sheet" id="product-sheet" aria-labelledby="product-guide-title"></dialog>
 
@@ -426,16 +441,19 @@ channelMenu.addEventListener("keydown", event => { if (event.key === "Escape") {
 filtersEl.innerHTML = CATS.map(c =>
   `<button type="button" id="f-${c.id}" data-cat="${c.id}" aria-pressed="${c.id === "all"}"><span aria-hidden="true">${c.icon}</span>${esc(c.name)}</button>`).join("");
 
+const concernLinkTitle = c => c.tag.endsWith("건강") ? `${c.tag} 정보` : c.id === "sleep" ? "수면 건강 정보" : `${c.tag} 건강 정보`;
+
 function renderGrid() {
   const list = C.filter(c => curCat === "all" || c.cat === curCat);
   gridEl.innerHTML = list.length ? list.map(c => {
     return `
-    <button type="button" class="card ${c.color}" data-id="${c.id}" aria-haspopup="dialog">
-      <img class="routine-thumb" src="assets/routine-${c.id}.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
-      <span class="card-top"><span class="label">${esc(c.tag)}</span></span>
-      <h3>${esc(c.q)}</h3>
-      <span class="card-bottom"><span>정보 보기</span><span class="arrow" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span></span>
-    </button>`;
+    <div class="link-row">
+      <button type="button" class="card ${c.color}" data-id="${c.id}" aria-haspopup="dialog" aria-label="${esc(concernLinkTitle(c))}: ${esc(c.q)}">
+        <img class="routine-thumb" src="assets/routine-${c.id}.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+        <span class="link-title">${esc(concernLinkTitle(c))}</span>
+      </button>
+      <button type="button" class="link-share" data-share-id="${c.id}" aria-label="${esc(c.tag)} 링크 공유"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg></button>
+    </div>`;
   }).join("") : "";
 }
 
@@ -710,6 +728,44 @@ sheet.addEventListener("click", e => {
   frame.focus({preventScroll:true});
 });
 
+
+const shareDialog = document.getElementById("share-dialog");
+const shareUrl = document.getElementById("share-url");
+const shareStatus = document.getElementById("share-status");
+function siteLink(id = "") {
+  const url = new URL(location.href);
+  url.search = "";
+  url.hash = id;
+  return url.href;
+}
+async function shareLink(id = "") {
+  const title = id ? `${C.find(c => c.id === id)?.tag || "건강 정보"} · 백년 탐구생활` : "백년 탐구생활";
+  const url = siteLink(id);
+  if (navigator.share) {
+    try { await navigator.share({title, url}); return; }
+    catch (error) { if (error.name === "AbortError") return; }
+  }
+  shareUrl.value = url;
+  shareStatus.textContent = "주소를 복사해서 공유해 주세요.";
+  shareDialog.showModal();
+}
+document.querySelector(".profile-share").addEventListener("click", () => shareLink());
+gridEl.addEventListener("click", event => {
+  const button = event.target.closest("[data-share-id]");
+  if (button) shareLink(button.dataset.shareId);
+});
+document.getElementById("share-copy").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(shareUrl.value);
+    shareStatus.textContent = "링크를 복사했어요.";
+  } catch {
+    shareUrl.focus(); shareUrl.select();
+    shareStatus.textContent = "선택된 주소를 복사해 주세요.";
+  }
+});
+document.getElementById("share-close").addEventListener("click", () => shareDialog.close());
+shareDialog.addEventListener("click", event => { if (event.target === shareDialog) shareDialog.close(); });
+channelMenu.querySelector('a[href="#discovery"]').addEventListener("click", () => { document.querySelector(".discovery-tools").open = true; });
 
 gridEl.addEventListener("click", e => { const b = e.target.closest(".card"); if (b) openNote(b.dataset.id); });
 filtersEl.addEventListener("click", e => {

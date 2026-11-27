@@ -48,3 +48,15 @@
   --collection-card-radius: 12px;
   --collection-card-gap: 12px;
 }
+
+/* Link profile layout: existing channel palette, reference proportions. */
+:root {
+  --color-profile-surround: #020c15;
+  --color-profile-border: #8b774f;
+  --color-profile-backdrop: #020a12b3;
+  --radius-link: 999px;
+  --radius-profile: 24px;
+  --profile-width: 580px;
+  --space-link-gap: 14px;
+  --font-link: var(--font-body);
+}
