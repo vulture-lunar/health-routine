@@ -38,3 +38,9 @@
   --text-caption:12px;
   --color-description:#c6ccd6;
 }
+/* Faceted silver inlay edges. */
+:root {
+  --cut-card:15px;
+  --cut-social:10px;
+  --pearl-edge:linear-gradient(125deg,var(--color-silver-deep) 0%,var(--color-pearl-blue) 24%,var(--color-silver-light) 43%,var(--color-pearl-pink) 59%,var(--color-silver-deep) 82%,var(--color-silver) 100%);
+}
