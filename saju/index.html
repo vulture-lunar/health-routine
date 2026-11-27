@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071725">
+  <meta name="description" content="사랑부터 일과 재물까지, 내 고민에 맞는 천시록 사주를 찾아보세요.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://vulture-lunar.github.io/health-routine/saju/assets/jeongtong-saju.jpg">
+  <meta property="og:title" content="천시록 | 내 고민에 맞는 사주 찾기">
+  <meta property="og:description" content="사랑부터 일과 재물까지, 궁금한 이야기를 골라보세요.">
+  <title>천시록 | 내 고민에 맞는 사주 찾기</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Noto+Serif+KR:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="../tokens.css?v=links-20261127-1">
+  <link rel="stylesheet" href="../theme.css?v=original-restored-20261124-1">
+  <link rel="stylesheet" href="../collection.css?v=choice-copy-20261125-1">
+  <link rel="stylesheet" href="../links.css?v=customer-copy-20261127-11">
+  <link rel="stylesheet" href="page.css?v=1">
+  <script src="content.js?v=1" defer></script>
+  <script src="page.js?v=1" defer></script>
+</head>
+<body>
+  <header class="channel-header">
+    <div class="inner">
+      <details class="channel-menu">
+        <summary aria-label="메뉴 열기"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary>
+        <nav aria-label="페이지 메뉴"><a href="#top">프로필</a><a href="#readings">사주 보기</a></nav>
+      </details>
+      <button class="profile-share" type="button" aria-label="페이지 공유하기"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M7 10H5v11h14V10h-2"/></svg></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="top">
+      <div class="inner">
+        <div class="collection-intro">
+          <div class="profile-avatar profile-wordmark" id="profile-mark" aria-hidden="true">命</div>
+          <img class="profile-avatar" id="profile-avatar" alt="" width="96" height="96" hidden>
+          <h1 id="page-title">천시록</h1>
+          <p class="hero-copy" id="page-intro">내일이 궁금한 오늘,<br>나를 읽는 시간.</p>
+          <p class="profile-description" id="page-description">사랑부터 일과 재물까지, 궁금한 이야기를 골라보세요.</p>
+        </div>
+      </div>
+    </section>
+    <section class="library" id="readings" aria-label="사주 상품 목록">
+      <div class="inner">
+        <h2 class="visually-hidden">궁금한 사주 이야기</h2>
+        <div class="card-grid" id="reading-list"></div>
+      </div>
+    </section>
+  </main>
+  <section class="official-home"><div class="inner"><a href="https://www.cheonsirok.co.kr/" target="_blank" rel="noopener noreferrer">천시록 공식 홈페이지 <span aria-hidden="true">↗</span></a></div></section>
+  <footer><div class="inner"><div class="footer-brand" id="footer-title">천시록</div><p id="footer-copyright"></p></div></footer>
+  <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-heading">
+    <div class="share-heading"><h2 id="share-heading">링크 공유하기</h2><button type="button" id="share-close" aria-label="공유 창 닫기">×</button></div>
+    <label class="visually-hidden" for="share-url">공유할 링크</label>
+    <input id="share-url" type="url" readonly>
+    <button type="button" id="share-copy">링크 복사</button>
+    <p id="share-status" role="status" aria-live="polite"></p>
+  </dialog>
+</body>
+</html>

@@ -61,6 +61,7 @@ jobs:
           mkdir _site
           cp index.html *.css *.js _site/
           cp -R assets _site/assets
+          cp -R saju _site/saju
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v4
         with:

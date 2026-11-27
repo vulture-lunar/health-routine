@@ -37,3 +37,11 @@ python3 -m http.server 8765
 일반적인 `main` 코드 변경도 같은 작업에서 배포됩니다.
 Pages의 게시 소스는 **GitHub Actions**입니다. 갱신 작업이 저장하는 커밋은
 후속 push 작업을 발생시키지 않으므로 같은 실행에서 갱신 후 배포까지 완료합니다.
+
+## 천시록 사주 소개 페이지
+
+별도 주소: https://vulture-lunar.github.io/health-routine/saju/
+
+`saju/content.js`에서 공식 상품 링크·소개 문구·이미지를 관리합니다.
+공식 사이트 확인 근거는 `saju/sources.json`에 보관합니다.
+건강 페이지와 디자인 CSS를 공유하며 상품 구성은 독립적으로 관리합니다.

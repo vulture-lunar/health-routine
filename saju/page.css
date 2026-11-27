@@ -1,0 +1,32 @@
+/* Existing profile design and tokens, adapted to an independent fortune page. */
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:var(--font-body); color:var(--color-ink); font-size:16px; line-height:1.5; word-break:keep-all; -webkit-font-smoothing:antialiased; }
+a { color:inherit; text-decoration:none; }
+button,input { font:inherit; }
+button { color:inherit; }
+img { max-width:100%; display:block; }
+[hidden] { display:none!important; }
+h1,h2,h3 { font-style:normal; min-width:0; overflow-wrap:anywhere; }
+.profile-wordmark { display:grid; place-items:center; background:var(--color-paper-2); color:var(--color-gold-light); font-family:var(--font-display); font-size:48px; }
+#reading-list { padding-bottom:24px; }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+:root { --color-brand-paper:#fff; }
+#profile-avatar { object-fit:contain; padding:10px; background:var(--color-brand-paper); }
+#reading-list .product-link { grid-template-columns:72px minmax(0,1fr) 20px; gap:12px; min-height:120px; }
+#reading-list .routine-thumb { width:72px; height:94px; border-radius:10px; object-fit:cover; object-position:center; }
+#reading-list .link-effect { font-family:var(--font-display); font-size:18px; }
+@media(max-width:600px) {
+  #reading-list .product-link { grid-template-columns:64px minmax(0,1fr) 20px; gap:8px; min-height:110px; }
+  #reading-list .routine-thumb { width:64px; height:82px; }
+  #reading-list .link-effect { font-size:17px; }
+}
+@media(max-width:374px) {
+  #reading-list .product-link { grid-template-columns:56px minmax(0,1fr) 16px; gap:6px; }
+  #reading-list .routine-thumb { width:56px; height:72px; }
+  #reading-list .link-effect { font-size:16px; }
+}
+.official-home { padding:0 0 12px; }
+.official-home a { display:flex; align-items:center; justify-content:center; gap:12px; min-height:48px; border:1px solid var(--color-profile-border); border-radius:var(--radius-link); color:var(--color-gold-light); font-size:13px; white-space:nowrap; }
+.official-home a:hover { background:var(--color-paper-2); }
+.official-home a:focus-visible { outline:2px solid var(--color-gold-light); outline-offset:3px; }
