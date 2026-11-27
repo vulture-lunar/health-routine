@@ -218,7 +218,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <link rel="stylesheet" href="tokens.css?v=links-20261127-1">
 <link rel="stylesheet" href="theme.css?v=original-restored-20261124-1">
 <link rel="stylesheet" href="collection.css?v=choice-copy-20261125-1">
-<link rel="stylesheet" href="links.css?v=20261127-1">
+<link rel="stylesheet" href="links.css?v=products-20261127-2">
 </head>
 <body>
 
@@ -226,7 +226,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
   <div class="inner">
     <details class="channel-menu">
       <summary aria-label="메뉴 열기"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary>
-      <nav aria-label="페이지 메뉴"><a href="#top">프로필</a><a href="#routines">건강 정보 보기</a><a href="#discovery">검색 · 고민 선택</a><a href="#youtube">유튜브 채널</a></nav>
+      <nav aria-label="페이지 메뉴"><a href="#top">프로필</a><a href="#routines">제품 목록 보기</a><a href="#discovery">검색 · 고민 선택</a><a href="#youtube">유튜브 채널</a></nav>
     </details>
     <button class="profile-share" type="button" aria-label="프로필 공유하기"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M7 10H5v11h14V10h-2"/></svg></button>
   </div>
@@ -238,15 +238,15 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
         <img class="profile-avatar" src="assets/channel-emblem.jpg" alt="백년 탐구생활 채널 프로필" width="96" height="96" fetchpriority="high">
         <h1>백년 탐구생활</h1>
         <p class="hero-copy">복잡한 건강 정보는 쉽게,<br>나에게 맞는 선택은 신중하게.</p>
-        <p class="profile-description">궁금한 고민을 눌러 생활 습관과 추천 제품을 살펴보세요.</p>
+        <p class="profile-description">제품을 누르면 해당 브랜드의 판매 페이지로 연결됩니다.</p>
       </div>
 
     </div>
   </section>
 
-  <section class="library" id="routines" aria-label="고민 목록">
+  <section class="library" id="routines" aria-label="제품 목록">
     <div class="inner">
-      <h2 class="visually-hidden">고민별 건강 정보</h2>
+      <h2 class="visually-hidden">활력포션 · 코어바이탈 제품</h2>
       <div class="card-grid" id="grid"></div>
     </div>
   </section>
@@ -316,6 +316,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <dialog class="sheet" id="sheet" aria-labelledby="sheet-title"></dialog>
 <dialog class="sheet product-sheet" id="product-sheet" aria-labelledby="product-guide-title"></dialog>
 
+<script src="catalog-products.js?v=20261127-1"></script>
 <script src="concern-insights.js?v=recommendation-links-20261125-1"></script>
 <script src="shorts-data.js?v=13363bccf6a3"></script>
 <script src="product-guides.js?v=point-aligned-20261125-1"></script>
@@ -441,20 +442,17 @@ channelMenu.addEventListener("keydown", event => { if (event.key === "Escape") {
 filtersEl.innerHTML = CATS.map(c =>
   `<button type="button" id="f-${c.id}" data-cat="${c.id}" aria-pressed="${c.id === "all"}"><span aria-hidden="true">${c.icon}</span>${esc(c.name)}</button>`).join("");
 
-const concernLinkTitle = c => c.tag.endsWith("건강") ? `${c.tag} 정보` : c.id === "sleep" ? "수면 건강 정보" : `${c.tag} 건강 정보`;
-
 function renderGrid() {
-  const list = C.filter(c => curCat === "all" || c.cat === curCat);
-  gridEl.innerHTML = list.length ? list.map(c => {
-    return `
+  const categoryProducts = new Set(C.filter(c => c.cat === curCat).flatMap(c => c.picks.map(([id]) => String(id))));
+  const list = PRODUCT_LINKS.filter(p => curCat === "all" || categoryProducts.has(p.id));
+  gridEl.innerHTML = list.map(p => `
     <div class="link-row">
-      <button type="button" class="card ${c.color}" data-id="${c.id}" aria-haspopup="dialog" aria-label="${esc(concernLinkTitle(c))}: ${esc(c.q)}">
-        <img class="routine-thumb" src="assets/routine-${c.id}.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
-        <span class="link-title">${esc(concernLinkTitle(c))}</span>
-      </button>
-      <button type="button" class="link-share" data-share-id="${c.id}" aria-label="${esc(c.tag)} 링크 공유"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg></button>
-    </div>`;
-  }).join("") : "";
+      <a class="card product-link" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer" data-catalog-id="${esc(p.id)}" aria-label="${esc(p.name)} 판매 페이지 (새 탭)">
+        <img class="routine-thumb" src="${esc(p.img)}" alt="" width="48" height="48" loading="lazy" decoding="async">
+        <span class="link-title">${esc(p.name)}</span>
+      </a>
+      <button type="button" class="link-share" data-share-id="product-${esc(p.id)}" aria-label="${esc(p.name)} 링크 공유"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg></button>
+    </div>`).join("");
 }
 
 function prodCard(no, why, tags) {
@@ -733,13 +731,16 @@ const shareDialog = document.getElementById("share-dialog");
 const shareUrl = document.getElementById("share-url");
 const shareStatus = document.getElementById("share-status");
 function siteLink(id = "") {
+  const product = PRODUCT_LINKS.find(p => `product-${p.id}` === id);
+  if (product) return product.url;
   const url = new URL(location.href);
   url.search = "";
   url.hash = id;
   return url.href;
 }
 async function shareLink(id = "") {
-  const title = id ? `${C.find(c => c.id === id)?.tag || "건강 정보"} · 백년 탐구생활` : "백년 탐구생활";
+  const product = PRODUCT_LINKS.find(p => `product-${p.id}` === id);
+  const title = product ? product.name : id ? `${C.find(c => c.id === id)?.tag || "건강 정보"} · 백년 탐구생활` : "백년 탐구생활";
   const url = siteLink(id);
   if (navigator.share) {
     try { await navigator.share({title, url}); return; }
@@ -767,7 +768,7 @@ document.getElementById("share-close").addEventListener("click", () => shareDial
 shareDialog.addEventListener("click", event => { if (event.target === shareDialog) shareDialog.close(); });
 channelMenu.querySelector('a[href="#discovery"]').addEventListener("click", () => { document.querySelector(".discovery-tools").open = true; });
 
-gridEl.addEventListener("click", e => { const b = e.target.closest(".card"); if (b) openNote(b.dataset.id); });
+gridEl.addEventListener("click", e => { const b = e.target.closest(".card"); if (b?.dataset.id) openNote(b.dataset.id); });
 filtersEl.addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
   curCat = b.dataset.cat;

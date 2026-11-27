@@ -90,3 +90,7 @@ footer p { font-size:11px; color:var(--color-muted); }
 .youtube-channel-action { display:block; width:24px; min-height:0; height:auto; padding:0; border:0; border-radius:0; background:none; box-shadow:none; }
 .youtube-channel-card:hover .youtube-channel-action { background:none; color:var(--color-gold-light); }
 @media(max-width:374px) { .youtube-channel-info h2 { font-size:13px; } }
+/* Product rows use the brand stores' packshots, one product per seller link. */
+.link-row .product-link .routine-thumb { object-fit:contain; background:var(--color-ink); }
+.link-row .product-link .link-title { font-size:14px; letter-spacing:-.03em; }
+@media(max-width:374px) { .link-row .product-link .link-title { font-size:12px; letter-spacing:-.05em; } }
