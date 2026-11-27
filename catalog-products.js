@@ -7,8 +7,8 @@ const PRODUCT_LINKS = [
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251209/e16e65f08472072444d79d7a318e6d08.png",
     "brand": "활력포션",
     "img": "assets/photos/after-comfortable-digestion.jpg",
-    "effect": "속 편안함을 생각한 배합",
-    "detail": "일반식품 · 양배추·작약·감초",
+    "effect": "속이 편안한 식사 루틴",
+    "detail": "먹고 나면 더부룩한 날이 잦다면",
     "imageAlt": "식사 후 편안한 표정으로 배에 손을 얹은 할아버지",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=74",
     "benefitReviewedAt": "2026-11-27"
@@ -21,7 +21,7 @@ const PRODUCT_LINKS = [
     "brand": "활력포션",
     "img": "assets/photos/color-blood-pressure.jpg",
     "effect": "혈압·혈당·콜레스테롤 관리",
-    "detail": "건강기능식품 · 도움을 줄 수 있음",
+    "detail": "여러 고민을 한 번에 챙기는 루틴",
     "imageAlt": "코랄색 상의를 입고 팔에 혈압계를 차는 중년 남성",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=75",
     "benefitReviewedAt": "2026-11-27"
@@ -34,7 +34,7 @@ const PRODUCT_LINKS = [
     "brand": "활력포션",
     "img": "assets/photos/after-fresh-breathing.jpg",
     "effect": "환절기 코·목 관리",
-    "detail": "일반식품 · 삼백초·맥문동",
+    "detail": "계절이 바뀔 때 먼저 챙기는 습관",
     "imageAlt": "상쾌한 공기를 편안히 들이마시는 여성",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=77",
     "benefitReviewedAt": "2026-11-27"
@@ -47,7 +47,7 @@ const PRODUCT_LINKS = [
     "brand": "활력포션",
     "img": "assets/photos/color-sleep-mint.jpg",
     "effect": "편안한 밤·수면 루틴",
-    "detail": "일반식품 · 멜라토닌 함유 원료·락티움",
+    "detail": "하루의 끝, 나를 위한 밤 루틴",
     "imageAlt": "민트색 잠옷과 밝은 침구에서 편안히 잠든 여성",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=54",
     "benefitReviewedAt": "2026-11-27"
@@ -60,7 +60,7 @@ const PRODUCT_LINKS = [
     "brand": "활력포션",
     "img": "assets/photos/after-healthy-hair.jpg",
     "effect": "머리숱·모발 영양 관리",
-    "detail": "일반식품 · 아누카사과·비오틴",
+    "detail": "거울 앞 자신감을 위한 작은 습관",
     "imageAlt": "풍성한 머리카락을 자연스럽게 정돈하는 남성",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=59",
     "benefitReviewedAt": "2026-11-27"
@@ -72,8 +72,8 @@ const PRODUCT_LINKS = [
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251204/a872935cee184bebffba44e63222819a.png",
     "brand": "활력포션",
     "img": "assets/photos/after-comfortable-throat.jpg",
-    "effect": "건조한 목을 위한 배합",
-    "detail": "일반식품 · 도라지·모과·맥문동",
+    "effect": "목이 편안한 하루 루틴",
+    "detail": "말을 많이 한 날, 목을 챙길 시간",
     "imageAlt": "물을 마시며 편안하게 미소 짓는 남성",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=72",
     "benefitReviewedAt": "2026-11-27"
@@ -86,7 +86,7 @@ const PRODUCT_LINKS = [
     "brand": "활력포션",
     "img": "assets/photos/after-energized-after-meal.jpg",
     "effect": "식후·식사 관리 루틴",
-    "detail": "일반식품 · 양춘사·바나바잎",
+    "detail": "밥·빵·면을 즐기는 나를 위한 선택",
     "imageAlt": "식사 후 활기차게 가볍게 기지개를 켜는 여성",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=51",
     "benefitReviewedAt": "2026-11-27"
@@ -99,7 +99,7 @@ const PRODUCT_LINKS = [
     "brand": "활력포션",
     "img": "assets/photos/light-pilates-pink.jpg",
     "effect": "다이어트·라인 루틴",
-    "detail": "일반식품 · 모로오렌지·락토페린",
+    "detail": "내가 원하는 라인을 위한 작은 습관",
     "imageAlt": "로즈 핑크 필라테스복을 입은 20대 성인 여성",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=49",
     "benefitReviewedAt": "2026-11-27"
@@ -112,7 +112,7 @@ const PRODUCT_LINKS = [
     "brand": "활력포션",
     "img": "assets/photos/after-radiant-skin.jpg",
     "effect": "피부 생기·피부결 관리",
-    "detail": "일반식품 · 모링가·비타민C",
+    "detail": "화장보다 먼저 챙기는 피부 루틴",
     "imageAlt": "거울을 보며 피부에 만족하는 표정의 여성",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=64",
     "benefitReviewedAt": "2026-11-27"
@@ -125,7 +125,7 @@ const PRODUCT_LINKS = [
     "brand": "활력포션",
     "img": "assets/photos/after-midlife-comfort.jpg",
     "effect": "중년 여성 밸런스 관리",
-    "detail": "일반식품 · 5종 식물 유래 원료",
+    "detail": "몸도 기분도 예전 같지 않을 때",
     "imageAlt": "햇살과 바람을 즐기며 편안히 웃는 중년 여성",
     "benefitSource": "https://smartstore.naver.com/corevital/products/13562421497",
     "benefitReviewedAt": "2026-11-27"
@@ -138,7 +138,7 @@ const PRODUCT_LINKS = [
     "brand": "코어바이탈",
     "img": "assets/photos/color-skin-hydration.jpg",
     "effect": "피부 보습·자외선 손상 케어",
-    "detail": "건강기능식품 · 도움을 줄 수 있음",
+    "detail": "푸석한 피부가 신경 쓰이는 날",
     "imageAlt": "라일락색 상의를 입고 볼에 보습제를 바르는 여성",
     "benefitSource": "https://smartstore.naver.com/corevital/products/13871627589",
     "benefitReviewedAt": "2026-11-27"
@@ -151,7 +151,7 @@ const PRODUCT_LINKS = [
     "brand": "코어바이탈",
     "img": "assets/photos/after-comfortable-bowel.jpg",
     "effect": "배변·콜레스테롤 개선",
-    "detail": "건강기능식품 · 도움을 줄 수 있음",
+    "detail": "아침마다 개운함이 아쉬웠다면",
     "imageAlt": "화장실 문가에서 편안한 표정으로 아랫배에 손을 얹은 남성",
     "benefitSource": "https://smartstore.naver.com/corevital/products/13764044888",
     "benefitReviewedAt": "2026-11-27"
@@ -164,7 +164,7 @@ const PRODUCT_LINKS = [
     "brand": "코어바이탈",
     "img": "assets/photos/color-portion-choice.jpg",
     "effect": "식사량 고민·식이섬유",
-    "detail": "일반식품 · 케롤린·식이섬유",
+    "detail": "식사 후에도 자꾸 간식이 당긴다면",
     "imageAlt": "청록색 상의를 입고 배가 불러 간식을 사양하는 여성",
     "benefitSource": "https://smartstore.naver.com/corevital/products/13041480467",
     "benefitReviewedAt": "2026-11-27"
