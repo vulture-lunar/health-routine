@@ -97,10 +97,10 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=49",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251209/4a02f587b70c861b41e2a707223b89da.png",
     "brand": "활력포션",
-    "img": "assets/photos/light.jpg",
+    "img": "assets/photos/light-pilates.jpg",
     "effect": "다이어트·라인 루틴",
     "detail": "일반식품 · 모로오렌지·락토페린",
-    "imageAlt": "공원에서 가볍게 산책하는 모습",
+    "imageAlt": "남색 필라테스 운동복을 입은 슬림한 성인 여성",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=49",
     "benefitReviewedAt": "2026-11-27"
   },
