@@ -1,29 +1,40 @@
 // Automatically refreshed public YouTube Shorts metadata; curated topics are preserved.
 const HEALTH_SHORTS = {
-  "checkedAt": "2026-11-27",
+  "checkedAt": "2026-11-28",
   "channelId": "UCE9Si-9SKNSVv0HunJgyVuQ",
   "videos": [
+    {
+      "id": "NSJaE-DqRYc",
+      "title": "치매 막으려 먹은 바이러스 약, 결과는 반대였다",
+      "publishedAt": "2026-11-27T09:00:15+00:00",
+      "views": 6,
+      "topics": [
+        "parents"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/NSJaE-DqRYc/hqdefault.jpg",
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
+    },
     {
       "id": "dAvyMzJqCQE",
       "title": "입술 물집이 같은 자리에 또 나는 이유",
       "publishedAt": "2026-11-26T09:00:37+00:00",
-      "views": 48,
+      "views": 123,
       "topics": [
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/dAvyMzJqCQE/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "ah8LmQofy9o",
       "title": "3명 중 2명이 가진 바이러스, 치매와 연결됐다",
       "publishedAt": "2026-11-25T09:00:30+00:00",
-      "views": 1249,
+      "views": 1256,
       "topics": [
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/ah8LmQofy9o/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "wN0epqkFI_o",
@@ -34,29 +45,29 @@ const HEALTH_SHORTS = {
         "light"
       ],
       "thumbnail": "https://i.ytimg.com/vi/wN0epqkFI_o/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "nAyZlysEWPY",
       "title": "외로움이 오래가면, 치매가 2명 중 1명꼴",
       "publishedAt": "2026-11-23T09:00:37+00:00",
-      "views": 1407,
+      "views": 1408,
       "topics": [
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/nAyZlysEWPY/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "7CCALN68pXA",
       "title": "햄·베이컨 먹은 뒤 비타민C, 위 속에서 생기는 일",
       "publishedAt": "2026-11-22T09:00:40+00:00",
-      "views": 170,
+      "views": 172,
       "topics": [
         "gut"
       ],
       "thumbnail": "https://i.ytimg.com/vi/7CCALN68pXA/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "DI8eC2hgcH8",
@@ -67,7 +78,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/DI8eC2hgcH8/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "VPYqyIq6b5g",
@@ -78,7 +89,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/VPYqyIq6b5g/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "NmUAfkcKdNI",
@@ -89,18 +100,18 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/NmUAfkcKdNI/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "sDq9SVSWnOY",
       "title": "잠들 때는 체온이 내려가는데, 왜 따뜻한 샤워가 도움이 될까요?",
       "publishedAt": "2026-11-19T09:00:25+00:00",
-      "views": 14,
+      "views": 15,
       "topics": [
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/sDq9SVSWnOY/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "6_QSTHthS2c",
@@ -111,7 +122,7 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/6_QSTHthS2c/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "GcZLfxpS0-0",
@@ -122,7 +133,7 @@ const HEALTH_SHORTS = {
         "sleep"
       ],
       "thumbnail": "https://i.ytimg.com/vi/GcZLfxpS0-0/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "kdQxAZS0XU8",
@@ -133,7 +144,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/kdQxAZS0XU8/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "SOH3DgQ3yhs",
@@ -145,7 +156,7 @@ const HEALTH_SHORTS = {
         "parents"
       ],
       "thumbnail": "https://i.ytimg.com/vi/SOH3DgQ3yhs/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "gtfw18tVAHc",
@@ -156,7 +167,7 @@ const HEALTH_SHORTS = {
         "meal"
       ],
       "thumbnail": "https://i.ytimg.com/vi/gtfw18tVAHc/hqdefault.jpg",
-      "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
+      "viewsCheckedAt": "2026-11-27T23:16:03+00:00"
     },
     {
       "id": "SJ0P4qfX23I",
@@ -523,5 +534,5 @@ const HEALTH_SHORTS = {
       "viewsCheckedAt": "2026-11-26T23:32:30+00:00"
     }
   ],
-  "updatedAt": "2026-11-26T23:32:30+00:00"
+  "updatedAt": "2026-11-27T23:16:03+00:00"
 };
