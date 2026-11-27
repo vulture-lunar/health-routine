@@ -6,10 +6,10 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=74",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251209/e16e65f08472072444d79d7a318e6d08.png",
     "brand": "활력포션",
-    "img": "assets/photos/gut-stomach.jpg",
+    "img": "assets/photos/gut-grandfather.jpg",
     "effect": "속 편안함을 생각한 배합",
     "detail": "일반식품 · 양배추·작약·감초",
-    "imageAlt": "복부에 손을 얹은 사람과 위 위치를 나타내는 금색 윤곽",
+    "imageAlt": "속이 불편해 상복부를 감싸고 있는 할아버지",
     "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=74",
     "benefitReviewedAt": "2026-11-27"
   },
