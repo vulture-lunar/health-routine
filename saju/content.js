@@ -2,16 +2,16 @@
 const SAJU_PAGE = {
   "title": "운명 에디트",
   "intro": [
-    "타고난 성향부터 연애·재물·인연까지,",
-    "내 삶의 흐름을 쉽고 흥미롭게."
+    "내 인생, 지금 어디로 가는 걸까?",
+    "사랑도 돈도, 자꾸 마음에 걸리는 그 질문."
   ],
-  "description": "지금 가장 궁금한 운명을 골라보세요.",
+  "description": "모른 척 넘겼던 그 고민, 지금 골라보세요.",
   "avatar": "assets/destiny-edit-avatar.jpg",
   "readings": [
     {
       "id": "jeongtong-saju",
       "title": "정통사주",
-      "description": "타고난 나부터 앞으로의 큰 흐름까지",
+      "description": "나는 왜 늘 비슷한 선택을 할까?",
       "url": "https://www.cheonsirok.co.kr/products/jeongtong-saju",
       "image": "assets/jeongtong-saju.jpg",
       "imageAlt": "정통사주 공식 상품 이미지",
@@ -20,7 +20,7 @@ const SAJU_PAGE = {
     {
       "id": "reunion",
       "title": "재회비책",
-      "description": "다시 연락할까, 마음을 정리할까",
+      "description": "끝난 걸까, 아직 가능성이 남은 걸까?",
       "url": "https://www.cheonsirok.co.kr/products/reunion",
       "image": "assets/reunion.jpg",
       "imageAlt": "재회비책 공식 상품 이미지",
@@ -29,7 +29,7 @@ const SAJU_PAGE = {
     {
       "id": "compatibility",
       "title": "인연궁합",
-      "description": "잘 맞는 만큼 다른 우리, 인연이 궁금하다면",
+      "description": "이렇게 끌리는데, 왜 자꾸 부딪힐까?",
       "url": "https://www.cheonsirok.co.kr/products/compatibility",
       "image": "assets/compatibility.jpg",
       "imageAlt": "인연궁합 공식 상품 이미지",
@@ -38,7 +38,7 @@ const SAJU_PAGE = {
     {
       "id": "relation",
       "title": "연애궁합",
-      "description": "그 사람과 나, 마음의 흐름을 읽어보세요",
+      "description": "그 사람과 나, 마음의 속도는 같을까?",
       "url": "https://www.cheonsirok.co.kr/products/relation",
       "image": "assets/relation.jpg",
       "imageAlt": "연애궁합 공식 상품 이미지",
@@ -47,7 +47,7 @@ const SAJU_PAGE = {
     {
       "id": "marriage",
       "title": "혼인명서",
-      "description": "배우자 인연부터 함께할 결혼생활까지",
+      "description": "평생 함께할 사람, 지금 그 사람일까?",
       "url": "https://www.cheonsirok.co.kr/products/marriage",
       "image": "assets/marriage.jpg",
       "imageAlt": "혼인명서 공식 상품 이미지",
@@ -56,7 +56,7 @@ const SAJU_PAGE = {
     {
       "id": "career",
       "title": "커리어사주",
-      "description": "내 재능이 빛나는 일은 무엇일까요?",
+      "description": "지금 버티는 그 일, 내 길이 맞을까?",
       "url": "https://www.cheonsirok.co.kr/products/career",
       "image": "assets/career.jpg",
       "imageAlt": "커리어사주 공식 상품 이미지",
@@ -65,7 +65,7 @@ const SAJU_PAGE = {
     {
       "id": "money",
       "title": "재물운",
-      "description": "돈이 모이는 방식과 새는 지출이 궁금하다면",
+      "description": "버는데 왜 안 모일까? 내 돈의 흐름은?",
       "url": "https://www.cheonsirok.co.kr/products/money",
       "image": "assets/money.jpg",
       "imageAlt": "재물운 공식 상품 이미지",
@@ -74,7 +74,7 @@ const SAJU_PAGE = {
     {
       "id": "instinct",
       "title": "본능비책",
-      "description": "둘 사이의 끌림과 친밀감이 궁금하다면",
+      "description": "말로는 안 하는, 둘 사이 끌림의 비밀",
       "url": "https://www.cheonsirok.co.kr/products/instinct",
       "image": "assets/instinct.jpg",
       "imageAlt": "본능비책 공식 상품 이미지",
@@ -83,7 +83,7 @@ const SAJU_PAGE = {
     {
       "id": "pregnancy",
       "title": "임신사주",
-      "description": "새 가족을 꿈꾸는 두 사람의 이야기",
+      "description": "아이를 기다리는 마음, 어떤 인연일까?",
       "url": "https://www.cheonsirok.co.kr/products/pregnancy",
       "image": "assets/pregnancy.jpg",
       "imageAlt": "임신사주 공식 상품 이미지",
@@ -92,7 +92,7 @@ const SAJU_PAGE = {
     {
       "id": "pet",
       "title": "펫사주",
-      "description": "우리 아이의 기질과 나와의 특별한 인연",
+      "description": "우리 집 아이, 왜 나한테만 이럴까?",
       "url": "https://www.cheonsirok.co.kr/products/pet",
       "image": "assets/pet.jpg",
       "imageAlt": "펫사주 공식 상품 이미지",
