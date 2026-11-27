@@ -26,3 +26,15 @@
   --color-mask-solid:#000;
   --metal-art-filter:grayscale(1) brightness(1.15);
 }
+/* Reading hierarchy: expressive serif titles, clear sans-serif descriptions. */
+:root {
+  --font-display:'Noto Serif KR',serif;
+  --font-body:'Noto Sans KR','Apple SD Gothic Neo',system-ui,sans-serif;
+  --text-profile-title:32px;
+  --text-reading-title:21px;
+  --text-reading-description:14px;
+  --text-profile-intro:16px;
+  --text-profile-note:14px;
+  --text-caption:12px;
+  --color-description:#c6ccd6;
+}

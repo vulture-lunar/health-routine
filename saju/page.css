@@ -86,3 +86,28 @@ html::before {
 }
 .hero::before,#profile-avatar { filter:var(--metal-art-filter); }
 @media(max-width:600px) { html::before { background-size:auto 100dvh; } }
+/* Readable typography at phone widths without squeezing the captions. */
+.hero h1 { font-family:var(--font-display); font-size:var(--text-profile-title); font-weight:700; line-height:1.5; letter-spacing:.015em; }
+.profile-handle { font-family:var(--font-body); font-size:var(--text-caption); letter-spacing:.035em; margin-top:8px; }
+.hero-copy { font-family:var(--font-body); font-size:var(--text-profile-intro); font-weight:500; line-height:1.85; letter-spacing:-.025em; max-width:100%; margin-top:16px; }
+.profile-description { font-family:var(--font-body); font-size:var(--text-profile-note); line-height:1.75; letter-spacing:-.025em; color:var(--color-description); margin-top:14px; }
+.hero::before { opacity:.22; }
+#reading-list .product-link { min-height:132px; padding-block:16px; }
+#reading-list .link-copy { gap:9px; }
+#reading-list .link-effect { font-family:var(--font-display); font-size:var(--text-reading-title); font-weight:700; line-height:1.5; letter-spacing:-.02em; }
+#reading-list .link-detail { font-family:var(--font-body); font-size:var(--text-reading-description); font-weight:400; line-height:1.75; letter-spacing:-.025em; color:var(--color-description); white-space:normal; text-wrap:balance; }
+.channel-links a { font-family:var(--font-body); font-size:14px; font-weight:500; line-height:1.6; min-height:52px; }
+footer .footer-brand { font-size:18px; }
+footer p { font-size:var(--text-caption); line-height:1.7; }
+@media(max-width:600px) {
+  .hero h1 { font-size:30px; }
+  #reading-list .product-link { min-height:126px; }
+  #reading-list .link-effect { font-size:20px; }
+}
+@media(max-width:374px) {
+  .hero h1 { font-size:28px; }
+  .hero-copy { font-size:15px; }
+  .profile-description { font-size:13px; }
+  #reading-list .link-effect { font-size:19px; }
+  #reading-list .link-detail { font-size:13px; }
+}
