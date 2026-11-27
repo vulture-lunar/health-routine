@@ -30,3 +30,50 @@ h1,h2,h3 { font-style:normal; min-width:0; overflow-wrap:anywhere; }
 .official-home a { display:flex; align-items:center; justify-content:center; gap:12px; min-height:48px; border:1px solid var(--color-profile-border); border-radius:var(--radius-link); color:var(--color-gold-light); font-size:13px; white-space:nowrap; }
 .official-home a:hover { background:var(--color-paper-2); }
 .official-home a:focus-visible { outline:2px solid var(--color-gold-light); outline-offset:3px; }
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V4
+ * genre: atmospheric profile · theme: supplied Destiny Edit identity
+ * black / antique gold / mother-of-pearl · existing product link structure
+ */
+html {
+  background-color:var(--color-profile-surround);
+  background-image:linear-gradient(var(--color-background-veil),var(--color-background-veil)),url('assets/destiny-wide.jpg');
+  background-position:center top;
+  background-size:cover;
+  background-attachment:fixed;
+}
+body { background:var(--color-body-overlay); border:1px solid var(--color-rule-soft); border-bottom:0; }
+.channel-header { z-index:2; }
+.hero { position:relative; overflow:hidden; }
+.hero::before {
+  content:""; display:block; position:absolute; inset:0; pointer-events:none;
+  background:url('assets/destiny-hero.jpg') center center / cover no-repeat;
+  opacity:.30;
+  mask-image:linear-gradient(to bottom,var(--color-mask-solid) 40%,var(--color-clear));
+}
+.hero .inner { position:relative; z-index:1; padding-top:28px; }
+#profile-avatar { width:104px; height:104px; padding:0; object-fit:cover; border:1px solid var(--color-gold-deep); background:var(--color-brand-paper); box-shadow:0 8px 28px var(--color-avatar-shadow); }
+.hero h1 { color:var(--color-ink); letter-spacing:.06em; margin-top:18px; }
+.profile-handle { margin:7px 0 5px; font-size:11px; color:var(--color-muted); letter-spacing:.08em; }
+.hero-copy { font-size:13px; font-weight:400; line-height:1.9; }
+.profile-description { margin-top:12px; font-size:12px; }
+#reading-list .link-row { background:var(--color-paper-2); border-color:var(--color-profile-border); }
+#reading-list .link-row:hover { background:var(--color-raised); }
+#reading-list .routine-thumb { border:1px solid var(--color-rule-soft); }
+#reading-list .link-effect { color:var(--color-gold-light); }
+.channel-links { padding:4px 0 16px; }
+.channel-links .inner { display:grid; grid-template-columns:minmax(0,1fr); gap:10px; }
+.channel-links a { display:flex; align-items:center; gap:12px; padding:12px 16px; min-height:48px; border:1px solid var(--color-rule); border-radius:var(--radius-link); background:var(--color-paper-2); color:var(--color-ink); font-size:13px; white-space:nowrap; }
+.channel-links a svg { flex:none; color:var(--color-gold); }
+.channel-links a > span:first-of-type { flex:1; text-align:center; }
+.channel-links a > span:last-child { color:var(--color-gold); }
+.channel-links a:hover { background:var(--color-raised); }
+.channel-links a:focus-visible { outline:2px solid var(--color-gold-light); outline-offset:3px; }
+.official-home a { background:var(--color-paper); }
+footer { padding-top:24px; }
+footer .footer-brand { color:var(--color-ink); }
+@media(max-width:600px) {
+  body { border:0; }
+  html { background-size:auto 100dvh; }
+  .hero .inner { padding-top:24px; }
+  .hero::before { background-size:auto 100%; }
+}

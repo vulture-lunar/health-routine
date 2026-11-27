@@ -93,5 +93,12 @@
       "imageAlt": "펫사주 공식 상품 이미지",
       "sourceImage": "https://www.cheonsirok.co.kr/products/product-cards/pet.webp"
     }
-  ]
+  ],
+  "publisher": {
+    "name": "운명 에디트",
+    "youtube": "https://www.youtube.com/@%EC%9A%B4%EB%AA%85%EC%97%90%EB%94%94%ED%8A%B8",
+    "instagram": "https://www.instagram.com/destiny_edit__/",
+    "avatar": "YouTube channel og:image, verified 2026-11-27",
+    "backgrounds": "Two celestial gold and mother-of-pearl images attached by the user on 2026-11-27"
+  }
 }

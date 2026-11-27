@@ -1,0 +1,23 @@
+/* Destiny Edit · user supplied black, antique gold and mother-of-pearl identity. */
+:root {
+  --color-paper:#080807;
+  --color-paper-2:#11100d;
+  --color-raised:#1d1913;
+  --color-ink:#f1e7d8;
+  --color-muted:#b9ab97;
+  --color-gold:#c49a63;
+  --color-gold-light:#ead6b5;
+  --color-gold-deep:#8f6537;
+  --color-rule:#685037;
+  --color-rule-soft:#30291f;
+  --color-profile-surround:#030302;
+  --color-profile-border:#715336;
+  --color-profile-backdrop:#000000b3;
+  --color-brand-paper:#080807;
+  --color-background-veil:#03030255;
+  --color-body-overlay:#080807ed;
+  --color-avatar-shadow:#00000080;
+  --color-pearl-pink:#dbc6cf;
+  --color-pearl-blue:#c5d0dc;
+  --color-mask-solid:#000;
+}

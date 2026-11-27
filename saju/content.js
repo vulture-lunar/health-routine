@@ -1,12 +1,12 @@
-// Official products and entry links verified on 2026-11-27.
+// Destiny Edit channel profile; official Cheonsirok product links.
 const SAJU_PAGE = {
-  "title": "천시록",
+  "title": "운명 에디트",
   "intro": [
-    "내일이 궁금한 오늘,",
-    "나를 읽는 시간."
+    "타고난 성향부터 연애·재물·인연까지,",
+    "내 삶의 흐름을 쉽고 흥미롭게."
   ],
-  "description": "사랑부터 일과 재물까지, 궁금한 이야기를 골라보세요.",
-  "avatar": "assets/cheonsirok-logo.png",
+  "description": "지금 가장 궁금한 운명을 골라보세요.",
+  "avatar": "assets/destiny-edit-avatar.jpg",
   "readings": [
     {
       "id": "jeongtong-saju",
@@ -98,5 +98,6 @@ const SAJU_PAGE = {
       "imageAlt": "펫사주 공식 상품 이미지",
       "sourceImage": "https://www.cheonsirok.co.kr/products/product-cards/pet.webp"
     }
-  ]
+  ],
+  "handle": "@destiny_edit__"
 };

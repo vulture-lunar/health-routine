@@ -1,7 +1,9 @@
 const config = SAJU_PAGE;
 const titleEl = document.getElementById("page-title");
 titleEl.textContent = config.title;
-document.title = `${config.title} | 내 고민에 맞는 사주 찾기`;
+const handleEl = document.querySelector(".profile-handle");
+if (handleEl) handleEl.textContent = config.handle || "";
+document.title = `${config.title} | 궁금했던 내 운명의 이야기`;
 document.getElementById("footer-title").textContent = config.title;
 document.getElementById("footer-copyright").textContent = `© ${config.title}`;
 document.getElementById("page-description").textContent = config.description;
