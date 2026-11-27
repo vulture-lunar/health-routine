@@ -1,4 +1,4 @@
-// One row per distinct product. Verified against the brand stores on 2026-11-27.
+// One row per product. Purpose illustrations; functional claims follow product labeling.
 const PRODUCT_LINKS = [
   {
     "id": "74",
@@ -6,7 +6,12 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=74",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251209/e16e65f08472072444d79d7a318e6d08.png",
     "brand": "활력포션",
-    "img": "assets/product-link-74.png"
+    "img": "assets/routine-gut.webp",
+    "effect": "속 편안함을 생각한 배합",
+    "detail": "일반식품 · 양배추·작약·감초",
+    "imageAlt": "위와 양배추로 표현한 속 편안함 관리",
+    "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=74",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "75",
@@ -14,7 +19,12 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=75",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20260205/09bfa97964541c8599bceef054c32b14.png",
     "brand": "활력포션",
-    "img": "assets/product-link-75.png"
+    "img": "assets/routine-vessel.webp",
+    "effect": "혈압·혈당·콜레스테롤 관리",
+    "detail": "건강기능식품 · 도움을 줄 수 있음",
+    "imageAlt": "심장과 혈관으로 표현한 혈관 건강 관리",
+    "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=75",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "77",
@@ -22,7 +32,12 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=77",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20260128/3a78f3fca9843c82a3409cc2d8820122.png",
     "brand": "활력포션",
-    "img": "assets/product-link-77.png"
+    "img": "assets/routine-throat.webp",
+    "effect": "환절기 코·목 관리",
+    "detail": "일반식품 · 삼백초·맥문동",
+    "imageAlt": "호흡기로 표현한 환절기 코와 목 관리",
+    "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=77",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "54",
@@ -30,7 +45,12 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=54",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251204/a2dc4095ac571176feaa9d9ae40b1509.png",
     "brand": "활력포션",
-    "img": "assets/product-link-54.png"
+    "img": "assets/routine-sleep.webp",
+    "effect": "편안한 밤·수면 루틴",
+    "detail": "일반식품 · 멜라토닌 함유 원료·락티움",
+    "imageAlt": "달과 편안한 밤으로 표현한 수면 루틴",
+    "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=54",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "59",
@@ -38,7 +58,12 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=59",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251204/e29206348dfecd9bfca95dc218f35b81.png",
     "brand": "활력포션",
-    "img": "assets/product-link-59.png"
+    "img": "assets/routine-hair.webp",
+    "effect": "머리숱·모발 영양 관리",
+    "detail": "일반식품 · 아누카사과·비오틴",
+    "imageAlt": "풍성한 머리카락으로 표현한 모발 관리",
+    "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=59",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "72",
@@ -46,7 +71,12 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=72",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251204/a872935cee184bebffba44e63222819a.png",
     "brand": "활력포션",
-    "img": "assets/product-link-72.png"
+    "img": "assets/routine-throat.webp",
+    "effect": "건조한 목을 위한 배합",
+    "detail": "일반식품 · 도라지·모과·맥문동",
+    "imageAlt": "호흡기로 표현한 건조한 목 관리",
+    "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=72",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "51",
@@ -54,7 +84,12 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=51",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251204/e1f1321fedc1c291f671224499553542.png",
     "brand": "활력포션",
-    "img": "assets/product-link-51.png"
+    "img": "assets/routine-meal.webp",
+    "effect": "식후·식사 관리 루틴",
+    "detail": "일반식품 · 양춘사·바나바잎",
+    "imageAlt": "식사 그릇으로 표현한 식후 관리",
+    "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=51",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "49",
@@ -62,7 +97,12 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=49",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251209/4a02f587b70c861b41e2a707223b89da.png",
     "brand": "활력포션",
-    "img": "assets/product-link-49.png"
+    "img": "assets/routine-light.webp",
+    "effect": "다이어트·라인 루틴",
+    "detail": "일반식품 · 모로오렌지·락토페린",
+    "imageAlt": "물과 식물로 표현한 가벼운 생활 루틴",
+    "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=49",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "64",
@@ -70,7 +110,12 @@ const PRODUCT_LINKS = [
     "url": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=64",
     "sourceImage": "https://ecimg.cafe24img.com/pg434b75783818095/conrolsc2/web/product/big/20251204/e84db472137e4bc71f6843fdcdd8a57f.png",
     "brand": "활력포션",
-    "img": "assets/product-link-64.png"
+    "img": "assets/routine-skin.webp",
+    "effect": "피부 생기·피부결 관리",
+    "detail": "일반식품 · 모링가·비타민C",
+    "imageAlt": "얼굴과 피부로 표현한 피부결 관리",
+    "benefitSource": "https://www.vitalitypotion.co.kr/product/detail.html?product_no=64",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "rfq",
@@ -78,7 +123,12 @@ const PRODUCT_LINKS = [
     "url": "https://smartstore.naver.com/corevital/products/13562421497",
     "sourceImage": "https://shop-phinf.pstatic.net/20260529_59/1780037783092DRlfm_PNG/93134692030800615_727987460.png?type=f640",
     "brand": "활력포션",
-    "img": "assets/product-link-rfq.png"
+    "img": "assets/routine-change.webp",
+    "effect": "중년 여성 밸런스 관리",
+    "detail": "일반식품 · 5종 식물 유래 원료",
+    "imageAlt": "여성의 모습으로 표현한 중년 건강 관리",
+    "benefitSource": "https://smartstore.naver.com/corevital/products/13562421497",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "col",
@@ -86,7 +136,12 @@ const PRODUCT_LINKS = [
     "url": "https://smartstore.naver.com/corevital/products/13871627589",
     "sourceImage": "https://shop-phinf.pstatic.net/20261116_133/1794789981255VflVY_PNG/128922801379521216_2138889105.png?type=f640",
     "brand": "코어바이탈",
-    "img": "assets/product-link-col.png"
+    "img": "assets/routine-skin.webp",
+    "effect": "피부 보습·자외선 손상 케어",
+    "detail": "건강기능식품 · 도움을 줄 수 있음",
+    "imageAlt": "촉촉한 피부를 상징하는 얼굴 일러스트",
+    "benefitSource": "https://smartstore.naver.com/corevital/products/13871627589",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "fib",
@@ -94,7 +149,12 @@ const PRODUCT_LINKS = [
     "url": "https://smartstore.naver.com/corevital/products/13764044888",
     "sourceImage": "https://shop-phinf.pstatic.net/20260922_292/1790065025458kpSxl_PNG/36810030842292978_1227258030.png?type=f640",
     "brand": "코어바이탈",
-    "img": "assets/product-link-fib.png"
+    "img": "assets/routine-bowel.webp",
+    "effect": "배변·콜레스테롤 개선",
+    "detail": "건강기능식품 · 도움을 줄 수 있음",
+    "imageAlt": "장과 식물로 표현한 배변활동 관리",
+    "benefitSource": "https://smartstore.naver.com/corevital/products/13764044888",
+    "benefitReviewedAt": "2026-11-27"
   },
   {
     "id": "off",
@@ -102,6 +162,11 @@ const PRODUCT_LINKS = [
     "url": "https://smartstore.naver.com/corevital/products/13041480467",
     "sourceImage": "https://shop-phinf.pstatic.net/20260206_255/1770350242336DxdB7_PNG/39009677042681135_1234439746.png?type=f640",
     "brand": "코어바이탈",
-    "img": "assets/product-link-off.png"
+    "img": "assets/routine-meal.webp",
+    "effect": "식사량 고민·식이섬유",
+    "detail": "일반식품 · 케롤린·식이섬유",
+    "imageAlt": "식사 그릇으로 표현한 식사량 관리",
+    "benefitSource": "https://smartstore.naver.com/corevital/products/13041480467",
+    "benefitReviewedAt": "2026-11-27"
   }
 ];

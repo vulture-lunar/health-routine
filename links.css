@@ -94,3 +94,25 @@ footer p { font-size:11px; color:var(--color-muted); }
 .link-row .product-link .routine-thumb { object-fit:contain; background:var(--color-ink); }
 .link-row .product-link .link-title { font-size:14px; letter-spacing:-.03em; }
 @media(max-width:374px) { .link-row .product-link .link-title { font-size:12px; letter-spacing:-.05em; } }
+/* Benefit-led rows: existing anatomical illustrations and product-specific copy. */
+.link-row .product-link { grid-template-columns:64px minmax(0,1fr) 28px; gap:10px; min-height:104px; padding:12px; border-radius:var(--radius-profile); }
+.link-row:has(.product-link) { border-radius:var(--radius-profile); }
+.link-row .product-link .routine-thumb { width:64px; height:64px; object-fit:cover; border-radius:14px; background:var(--color-paper); }
+.link-copy { grid-column:2; grid-row:1; display:flex; flex-direction:column; align-items:center; gap:5px; min-width:0; }
+.link-effect { display:block; color:var(--color-gold-light); font-family:var(--font-body); font-size:16px; line-height:1.55; font-weight:700; letter-spacing:-.04em; white-space:nowrap; }
+.link-row .product-link .link-title { display:block; font-size:12px; font-weight:500; line-height:1.6; letter-spacing:-.04em; }
+.link-detail { display:block; color:var(--color-muted); font-size:10px; line-height:1.6; letter-spacing:-.04em; white-space:nowrap; }
+@media(max-width:600px) {
+  .link-row .product-link { grid-template-columns:56px minmax(0,1fr) 20px; padding:12px 8px; gap:6px; }
+  .link-row .product-link .routine-thumb { width:56px; height:64px; }
+  .link-effect { font-size:14px; }
+  .link-row .product-link .link-title { font-size:12px; }
+  .link-row:has(.product-link) .link-share { width:32px; right:2px; }
+}
+@media(max-width:374px) {
+  .link-row .product-link { grid-template-columns:48px minmax(0,1fr) 16px; gap:4px; }
+  .link-row .product-link .routine-thumb { width:48px; height:60px; }
+  .link-effect { font-size:13px; }
+  .link-row .product-link .link-title { font-size:11px; }
+  .link-detail { font-size:9px; }
+}
