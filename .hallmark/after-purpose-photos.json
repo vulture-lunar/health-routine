@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-27",
+  "tool": "built-in image_gen.imagegen",
+  "purpose": "Aspirational everyday wellness scenes representing comfortable states; generated models, not documented treatment outcomes.",
+  "assets": [
+    {
+      "id": "74",
+      "key": "comfortable-digestion",
+      "scene": "A Korean grandfather around 70 in a light oatmeal beige cardigan and pale peach shirt seated comfortably after a modest home meal. Warm relaxed smile, upright easy posture, one hand resting lightly and comfortably over his upper abdomen, other hand beside the dining table. His face and abdomen are both clearly visible in a tight head-to-waist crop, simple plate at lower edge. Convey a contented comfortable stomach after eating, no grimace or pain.",
+      "prompt": "Use case: photorealistic-natural. Asset: square thumbnail on a Korean wellness website. Create an aspirational positive everyday wellness lifestyle photograph, NOT a documented treatment result or proof of product efficacy. Bright authentic editorial photography, natural skin and anatomy, colorful light clothing and light cream/pastel surroundings, clear dominant subject recognizable at 64 pixels. No navy clothing, no product packaging, no text, no before-and-after layout, no arrows, clinical readings, miraculous changes or artificial perfection. A Korean grandfather around 70 in a light oatmeal beige cardigan and pale peach shirt seated comfortably after a modest home meal. Warm relaxed smile, upright easy posture, one hand resting lightly and comfortably over his upper abdomen, other hand beside the dining table. His face and abdomen are both clearly visible in a tight head-to-waist crop, simple plate at lower edge. Convey a contented comfortable stomach after eating, no grimace or pain.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-4293d8b1-3bd9-4ef8-829e-6089e18e1f31.png",
+      "path": "assets/photos/after-comfortable-digestion.jpg"
+    },
+    {
+      "id": "77",
+      "key": "fresh-breathing",
+      "scene": "A Korean woman around 40 in a lavender sweater outdoors in a sunlit green park, eyes gently closed, nose and face clearly visible in profile-three-quarter view, enjoying a relaxed fresh-air breath with a gentle smile and hand lightly on her upper chest. Tight head-and-shoulder crop, beautiful soft yellow-green foliage. Comfortable unobstructed breathing, no tissues, sneezing or distress.",
+      "prompt": "Use case: photorealistic-natural. Asset: square thumbnail on a Korean wellness website. Create an aspirational positive everyday wellness lifestyle photograph, NOT a documented treatment result or proof of product efficacy. Bright authentic editorial photography, natural skin and anatomy, colorful light clothing and light cream/pastel surroundings, clear dominant subject recognizable at 64 pixels. No navy clothing, no product packaging, no text, no before-and-after layout, no arrows, clinical readings, miraculous changes or artificial perfection. A Korean woman around 40 in a lavender sweater outdoors in a sunlit green park, eyes gently closed, nose and face clearly visible in profile-three-quarter view, enjoying a relaxed fresh-air breath with a gentle smile and hand lightly on her upper chest. Tight head-and-shoulder crop, beautiful soft yellow-green foliage. Comfortable unobstructed breathing, no tissues, sneezing or distress.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-31b98a05-449e-4bae-b4ab-9948eae867c0.png",
+      "path": "assets/photos/after-fresh-breathing.jpg"
+    },
+    {
+      "id": "59",
+      "key": "healthy-hair",
+      "scene": "A Korean man around 40 in a mustard yellow shirt, naturally thick healthy dark hair with believable strand texture, casually arranging his hair with one hand and smiling lightly at a mirror at the frame edge. Tight three-quarter head-and-shoulders crop emphasizing naturally full crown and hair volume. Bright cream bathroom. Realistic adult hair density, ordinary grooming, no exaggerated hair regrowth or before-and-after.",
+      "prompt": "Use case: photorealistic-natural. Asset: square thumbnail on a Korean wellness website. Create an aspirational positive everyday wellness lifestyle photograph, NOT a documented treatment result or proof of product efficacy. Bright authentic editorial photography, natural skin and anatomy, colorful light clothing and light cream/pastel surroundings, clear dominant subject recognizable at 64 pixels. No navy clothing, no product packaging, no text, no before-and-after layout, no arrows, clinical readings, miraculous changes or artificial perfection. A Korean man around 40 in a mustard yellow shirt, naturally thick healthy dark hair with believable strand texture, casually arranging his hair with one hand and smiling lightly at a mirror at the frame edge. Tight three-quarter head-and-shoulders crop emphasizing naturally full crown and hair volume. Bright cream bathroom. Realistic adult hair density, ordinary grooming, no exaggerated hair regrowth or before-and-after.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-a9b0bdc6-f421-412a-981c-91a31efebb80.png",
+      "path": "assets/photos/after-healthy-hair.jpg"
+    },
+    {
+      "id": "72",
+      "key": "comfortable-throat",
+      "scene": "A Korean man around 50 in a bright sage green linen shirt, smiling comfortably and holding a clear glass of water near his mouth after a refreshing sip, other hand lightly resting near his throat without pressure. Tight face-and-chest crop with visible glass and relaxed expression, bright cream home background. Comfortable everyday throat hydration, no cough or grimace.",
+      "prompt": "Use case: photorealistic-natural. Asset: square thumbnail on a Korean wellness website. Create an aspirational positive everyday wellness lifestyle photograph, NOT a documented treatment result or proof of product efficacy. Bright authentic editorial photography, natural skin and anatomy, colorful light clothing and light cream/pastel surroundings, clear dominant subject recognizable at 64 pixels. No navy clothing, no product packaging, no text, no before-and-after layout, no arrows, clinical readings, miraculous changes or artificial perfection. A Korean man around 50 in a bright sage green linen shirt, smiling comfortably and holding a clear glass of water near his mouth after a refreshing sip, other hand lightly resting near his throat without pressure. Tight face-and-chest crop with visible glass and relaxed expression, bright cream home background. Comfortable everyday throat hydration, no cough or grimace.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-5e5f97a3-31e4-4f7e-93f9-21972f07e2d3.png",
+      "path": "assets/photos/after-comfortable-throat.jpg"
+    },
+    {
+      "id": "51",
+      "key": "energized-after-meal",
+      "scene": "A Korean woman around 40 in a peach orange blouse in a bright cream kitchen, sitting upright with an energetic cheerful smile after finishing a balanced meal. She stretches both arms lightly upward and back, with her face unobstructed and a nearly finished bowl of rice and vegetables at lower foreground. Tight head-to-table crop, her awake eyes, upright posture and lunch bowl clearly visible. Convey a light refreshed post-lunch routine, not drowsiness.",
+      "prompt": "Use case: photorealistic-natural. Asset: square thumbnail on a Korean wellness website. Create an aspirational positive everyday wellness lifestyle photograph, NOT a documented treatment result or proof of product efficacy. Bright authentic editorial photography, natural skin and anatomy, colorful light clothing and light cream/pastel surroundings, clear dominant subject recognizable at 64 pixels. No navy clothing, no product packaging, no text, no before-and-after layout, no arrows, clinical readings, miraculous changes or artificial perfection. A Korean woman around 40 in a peach orange blouse in a bright cream kitchen, sitting upright with an energetic cheerful smile after finishing a balanced meal. She stretches both arms lightly upward and back, with her face unobstructed and a nearly finished bowl of rice and vegetables at lower foreground. Tight head-to-table crop, her awake eyes, upright posture and lunch bowl clearly visible. Convey a light refreshed post-lunch routine, not drowsiness.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-b1d78677-8ee4-4e45-8678-75afec77fb3c.png",
+      "path": "assets/photos/after-energized-after-meal.jpg"
+    },
+    {
+      "id": "64",
+      "key": "radiant-skin",
+      "scene": "A Korean woman around 30 wearing a soft coral top, smiling with natural healthy lively skin, gently touching her cheek while looking into a small handheld mirror at the edge of frame. Tight face crop with natural pores and subtle glow, minimal makeup, warm cream and pale apricot background. Confident comfortable skin-care moment, not worried or airbrushed.",
+      "prompt": "Use case: photorealistic-natural. Asset: square thumbnail on a Korean wellness website. Create an aspirational positive everyday wellness lifestyle photograph, NOT a documented treatment result or proof of product efficacy. Bright authentic editorial photography, natural skin and anatomy, colorful light clothing and light cream/pastel surroundings, clear dominant subject recognizable at 64 pixels. No navy clothing, no product packaging, no text, no before-and-after layout, no arrows, clinical readings, miraculous changes or artificial perfection. A Korean woman around 30 wearing a soft coral top, smiling with natural healthy lively skin, gently touching her cheek while looking into a small handheld mirror at the edge of frame. Tight face crop with natural pores and subtle glow, minimal makeup, warm cream and pale apricot background. Confident comfortable skin-care moment, not worried or airbrushed.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-f2c9f5be-5c9b-4088-b3a7-3b38fda398c6.png",
+      "path": "assets/photos/after-radiant-skin.jpg"
+    },
+    {
+      "id": "rfq",
+      "key": "midlife-comfort",
+      "scene": "A Korean woman around 50 wearing a light warm yellow blouse, sitting by an open sunlit window, relaxed shoulders, comfortably enjoying a cool gentle breeze, serene easy smile and natural age-appropriate facial lines. A few strands of hair gently move in the breeze, her hand holds a small pale pink fan resting unused at chest level. Tight face-and-shoulders crop, bright cream background. Convey ease and balanced midlife wellbeing, no flushing, sweating or distress.",
+      "prompt": "Use case: photorealistic-natural. Asset: square thumbnail on a Korean wellness website. Create an aspirational positive everyday wellness lifestyle photograph, NOT a documented treatment result or proof of product efficacy. Bright authentic editorial photography, natural skin and anatomy, colorful light clothing and light cream/pastel surroundings, clear dominant subject recognizable at 64 pixels. No navy clothing, no product packaging, no text, no before-and-after layout, no arrows, clinical readings, miraculous changes or artificial perfection. A Korean woman around 50 wearing a light warm yellow blouse, sitting by an open sunlit window, relaxed shoulders, comfortably enjoying a cool gentle breeze, serene easy smile and natural age-appropriate facial lines. A few strands of hair gently move in the breeze, her hand holds a small pale pink fan resting unused at chest level. Tight face-and-shoulders crop, bright cream background. Convey ease and balanced midlife wellbeing, no flushing, sweating or distress.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-0be59527-ed62-498f-86cb-5885e7b99d91.png",
+      "path": "assets/photos/after-midlife-comfort.jpg"
+    },
+    {
+      "id": "fib",
+      "key": "comfortable-bowel",
+      "scene": "A Korean man around 60 in a pale mint green long-sleeved shirt and beige trousers, standing comfortably beside an open bathroom doorway, relaxed upright posture and satisfied relieved gentle smile, one hand resting lightly on his lower abdomen. Bright clean cream bathroom tile and a small part of a white washbasin visible in background, no toilet bowl or bodily waste. Tight head-to-waist composition makes his comfortable expression and lower-abdomen hand position clear. Tasteful everyday digestive comfort, fully clothed.",
+      "prompt": "Use case: photorealistic-natural. Asset: square thumbnail on a Korean wellness website. Create an aspirational positive everyday wellness lifestyle photograph, NOT a documented treatment result or proof of product efficacy. Bright authentic editorial photography, natural skin and anatomy, colorful light clothing and light cream/pastel surroundings, clear dominant subject recognizable at 64 pixels. No navy clothing, no product packaging, no text, no before-and-after layout, no arrows, clinical readings, miraculous changes or artificial perfection. A Korean man around 60 in a pale mint green long-sleeved shirt and beige trousers, standing comfortably beside an open bathroom doorway, relaxed upright posture and satisfied relieved gentle smile, one hand resting lightly on his lower abdomen. Bright clean cream bathroom tile and a small part of a white washbasin visible in background, no toilet bowl or bodily waste. Tight head-to-waist composition makes his comfortable expression and lower-abdomen hand position clear. Tasteful everyday digestive comfort, fully clothed.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-fa6ebee2-0bac-436f-abc7-1cae22beabbb.png",
+      "path": "assets/photos/after-comfortable-bowel.jpg"
+    }
+  ]
+}
