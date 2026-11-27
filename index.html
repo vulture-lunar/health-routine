@@ -218,7 +218,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <link rel="stylesheet" href="tokens.css?v=links-20261127-1">
 <link rel="stylesheet" href="theme.css?v=original-restored-20261124-1">
 <link rel="stylesheet" href="collection.css?v=choice-copy-20261125-1">
-<link rel="stylesheet" href="links.css?v=benefits-20261127-3">
+<link rel="stylesheet" href="links.css?v=photos-20261127-4">
 </head>
 <body>
 
@@ -316,7 +316,7 @@ dialog.sheet::backdrop { background: rgba(23, 41, 31, .4); -webkit-backdrop-filt
 <dialog class="sheet" id="sheet" aria-labelledby="sheet-title"></dialog>
 <dialog class="sheet product-sheet" id="product-sheet" aria-labelledby="product-guide-title"></dialog>
 
-<script src="catalog-products.js?v=benefits-20261127-3"></script>
+<script src="catalog-products.js?v=photos-20261127-4"></script>
 <script src="concern-insights.js?v=recommendation-links-20261125-1"></script>
 <script src="shorts-data.js?v=13363bccf6a3"></script>
 <script src="product-guides.js?v=point-aligned-20261125-1"></script>
@@ -447,11 +447,11 @@ function renderGrid() {
   const list = PRODUCT_LINKS.filter(p => curCat === "all" || categoryProducts.has(p.id));
   gridEl.innerHTML = list.map(p => `
     <div class="link-row">
-      <a class="card product-link" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer" data-catalog-id="${esc(p.id)}" aria-label="${esc(p.effect)} · ${esc(p.name)} 판매 페이지 (새 탭)">
+      <a class="card product-link" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer" data-catalog-id="${esc(p.id)}" aria-label="${esc(p.effect)} 판매 페이지 (새 탭)">
         <img class="routine-thumb" src="${esc(p.img)}" alt="${esc(p.imageAlt)}" width="64" height="64" loading="lazy" decoding="async">
-        <span class="link-copy"><strong class="link-effect">${esc(p.effect)}</strong><span class="link-title">${esc(p.name)}</span><span class="link-detail">${esc(p.detail)}</span></span>
+        <span class="link-copy"><strong class="link-effect">${esc(p.effect)}</strong><span class="link-detail">${esc(p.detail)}</span></span>
       </a>
-      <button type="button" class="link-share" data-share-id="product-${esc(p.id)}" aria-label="${esc(p.name)} 링크 공유"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg></button>
+      <button type="button" class="link-share" data-share-id="product-${esc(p.id)}" aria-label="${esc(p.effect)} 링크 공유"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg></button>
     </div>`).join("");
 }
 
@@ -740,7 +740,7 @@ function siteLink(id = "") {
 }
 async function shareLink(id = "") {
   const product = PRODUCT_LINKS.find(p => `product-${p.id}` === id);
-  const title = product ? product.name : id ? `${C.find(c => c.id === id)?.tag || "건강 정보"} · 백년 탐구생활` : "백년 탐구생활";
+  const title = product ? product.effect : id ? `${C.find(c => c.id === id)?.tag || "건강 정보"} · 백년 탐구생활` : "백년 탐구생활";
   const url = siteLink(id);
   if (navigator.share) {
     try { await navigator.share({title, url}); return; }

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-27",
+  "tool": "built-in image_gen.imagegen",
+  "purpose": "AI-generated editorial lifestyle photos representing care purposes; not product-result evidence.",
+  "assets": [
+    {
+      "key": "gut",
+      "prompt": "Use case: photorealistic-natural. Asset type: small square thumbnail for a Korean health-product link page, replacing a gold anatomical illustration. Primary request: a realistic editorial photograph conveying comfortable digestion and mindful meals. Subject: close cropped view of a fully clothed Korean adult gently resting one hand over their abdomen at a wooden dining table, with a small plate of fresh cabbage in the foreground. Composition: one clear central subject readable at 64 pixels, square crop, waist and hand only, no face required. Lighting: natural window light, warm subtle highlights, deep navy and warm neutral surroundings, authentic skin and fabric texture. Constraints: genuinely photographic, no gold sculpture, no illustration, no anatomical cutaway, no text, no labels, no logos, no packaging, no before-and-after, no implied clinical test or treatment proof.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-60aac951-926e-4f4b-b7c5-3a14f68e1b9b.png",
+      "path": "assets/photos/gut.jpg"
+    },
+    {
+      "key": "vessel",
+      "prompt": "Use case: photorealistic-natural. Asset type: square thumbnail for a Korean health and wellness link page. Style: authentic premium editorial photography, natural window light, subtle warm highlights and deep navy or warm neutral surroundings, real human skin and material textures. Composition: one dominant centered subject that remains clear at 64px. Constraints: photograph, never an illustration or gold sculpture; no text, no labels, no logos, no packaging, no before-and-after, no clinical proof, no exaggerated transformations. A close cropped realistic photograph of an adult Korean person's relaxed wrist and fingertips gently checking the radial pulse, fully clothed arm in a navy shirt, softly blurred home interior. Calm everyday cardiovascular self-care; no medical devices or numeric readings.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-13a9dacd-3995-451d-8ed1-10b7df85d85c.png",
+      "path": "assets/photos/vessel.jpg"
+    },
+    {
+      "key": "throat",
+      "prompt": "Use case: photorealistic-natural. Asset type: square thumbnail for a Korean health and wellness link page. Style: authentic premium editorial photography, natural window light, subtle warm highlights and deep navy or warm neutral surroundings, real human skin and material textures. Composition: one dominant centered subject that remains clear at 64px. Constraints: photograph, never an illustration or gold sculpture; no text, no labels, no logos, no packaging, no before-and-after, no clinical proof, no exaggerated transformations. Close crop of an adult Korean woman wearing a comfortable navy knit sweater, her hand gently resting at the front of her neck, a warm cup of tea at the edge of frame. Natural skin, soft daylight, relaxed expression, no distress. Convey throat comfort and seasonal care. No exposed chest.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-d3d90115-7662-4288-acf4-5891124f3de6.png",
+      "path": "assets/photos/throat.jpg"
+    },
+    {
+      "key": "sleep",
+      "prompt": "Use case: photorealistic-natural. Asset type: square thumbnail for a Korean health and wellness link page. Style: authentic premium editorial photography, natural window light, subtle warm highlights and deep navy or warm neutral surroundings, real human skin and material textures. Composition: one dominant centered subject that remains clear at 64px. Constraints: photograph, never an illustration or gold sculpture; no text, no labels, no logos, no packaging, no before-and-after, no clinical proof, no exaggerated transformations. An adult Korean woman peacefully sleeping on her side on a cream pillow, navy bedding, head and shoulders clearly visible, soft morning light at bedroom window, serene naturally relaxed face. A believable lifestyle moment, not a beauty illustration.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-83ff2043-1254-4a76-a5a3-545658652d0f.png",
+      "path": "assets/photos/sleep.jpg"
+    },
+    {
+      "key": "hair",
+      "prompt": "Use case: photorealistic-natural. Asset type: square thumbnail for a Korean health and wellness link page. Style: authentic premium editorial photography, natural window light, subtle warm highlights and deep navy or warm neutral surroundings, real human skin and material textures. Composition: one dominant centered subject that remains clear at 64px. Constraints: photograph, never an illustration or gold sculpture; no text, no labels, no logos, no packaging, no before-and-after, no clinical proof, no exaggerated transformations. Back and side view close-up of an adult Korean woman gently brushing her natural dark hair with a simple wooden brush, strands clearly defined in warm daylight, navy top and neutral bathroom background. Everyday hair care, realistic natural density and texture.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-85341dff-d20a-45eb-9a8f-20e27e1e8112.png",
+      "path": "assets/photos/hair.jpg"
+    },
+    {
+      "key": "meal",
+      "prompt": "Use case: photorealistic-natural. Asset type: square thumbnail for a Korean health and wellness link page. Style: authentic premium editorial photography, natural window light, subtle warm highlights and deep navy or warm neutral surroundings, real human skin and material textures. Composition: one dominant centered subject that remains clear at 64px. Constraints: photograph, never an illustration or gold sculpture; no text, no labels, no logos, no packaging, no before-and-after, no clinical proof, no exaggerated transformations. Photographic overhead close-up of a balanced modest home meal in a ceramic bowl: rice, green vegetables and egg, a hand resting beside the bowl, a glass of water, deep navy linen on a warm wooden table. Thoughtful portion and meal routine, no diet messaging or calorie numbers.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-7cc42dbc-0be8-4d5e-bcb4-fb17e4ac651b.png",
+      "path": "assets/photos/meal.jpg"
+    },
+    {
+      "key": "light",
+      "prompt": "Use case: photorealistic-natural. Asset type: square thumbnail for a Korean health and wellness link page. Style: authentic premium editorial photography, natural window light, subtle warm highlights and deep navy or warm neutral surroundings, real human skin and material textures. Composition: one dominant centered subject that remains clear at 64px. Constraints: photograph, never an illustration or gold sculpture; no text, no labels, no logos, no packaging, no before-and-after, no clinical proof, no exaggerated transformations. An adult Korean woman in a navy athletic top and comfortable trousers taking a relaxed morning walk along a softly blurred green park path, framed from shoulders to hips, natural ordinary body proportions and easy posture. Convey gentle movement and a light daily wellness routine, not weight-loss results. Fully clothed, no measuring tape, no scales.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-d3fb0bc0-e63f-411e-926d-b932ad2e3e4a.png",
+      "path": "assets/photos/light.jpg"
+    },
+    {
+      "key": "skin",
+      "prompt": "Use case: photorealistic-natural. Asset type: square thumbnail for a Korean health and wellness link page. Style: authentic premium editorial photography, natural window light, subtle warm highlights and deep navy or warm neutral surroundings, real human skin and material textures. Composition: one dominant centered subject that remains clear at 64px. Constraints: photograph, never an illustration or gold sculpture; no text, no labels, no logos, no packaging, no before-and-after, no clinical proof, no exaggerated transformations. Close portrait of an adult Korean woman with healthy natural skin and visible pores, gently touching her cheek with her fingertips, subtle smile, minimal makeup, warm natural window light, softly blurred deep navy bathroom surroundings. Everyday hydration and skin care, realistic complexion, no airbrushing, no before-and-after.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-83a058ee-e091-46df-a880-d9aaf0bdc836.png",
+      "path": "assets/photos/skin.jpg"
+    },
+    {
+      "key": "change",
+      "prompt": "Use case: photorealistic-natural. Asset type: square thumbnail for a Korean health and wellness link page. Style: authentic premium editorial photography, natural window light, subtle warm highlights and deep navy or warm neutral surroundings, real human skin and material textures. Composition: one dominant centered subject that remains clear at 64px. Constraints: photograph, never an illustration or gold sculpture; no text, no labels, no logos, no packaging, no before-and-after, no clinical proof, no exaggerated transformations. A Korean woman in her late 40s or early 50s calmly enjoying morning sunlight by an open home window, face and shoulders visible, comfortable navy cardigan, softly smiling, authentic age-appropriate skin texture and a few natural smile lines. Everyday midlife wellbeing and balance, no pills or products.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-6b3ec381-319e-4116-8e82-d75016b40a77.png",
+      "path": "assets/photos/change.jpg"
+    },
+    {
+      "key": "bowel",
+      "prompt": "Use case: photorealistic-natural. Asset type: square thumbnail for a Korean health and wellness link page. Style: authentic premium editorial photography, natural window light, subtle warm highlights and deep navy or warm neutral surroundings, real human skin and material textures. Composition: one dominant centered subject that remains clear at 64px. Constraints: photograph, never an illustration or gold sculpture; no text, no labels, no logos, no packaging, no before-and-after, no clinical proof, no exaggerated transformations. A realistic food photograph showing a clear glass of water, a small bowl of oats, a pear and sliced kiwi on a wooden breakfast table with a deep navy linen napkin, natural daylight. Clear simple composition suggesting hydration, fiber and regular daily digestion, no text or packaging.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-7967da4d-8450-4670-bd47-88d30b6ee975.png",
+      "path": "assets/photos/bowel.jpg"
+    }
+  ]
+}

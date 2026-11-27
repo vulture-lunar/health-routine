@@ -116,3 +116,6 @@ footer p { font-size:11px; color:var(--color-muted); }
   .link-row .product-link .link-title { font-size:11px; }
   .link-detail { font-size:9px; }
 }
+/* Photographic purpose images; product names stay out of the link labels. */
+.link-row .product-link .routine-thumb { object-fit:cover; object-position:center; }
+.link-copy { gap:8px; }
