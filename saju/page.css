@@ -32,7 +32,7 @@ h1,h2,h3 { font-style:normal; min-width:0; overflow-wrap:anywhere; }
 .official-home a:focus-visible { outline:2px solid var(--color-gold-light); outline-offset:3px; }
 /* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V4
  * genre: atmospheric profile · theme: supplied Destiny Edit identity
- * black / antique gold / mother-of-pearl · existing product link structure
+ * black / cool silver / mother-of-pearl · existing product link structure
  */
 html {
   background-color:var(--color-profile-surround);
@@ -77,3 +77,12 @@ footer .footer-brand { color:var(--color-ink); }
   .hero .inner { padding-top:24px; }
   .hero::before { background-size:auto 100%; }
 }
+/* Silver treatment for decorative artwork; product artwork retains its colors. */
+html { background-image:none; isolation:isolate; }
+html::before {
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:linear-gradient(var(--color-background-veil),var(--color-background-veil)),url('assets/destiny-wide.jpg') center top / cover no-repeat;
+  filter:var(--metal-art-filter);
+}
+.hero::before,#profile-avatar { filter:var(--metal-art-filter); }
+@media(max-width:600px) { html::before { background-size:auto 100dvh; } }

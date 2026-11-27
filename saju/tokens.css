@@ -1,23 +1,28 @@
-/* Destiny Edit · user supplied black, antique gold and mother-of-pearl identity. */
+/* Destiny Edit · black, cool silver and mother-of-pearl identity. */
 :root {
-  --color-paper:#080807;
-  --color-paper-2:#11100d;
-  --color-raised:#1d1913;
-  --color-ink:#f1e7d8;
-  --color-muted:#b9ab97;
-  --color-gold:#c49a63;
-  --color-gold-light:#ead6b5;
-  --color-gold-deep:#8f6537;
-  --color-rule:#685037;
-  --color-rule-soft:#30291f;
-  --color-profile-surround:#030302;
-  --color-profile-border:#715336;
+  --color-paper:#08090b;
+  --color-paper-2:#101216;
+  --color-raised:#191d24;
+  --color-ink:#f0f1f5;
+  --color-muted:#adb3bf;
+  --color-silver:#c1c8d4;
+  --color-silver-light:#eef1f8;
+  --color-silver-deep:#788395;
+  /* Compatibility aliases for the shared profile stylesheet. */
+  --color-gold:var(--color-silver);
+  --color-gold-light:var(--color-silver-light);
+  --color-gold-deep:var(--color-silver-deep);
+  --color-rule:#535e70;
+  --color-rule-soft:#2b313c;
+  --color-profile-surround:#030407;
+  --color-profile-border:#657084;
   --color-profile-backdrop:#000000b3;
-  --color-brand-paper:#080807;
-  --color-background-veil:#03030255;
-  --color-body-overlay:#080807ed;
+  --color-brand-paper:#08090b;
+  --color-background-veil:#03040755;
+  --color-body-overlay:#08090bed;
   --color-avatar-shadow:#00000080;
-  --color-pearl-pink:#dbc6cf;
-  --color-pearl-blue:#c5d0dc;
+  --color-pearl-pink:#d9d1e4;
+  --color-pearl-blue:#ccd8eb;
   --color-mask-solid:#000;
+  --metal-art-filter:grayscale(1) brightness(1.15);
 }
