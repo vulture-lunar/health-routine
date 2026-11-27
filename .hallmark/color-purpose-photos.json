@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-27",
+  "tool": "built-in image_gen.imagegen",
+  "purpose": "Bright varied clothing and clear keyword-specific gestures; preserves the approved pink Pilates photo.",
+  "assets": [
+    {
+      "id": "74",
+      "key": "digestion",
+      "prompt": "Edit the supplied photograph. Preserve the same elderly Korean grandfather, his gray hair, his uncomfortable facial expression, pose and hand holding his upper abdomen. Change his navy cardigan to a light warm oatmeal / camel beige cardigan and his undershirt to pale peach. Make the background a slightly brighter sunlit cream living room. Realistic editorial photography. Keep face and hand clearly readable in the square composition. No text, logos, organs or overlays.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-626b2e12-7c9c-47bb-9cf3-97c259c2e7be.png",
+      "path": "assets/photos/color-digestion.jpg"
+    },
+    {
+      "id": "75",
+      "key": "blood-pressure",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. An older Korean man around 60 wearing a bright muted coral polo shirt, seated at a light home table using an upper-arm blood pressure monitor. The light gray cuff on his upper arm and his attentive face are both large and obvious; one hand steadies the cuff. Close portrait including face, arm and cuff, cropped just below the waist. White and pale peach home interior, monitor has no readable numbers. Key visual is checking blood pressure, not wrist massage.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-8c302887-22ab-4fed-9b24-94b8feea48d6.png",
+      "path": "assets/photos/color-blood-pressure.jpg"
+    },
+    {
+      "id": "77",
+      "key": "seasonal-nose",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. An adult Korean woman around 40 wearing a lavender sweater, holding a white tissue to her nose while sneezing lightly, eyes gently squinted and nose slightly reddened. Frame head and upper chest very tightly so the tissue at the nose is instantly obvious, with soft yellow-green spring foliage through a bright cream window behind her. Convey seasonal nose irritation. No mask, no tea.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-f5e23069-1596-4620-9df7-3caf85516996.png",
+      "path": "assets/photos/color-seasonal-nose.jpg"
+    },
+    {
+      "id": "54",
+      "key": "sleep-mint",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. An adult Korean woman sleeping peacefully on her side, face large in the frame, wearing mint green cotton pajamas, one hand beside her face on a soft white pillow. Pale blush pink bedding in a bright softly lit cozy bedroom. Eyes completely closed and relaxed sleeping expression. Close head-and-shoulders composition, visible pillow and blanket make sleep immediately recognizable.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-45ae3f8c-886a-4202-8246-04ad987eef5d.png",
+      "path": "assets/photos/color-sleep-mint.jpg"
+    },
+    {
+      "id": "59",
+      "key": "hair-concern",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. A middle-aged Korean man wearing a mustard yellow casual shirt examining the top of his head, one hand gently parting his hair to look at a visibly thinning crown. Tight three-quarter overhead close-up including the thinning crown, his hand and part of his concerned face. Natural everyday male pattern thinning, realistic scalp and hair, bright light cream bathroom. Key visual is hair density concern, not generic long hair or brushing.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-5e68fc75-080e-44a3-8baa-04b2780324a7.png",
+      "path": "assets/photos/color-hair-concern.jpg"
+    },
+    {
+      "id": "72",
+      "key": "dry-throat",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. A Korean man around 50 wearing a bright sage green shirt gently coughing into a loosely closed fist while the other hand touches the front of his throat. Close head-and-chest photo, dry-throat discomfort clearly apparent in his facial expression. A clear glass of water visible at lower edge, bright cream and pale green home background. Not a medical emergency; no tissue, no nose gesture.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-c7717701-72ab-4ed0-b5eb-b2bf3b3855f1.png",
+      "path": "assets/photos/color-dry-throat.jpg"
+    },
+    {
+      "id": "51",
+      "key": "after-meal",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. A middle-aged Korean woman in a peach orange blouse sitting after a meal at a table, drowsy face resting lightly on one hand while the other hand rests near a nearly finished bowl of rice and vegetables. Close head-through-table composition; her half-closed sleepy eyes and the lunch bowl are dominant. Bright cream kitchen, natural realistic expression. Convey a recognizable post-lunch sluggish moment rather than a generic food still life.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-a6f26f47-127b-4a8c-bf6c-7104e2e8325f.png",
+      "path": "assets/photos/color-after-meal.jpg"
+    },
+    {
+      "id": "64",
+      "key": "skin-texture",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. Close-up portrait of an adult Korean woman around 30 in a bright soft coral top, touching her cheek gently with fingertips while looking at a small hand mirror at the edge of frame, concerned about dull dry skin. Authentic visible pores and slight cheek dryness, no severe rash or exaggerated blemishes. Cream and pale apricot background. Face and fingertips fill the square crop; everyday complexion and skin-texture care is immediately clear.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-e1415b90-3986-4677-b661-d2d8a3ff8fff.png",
+      "path": "assets/photos/color-skin-texture.jpg"
+    },
+    {
+      "id": "rfq",
+      "key": "midlife-fan",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. An adult Korean woman around 50 with natural age-appropriate smile lines, wearing a light warm yellow blouse, fanning her face with a small pale pink handheld paper fan while gently pressing a cool cloth to her neck. Slightly flushed cheeks and a warm uncomfortable expression, relatable midlife hot-flash moment. Tight face-and-upper-chest composition, bright cream home background. No text, no medical devices.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-1812ee38-4306-42d4-8683-faab179497d1.png",
+      "path": "assets/photos/color-midlife-fan.jpg"
+    },
+    {
+      "id": "col",
+      "key": "skin-hydration",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. Close beauty editorial portrait of a clearly adult Korean woman aged around 30 wearing a light lilac top and a white headband, gently pressing a small clear drop of water-based moisturizer into her cheek with her fingertips. Clearly visible small skin dewdrops and natural healthy skin texture, no plastic skin or heavy makeup. Bright pale pink background and soft daylight. Tight face crop, clean fresh hydration feeling; no bottle or jar, no sun symbol.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-f92db6df-4fbe-4eb5-b5c9-dc2b5f218875.png",
+      "path": "assets/photos/color-skin-hydration.jpg"
+    },
+    {
+      "id": "fib",
+      "key": "bowel-concern",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. A Korean man around 60 wearing a pale mint green long-sleeved shirt and fully covering beige trousers, seated on a closed white toilet lid in a bright clean bathroom, both hands resting on his lower abdomen, slight hunch and a mildly strained concerned face. Frame from head through the upper thighs so his face, hands on lower belly and the white cistern behind him are all recognizable. Everyday constipation concern expressed tastefully, fully clothed, no nudity, no bodily waste, no graphic content.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-43fa6115-6452-4baf-a8ea-ae104cb34a60.png",
+      "path": "assets/photos/color-bowel-concern.jpg"
+    },
+    {
+      "id": "off",
+      "key": "portion-choice",
+      "prompt": "Use case: photorealistic-natural. Asset: square 1:1 thumbnail for a Korean wellness link page, readable at 64 pixels. Genuine realistic editorial photograph, natural skin texture, believable anatomy, clear expressive action and tightly framed dominant subject. Bright soft daylight, colorful clothing with a light cream or pastel background that contrasts strongly against a dark navy website. No navy, black or dark blue clothing. No text, logos, packaging, numbers, medical outcome claims, before-and-after, anatomical overlays or illustrations. An adult Korean woman around 35 wearing a vivid muted teal short-sleeved top, seated at a bright kitchen table, pausing with her open palm raised politely toward a large plate of pastries being offered from the edge of frame, while her other hand rests lightly over her satisfied stomach. Her face gives a friendly 'I am full' expression. Close face-and-torso composition with only one pastry plate at lower edge, pale cream background. Clearly communicate appetite and portion-size choices, no diet product or weight-loss result.",
+      "source": "/Users/seongbeom/.codex/generated_images/01a205f3-1913-73d2-b5ad-21baaa015fa0/exec-44b97aec-9863-4460-9180-f8f71fee4c2d.png",
+      "path": "assets/photos/color-portion-choice.jpg"
+    }
+  ]
+}
